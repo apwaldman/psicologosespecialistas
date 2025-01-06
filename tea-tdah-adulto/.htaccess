@@ -1,0 +1,63 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Forçar HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    # Remover "www" do domínio
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+    # Cache Expires Headers
+    <IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresByType image/jpeg "access plus 1 year"
+        ExpiresByType image/png "access plus 1 year"
+        ExpiresByType image/gif "access plus 1 year"
+        ExpiresByType text/css "access plus 1 year"
+        ExpiresByType application/javascript "access plus 1 year"
+        ExpiresByType font/woff2 "access plus 1 year"
+    </IfModule>
+
+    # Cache-Control Headers
+    <IfModule mod_headers.c>
+        <FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|js|css|swf)$">
+            Header set Cache-Control "max-age=2592000, public"
+        </FilesMatch>
+        <FilesMatch "\.(xml|txt|html|htm)$">
+            Header set Cache-Control "max-age=7200, public, must-revalidate"
+        </FilesMatch>
+
+        # Desativar ETags
+        Header unset ETag
+    </IfModule>
+
+    # Habilitar compressão com mod_deflate
+    <IfModule mod_deflate.c>
+        AddOutputFilterByType DEFLATE text/plain text/css text/javascript application/javascript application/json application/x-javascript text/html text/xml
+        AddOutputFilterByType DEFLATE application/xml application/xhtml+xml application/rss+xml application/atom+xml
+        AddOutputFilterByType DEFLATE font/opentype font/ttf font/woff font/woff2 image/svg+xml
+
+        # Exceção para imagens
+        SetEnvIfNoCase REQUEST_URI \.(?:gif|jpg|jpeg|png|webp)$ no-gzip dont-vary
+
+        # Compatibilidade com navegadores antigos
+        BrowserMatch ^Mozilla/4 gzip-only-text/html
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
+        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    </IfModule>
+
+    # Preconnect para origens necessárias
+    <IfModule mod_headers.c>
+        Header add Link "<https://your-cdn.com>; rel=preconnect; crossorigin"
+    </IfModule>
+
+    # Forçar script loading assíncrono/defer
+    <IfModule mod_filter.c>
+        <FilesMatch "\.(js)$">
+            FilterDeclare "application/x-javascript"
+            FilterChain DEFLATE
+        </FilesMatch>
+    </IfModule>
+</IfModule>
