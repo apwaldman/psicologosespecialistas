@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <img src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/logo.webp" 			
+        <img src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/logo.webp" 			
             alt="Psicologa Daniele Mendes da Silva - especialista em atendimento psicologico de tdah e tea em adultos" 
             title="Psicologa Daniele Mendes da Silva - especialista em atendimento psicologico de tdah e tea em adultos" 			
             class="img-fluid"
@@ -40,7 +40,17 @@
                         title="Depoimentos Psicóloga especializada no tratamento de tea e de tdah em adultos.">
                         Depoimentos
                     </a>
-                </li>					
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  
+                    href="https://psicologosespecialistas.com.br/"  target="_blank"
+                    title="Psicólogos especialistas">
+                        <img src="https://psicologosespecialistas.com.br/php-include/image/logo-psicologos-especialistas.webp" 
+                            alt="Psicólogos especialistas: aqui você encontra o profissional certo!" 
+                            loading="lazy" 
+                            style="height: 24px; width: auto; vertical-align: middle;">
+                    </a>
+                </li>
 			</ul>
 		</div>
 	</div>
@@ -60,7 +70,7 @@
         </p>
         <div property="provider" typeof="CollegeOrUniversity">
             <a property="url"
-                href="https://wa.me/5555991820758?text=Vim%20por%20meio%20do%20seu%20site%20e%20gostaria%20de%20falar%20sobre.https://tea-tdah-adulto.waldmanpsicologia.com.br/">
+                href="https://wa.me/5555991820758?text=Vim%20por%20meio%20do%20seu%20site%20e%20gostaria%20de%20falar%20sobre.https://tea-tdah-adulto.psicologosespecialistas.com.br/">
                 <span property="name">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="#ffffff">
                         <path
@@ -83,15 +93,15 @@
         <meta itemprop="brand" content="Psicologa Daniele Mendes da Silva">
         <meta itemprop="sku" content="012024">
         <meta itemprop="image"
-            content="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/logo.webp">
-        <meta itemprop="hasMerchantReturnPolicy" content="https://tea-tdah-adulto.waldmanpsicologia.com.br/">
+            content="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/logo.webp">
+        <meta itemprop="hasMerchantReturnPolicy" content="https://tea-tdah-adulto.psicologosespecialistas.com.br/">
 
         <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
             <meta itemprop="price" content="700">
             <meta itemprop="priceCurrency" content="BRL">
             <link itemprop="availability" href="https://schema.org/InStock">
             <link itemprop="url"
-                href="https://tea-tdah-adulto.waldmanpsicologia.com.br/">
+                href="https://tea-tdah-adulto.psicologosespecialistas.com.br/">
         </span>
     </div>    
 </div>
@@ -101,7 +111,7 @@
         <div class="col-sm-3 col-md-3">
             <img
                 loading="lazy"
-                src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/sobre/psicologa-especialista-no-tratamento-de-tea-e-de-tdah.webp"
+                src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/sobre/psicologa-especialista-no-tratamento-de-tea-e-de-tdah.webp"
                 alt="Psicóloga especialista no tratamento de Transtorno do Espectro Autista (TEA) e de Transtorno de Déficit de Atenção e de Hiperatividade em adultos"
                 class="img-fluid rounded shadow"
                 width="2400"
@@ -149,7 +159,7 @@
         <div class="col-sm-3 col-md-3 my-1">
             <img
                 loading="lazy"
-                src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/servicos/avaliacao-e-tratamento-tardio-tdah-tea.webp"
+                src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/servicos/avaliacao-e-tratamento-tardio-tdah-tea.webp"
                 alt="Psicóloga especialista no tratamento de  TEA e de TDAH em adultos"
                 class="img-fluid rounded shadow"
                 width="2400"
@@ -163,7 +173,7 @@
                     <div class="carousel-item active">
                         <img
                             loading="lazy"
-                            src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/servicos/supervisao-psicologica-clinica-para-estudantes-e-recem-formados.webp"
+                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/servicos/supervisao-psicologica-clinica-para-estudantes-e-recem-formados.webp"
                             alt="Supervisão clínica para psicólogos - imagem 1"
                             class="img-fluid rounded shadow"
                             width="2400"
@@ -173,7 +183,7 @@
                     <div class="carousel-item">
                         <img
                             loading="lazy"
-                            src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/servicos/projeto-acolher-supervisao-clinica-para-psicologos-recem-formados.webp"
+                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/servicos/projeto-acolher-supervisao-clinica-para-psicologos-recem-formados.webp"
                             alt="Supervisão psicológica em abordagem TCC - imagem 2"
                             class="img-fluid rounded shadow"
                             width="2400"
@@ -183,7 +193,7 @@
                     <div class="carousel-item">
                         <img
                             loading="lazy"
-                            src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/servicos/projeto-fly-supervisao-clinica-para-psicologos-recem-formados.webp"
+                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/servicos/projeto-fly-supervisao-clinica-para-psicologos-recem-formados.webp"
                             alt="Atendimento e supervisão psicológica para estudantes - imagem 3"
                             class="img-fluid rounded shadow"
                             width="2400"
@@ -221,7 +231,7 @@
         <div class="col-sm-3 col-md-3  my-1">
             <img
                 loading="lazy"
-                src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/servicos/atendimento-psicologico-tratamento-de-trauma.webp"
+                src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/servicos/atendimento-psicologico-tratamento-de-trauma.webp"
                 alt="Psicóloga especialista no tratamento de  TEA e de TDAH em adultos"
                 class="img-fluid rounded shadow"
                 width="2400"
@@ -254,7 +264,7 @@
                     <div class="carousel-item active">
                         <img
                             loading="lazy"
-                            src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/depoimentos/psicologa-que-atende-cognitivo-comportamental-adultos.webp"
+                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-que-atende-cognitivo-comportamental-adultos.webp"
                             alt="Atendimento psicológico na abordagem cognitivo-comportamental"
                             class="img-fluid rounded shadow"
                             width="2400"
@@ -263,7 +273,7 @@
                     <div class="carousel-item">
                         <img
                             loading="lazy"
-                            src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/depoimentos/psicologa-que-atende-tdah-em-adultos.webp"
+                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-que-atende-tdah-em-adultos.webp"
                             alt="Psicologa especializada no atendimento de pacientes com TDAH - Transtorno do Déficit de Atenção e de Hiperatividade"
                             class="img-fluid rounded shadow"
                             width="2400"
@@ -272,7 +282,7 @@
                     <div class="carousel-item">
                         <img
                             loading="lazy"
-                            src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/depoimentos/psicologa-que-atende-tea-autismo-em-adultos.webp"
+                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-que-atende-tea-autismo-em-adultos.webp"
                             alt="Psicologa especializada no atendimento de pacientes com TEA - Transtorno do Espectro Autista"
                             class="img-fluid rounded shadow"
                             width="2400"
@@ -281,7 +291,7 @@
                     <div class="carousel-item">
                         <img
                             loading="lazy"
-                            src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/depoimentos/psicologa-que-faz-mentoria-na-linha-cognitivo-comportamental.webp"
+                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-que-faz-mentoria-na-linha-cognitivo-comportamental.webp"
                             alt="Psicologa que oferece mentoria na abordagem cognitivo-comportamental"
                             class="img-fluid rounded shadow"
                             width="2400"
@@ -290,7 +300,7 @@
                     <div class="carousel-item">
                         <img
                             loading="lazy"
-                            src="https://tea-tdah-adulto.waldmanpsicologia.com.br/image/depoimentos/psicologa-supervisora-na-linha-cognitivo-comportamental.webp"
+                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-supervisora-na-linha-cognitivo-comportamental.webp"
                             alt="Psicologa que oferece supervisão na abordagem cognitivo-comportamental"
                             class="img-fluid rounded shadow"
                             width="2400"
@@ -376,11 +386,11 @@
         <div class="col-sm-4 col-md-4">
             <div class="ratio ratio-1x1">
                 <video
-                    src="https://tea-tdah-adulto.waldmanpsicologia.com.br/video/video-psicologa-supervisora-em-tcc.mp4"
+                    src="https://tea-tdah-adulto.psicologosespecialistas.com.br/video/video-psicologa-supervisora-em-tcc.mp4"
                     class="border rounded shadow-lg"
                     controls
                     preload="metadata"
-                    poster="https://tea-tdah-adulto.waldmanpsicologia.com.br/video/tumbnail-video-psicologa-supervisora-em-tcc.webp">
+                    poster="https://tea-tdah-adulto.psicologosespecialistas.com.br/video/tumbnail-video-psicologa-supervisora-em-tcc.webp">
                     Seu navegador não suporta a tag de vídeo.
                 </video>
             </div>

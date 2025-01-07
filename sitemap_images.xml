@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://psicologosespecialistas.com.br</loc>
+        <image:image>
+            <image:loc>https://psicologosespecialistas.com.br/php-include/image/logo-psicologos-especialistas.webp</image:loc>
+            <image:caption>Logo de psicologos especialistas: o melhor site para psicologos</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://psicologosespecialistas.com.br</loc>
+        <image:image>
+            <image:loc>https:/psicologosespecialistas.com.br/php-include/image/index/psicologa-especialista-no-tratamento-de-tea-e-de-tdah.webp</image:loc>
+            <image:caption>Psicóloga especialista no tratamento de Transtorno do Espectro Autista (TEA) e de Transtorno de Déficit de Atenção e de Hiperatividade em adultos</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://psicologosespecialistas.com.br</loc>
+        <image:image>
+            <image:loc>https:/psicologosespecialistas.com.br/php-include/image/index/psicologa-andrea-pires-waldman.webp</image:loc>
+            <image:caption>Psicóloga especialista em avaliação psicológica e em psicologia jurídica</image:caption>
+        </image:image>
+    </url>
+</urlset>
