@@ -27,6 +27,9 @@
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+<!-- Bing -->
+<meta name="msvalidate.01" content="34B765C4509413BBB34DE16C6619DBAA" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZG642TW7B5"></script>
 <script>
