@@ -1,1 +1,62 @@
-.back-to-top{position:fixed;width:60px;height:60px;bottom:100px;left:40px;background-color:#25d366;color:#fff;border-radius:50px;text-align:center;font-size:30px;box-shadow:1px 1px 2px #888;z-index:1000}.back-to-top i{margin-top:16px}@media (max-width:768px){.back-to-top{bottom:80px;left:20px;width:50px;height:50px;font-size:25px}}@media (max-width:480px){.back-to-top{bottom:60px;left:10px;width:45px;height:45px;font-size:22px}}
+.back-to-top {
+    position: fixed;
+    width: 3.6rem;
+    height: 3.6rem;
+    bottom: 2rem; /* distancia do final da pagina */
+    left: 2rem; /* Ajustável */
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.back-to-top i {
+    margin-top: 16px;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .back-to-top {
+        width: 3rem; /* Reduz o tamanho do botão */
+        height: 3rem;
+        bottom: 1.7rem; /* Ajusta a distância do final da página */
+        left: 1.5rem; /* Ajusta a posição para manter proporção */
+        font-size: 25px; /* Reduz o tamanho do ícone */
+    }
+
+    .back-to-top i {
+        margin-top: 12px; /* Ajusta a margem do ícone */
+    }
+}
+
+@media (max-width: 576px) {
+    .back-to-top {
+        width: 2.8rem; /* Reduz ainda mais o tamanho */
+        height: 2.8rem;
+        bottom: 1rem; /* Aumenta a distância para maior acessibilidade */
+        left: 1.2rem; /* Ajusta a posição */
+        font-size: 22px; /* Reduz o tamanho do ícone */
+    }
+
+    .back-to-top i {
+        margin-top: 10px; /* Ajusta a margem do ícone */
+    }
+}
+
+@media (max-width: 480px) {
+    .back-to-top {
+        width: 2.5rem; /* Tamanho mínimo para telas muito pequenas */
+        height: 2.5rem;
+        bottom: 1.2rem; /* Mais espaço na base */
+        left: 0.8rem; /* Ajusta posição */
+        font-size: 20px; /* Tamanho proporcional ao botão */
+    }
+
+    .back-to-top i {
+        margin-top: 8px; /* Ajusta margem */
+    }
+}

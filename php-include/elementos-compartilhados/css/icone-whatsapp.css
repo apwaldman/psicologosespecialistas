@@ -1,3 +1,5 @@
+
+/* Botão WhatsApp */
 .custom-whatsapp-container {
     position: fixed;
     bottom: 2rem;
@@ -8,93 +10,33 @@
     align-items: flex-end;
 }
 
-.custom-whatsapp-link i.fab.fa-whatsapp {
-    font-size: 1.5rem; /* Tamanho do ícone ajustado */
-    color: white; /* Cor do ícone */
-    display: inline-block; /* Garante que o ícone ocupa espaço corretamente */
-    vertical-align: middle; /* Alinha verticalmente */
-}
-
 .custom-whatsapp-link {
-    width: 4rem;
+    width: 4rem; /* Tamanho do botão */
     height: 4rem;
-    background-color: #25D366;
-    border-radius: 50%; /* Torna o círculo perfeito */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Adicionado para controle de posicionamento */
-}
-
-.custom-whatsapp-link img {
-    width: 100%;
-    height: 100%;
-}
-
-.custom-whatsapp-message {
-    background-color: #FFF;
-    color: #333;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.custom-close-whats-btn {
-    background: none;
-    border: none;
-    color: #333;
-    font-size: 1.5rem; /* Ajustado para font-awesome */
-    cursor: pointer;
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    z-index: 10;
-    padding: 0;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
+    background-color: #25d366;
     border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
 }
 
-.custom-close-whats-btn::before {
-    content: '\f00d'; /* FontAwesome 'times' icon for close button */
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #333;
+.custom-whatsapp-link:hover {
+    transform: scale(1.1);
 }
 
-.custom-close-whats-btn:hover {
-    background-color: #f0f0f0;
-    color: #007bff;
-}
-
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
+ 
     .custom-whatsapp-container {
         bottom: 1.5rem;
-        right: 1.5rem;
+        right: 2rem;
     }
 
     .custom-whatsapp-link {
         width: 3rem;
         height: 3rem;
-    }
-
-    .custom-close-whats-btn {
-        font-size: 1.2rem;
-        top: -8px;
-        right: -8px;
-    }
-
-    .custom-close-whats-btn::before {
-        width: 25px;
-        height: 25px;
     }
 }
 
@@ -107,16 +49,5 @@
     .custom-whatsapp-link {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .custom-close-whats-btn {
-        font-size: 1rem;
-        top: -6px;
-        right: -6px;
-    }
-
-    .custom-close-whats-btn::before {
-        width: 20px;
-        height: 20px;
     }
 }

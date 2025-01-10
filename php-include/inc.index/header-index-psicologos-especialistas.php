@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-  <title>Encontre aqui o seu psicólogo especialista</title>
+  <meta charset="utf-8">
 
+<title>Encontre aqui o seu psicólogo especialista</title>
 <meta name="author" content="Psicólogos Especialistas">
 <meta name="geo.country" content="BR">
 <meta name="geo.placename" content="Brazil">
@@ -27,9 +28,7 @@
 <meta name="twitter:title" content="Encontre aqui o seu psicólogo especialista">
 <meta name="twitter:description" content="O site Psicólogos Especialistas nosso site facilita sua busca pelo profissional que melhor atende às suas necessidades, garantindo um atendimento personalizado e confiável.">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://psicologosespecialistas.com.br/php-include/elementos-compartilhados/busca-de-psicologos/styles.css">
-<script async src="https://psicologosespecialistas.com.br/php-include/elementos-compartilhados/busca-de-psicologos/script.js"></script>
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <link rel="canonical"  href="https://psicologosespecialistas.com.br">
 <link rel="alternate" type="application/rss+xml"  title="Encontre aqui o seu psicólogo especialista "
