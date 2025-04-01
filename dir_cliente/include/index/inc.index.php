@@ -1,11 +1,22 @@
 <?php require_once 'inc.conecta.php' ?>
-<?php echo $erro; ?>
+
+
+<?php 
+session_start();
+$erro = $_SESSION['erro'] ?? '';
+unset($_SESSION['erro']); // Limpa a mensagem de erro após exibi-la
+?>
+
+<?php if (!empty($erro)): ?>
+    <div class="alert alert-danger text-center"><?php echo htmlspecialchars($erro); ?></div>
+<?php endif; ?>
+
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h2 class="text-center">Login</h2>
             <?php echo $erro; ?>
-            <form action="autenticar.php" method="POST">
+            <form action="include/index/autenticar.php" method="POST">
                 <div class="mb-3">
                     <label for="cpf" class="form-label">CPF</label>
                     <input type="text" class="form-control" id="cpf" name="cpf" required>
@@ -23,6 +34,4 @@
         </div>
     </div>
 </div>
-
-<?php
-ob_end_flush(); // Envia o buffer de saída para o navegador
+<?php ob_end_flush(); ?>

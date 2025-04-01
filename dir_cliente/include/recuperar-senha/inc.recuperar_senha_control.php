@@ -33,13 +33,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 // Configuração do e-mail
                 $destinatario = $email;
-                $remetente = "contato@waldmanpsicologia.com.br";
+                $remetente = "psicologosespecialistas@psicologosespecialistas.com.br";
                 $assunto = "Recuperação de Senha";
                 $headers = "From: " . $remetente . "\r\n";
                 $headers .= "Reply-To: " . $remetente . "\r\n";
                 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-                $link = "https://cliente.waldmanpsicologia.com.br/redefinir_senha.php?token=$token";
+                $link = "https://cliente.psicologosespecialistas.com.br/redefinir_senha.php?token=$token";
                 
                 $corpo_email = "<html><body>";
                 $corpo_email .= "<p>Olá,</p>";

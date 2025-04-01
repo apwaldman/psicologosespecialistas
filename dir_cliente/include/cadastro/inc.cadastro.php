@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <h2>Cadastro de Usuário</h2>
-    <form action="https://cliente.waldmanpsicologia.com.br/include/cadastro/cadastro-controller.php" method="POST" novalidate>
+    <form action="https://cliente.psicologosespecialistas.com.br/include/cadastro/cadastro-controller.php" method="POST" novalidate>
         <div class="alert alert-danger d-none" id="errorMessages"></div>
 
         <!-- Nome Completo -->
@@ -237,7 +237,7 @@
 <?php include('pop-up-exibe-mensagem-ao-usuario.php'); ?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-<script src="https://cliente.waldmanpsicologia.com.br/include/cadastro/valida-cadastro.js"></script>
+<script src="https://cliente.psicologosespecialistas.com.br/include/cadastro/valida-cadastro.js"></script>
 <?php include('exibe-mensagem-ao-clicar-no-enviar.php'); ?>
 
 <?php

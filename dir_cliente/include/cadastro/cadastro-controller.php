@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Validando o e-mail
     if (!$email) {
         $_SESSION['erro_email'] = "Por favor, insira um endereço de e-mail válido.";
-        header('Location: https://cliente.waldmanpsicologia.com.br/cadastro.php');
+        header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
         exit();
     }
 
@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     if ($stmt_check->rowCount() > 0) {
         $_SESSION['erro_cpf'] = "Já existe um usuário com este CPF ou e-mail.";
-        header('Location: https://cliente.waldmanpsicologia.com.br/cadastro.php');
+        header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
         exit();
     }
 
@@ -128,26 +128,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             $corpo_email = "<strong>Olá, $nome_completo!</strong><br><br>";
             $corpo_email .= "Por favor, clique no link abaixo para confirmar seu cadastro:<br><br>";
-            $corpo_email .= "<a href='https://cliente.waldmanpsicologia.com.br/confirmar_cadastro.php?email=" . urlencode($email) . "&token=" . md5($email . time()) . "'>Confirmar Cadastro</a><br><br>";
+            $corpo_email .= "<a href='https://cliente.psicologosespecialistas.com.br/confirmar_cadastro.php?email=" . urlencode($email) . "&token=" . md5($email . time()) . "'>Confirmar Cadastro</a><br><br>";
             $corpo_email .= "Atenciosamente,<br>Equipe Waldman Psicologia";
             
             if (mail($destinatario, $assunto, $corpo_email, $headers)) {
                 $_SESSION['sucesso'] = "Cadastro realizado com sucesso! Um e-mail de confirmação foi enviado.";
-                header('Location: https://cliente.waldmanpsicologia.com.br/cadastro.php');
+                header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
                 exit();
             } else {
                 $_SESSION['erro_email'] = "Erro ao enviar e-mail de confirmação. Tente novamente mais tarde.";
-                header('Location: https://cliente.waldmanpsicologia.com.br/cadastro.php');
+                header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
                 exit();
             }
         } catch (Exception $e) {
             $_SESSION['erro_email'] = "Erro ao enviar e-mail de confirmação. " . $e->getMessage();
-            header('Location: https://cliente.waldmanpsicologia.com.br/cadastro.php');
+            header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
             exit();
         }
     } else {
         $_SESSION['erro_banco'] = "Erro ao cadastrar usuário. Tente novamente mais tarde.";
-        header('Location: https://cliente.waldmanpsicologia.com.br/cadastro.php');
+        header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
         exit();
     }
 }

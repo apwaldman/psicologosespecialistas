@@ -1,5 +1,5 @@
 <?php
-ob_start(); // Inicia o buffer de saída para evitar erro de headers
+ob_start();
 session_start();
 
 // Inclui a conexão corretamente

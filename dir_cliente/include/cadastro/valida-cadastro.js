@@ -80,7 +80,7 @@
         
         function validaCpfBanco(cpf){
             $.ajax({
-                url: 'https://cliente.waldmanpsicologia.com.br/include/cadastro/verifica_cpf.php',
+                url: 'https://cliente.psicologosespecialistas.com.br/include/cadastro/verifica_cpf.php',
                 method: 'POST',
                 data: { cpf: cpf },
                 dataType: 'json',
@@ -135,7 +135,7 @@
 
         function validaEmailBanco(email){
             $.ajax({
-                url: 'https://cliente.waldmanpsicologia.com.br/include/cadastro/verifica_email.php',
+                url: 'https://cliente.psicologosespecialistas.com.br/include/cadastro/verifica_email.php',
                 method: 'POST',
                 data: { email: email },
                 dataType: 'json',
