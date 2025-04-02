@@ -73,8 +73,27 @@ try {
     <div class="container mt-5">
         <div class="card shadow-lg">
             <div class="card-header bg-primary text-white">
-                <h2 class="text-center">QUESTIONÁRIO DE ESQUEMAS DE YOUNG</h2>
-                <!-- Suas instruções aqui -->
+                <h2 class="text-center">QUESTIONÁRIO DE ESQUEMAS DE YOUNG – VERSÃO BREVE (YSQ – S3)</h2>
+                <i>Jeffrey Young, Ph.D.</i>
+            </div>    
+            <div>
+                <small class="text-muted">Tradução e adaptação oficial para uso no Brasil por Lauren Heineck de Souza, Elisa Steinhorst Damasceno e Margareth
+                da Silva Oliveira. Autorização exclusiva do Schema Therapy Institute.</small>
+                <hr class="text-center">Instruções</h3>
+                <p>Abaixo há uma lista de afirmações que as pessoas podem utilizar para descrever a si mesmas. Por favor, leia cada afirmação e então a classifique, 
+                    baseando-se em quão bem ela descreve você <strong>ao longo do último ano</strong>. Quando você não tiver certeza, baseie sua resposta nos 
+                    <strong>seus sentimentos</strong>, e não no que você acredita racionalmente que é verdade. </p>
+                
+                <p><i>Alguns dos itens se referem a sua relação com seus pais ou parceiro(s) amoroso(s). Se qualquer um deles já tiver falecido,
+                    por favor, responda a esses itens baseando-se na sua relação com eles enquanto eram vivos ou na sua relação com a pessoa
+                    que fez esse papel. Se você atualmente não tem um(a) parceiro(a) amoroso(a), mas teve parceiros(as) no passado, responda
+                    ao item baseando-se no parceiro(a) mais significativo que você teve recentemente.</i></p>   
+                    <p>1 – Completamente falso sobre mim</p>
+                    <p>2 – Em grande parte falso sobre mim</p>
+                    <p>3 – Um pouco mais verdadeiro do que falso sobre mim</p>
+                    <p>4 – Moderadamente verdadeiro sobre mim</p>
+                    <p>5 – Em grande parte verdadeiro sobre mim</p>
+                    <p>6 – Me descreve perfeitamente</p>
             </div>
             
             <div class="card-body">

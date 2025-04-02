@@ -14,23 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome_completo = strip_tags(trim($_POST['nome_completo']));
     $data_nascimento = $_POST['data_nascimento'];
     $idade = $_POST['idade'];
-    
-    // Remover máscaras de CPF, e Celular
+        // Remover máscaras de CPF, e Celular
     $cpf = preg_replace('/[^0-9]/', '', $_POST['cpf']);
     $celular = preg_replace('/[^0-9]/', '', $_POST['celular']);
-
-    $profissao = $_POST['profissao'];
-    $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
-    $cep = $_POST['cep'];
-    $endereco = $_POST['endereco'];
-    $numero = $_POST['numero'];
-    $complemento = $_POST['complemento'];
-    $bairro = $_POST['bairro'];
-    $cidade = $_POST['cidade'];
-    $estado = $_POST['estado'];
-    $estado_civil = $_POST['estado_civil'];
-    $naturalidade = $_POST['naturalidade'];
-    $escolaridade = $_POST['escolaridade'];
+    $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);    
     $senha = $_POST['senha'];
     $confirmacao_senha = $_POST['confirmacao_senha'];
 
@@ -39,18 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'nome_completo' => $nome_completo,
         'data_nascimento' => $data_nascimento,
         'cpf' => $cpf,
-        'profissao' => $profissao,
         'email' => $email,
         'celular' => $celular,
-        'cep' => $cep,
-        'endereco' => $endereco,
-        'numero' => $numero,
-        'bairro' => $bairro,
-        'cidade' => $cidade,
-        'estado' => $estado,
-        'estado_civil' => $estado_civil,
-        'naturalidade' => $naturalidade,
-        'escolaridade' => $escolaridade
+        'senha' => $senha
     ];
 
     foreach ($campos_obrigatorios as $campo => $valor) {
@@ -92,34 +70,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha_hash = password_hash($senha, PASSWORD_BCRYPT);
 
     // Inserindo os dados no banco
-    $sql = "INSERT INTO usuarios (nome_completo, data_nascimento, idade, cpf, profissao, email, celular, cep, endereco, numero, complemento, bairro, cidade, estado, estado_civil, naturalidade, escolaridade, senha) 
-            VALUES (:nome_completo, :data_nascimento, :idade, :cpf, :profissao, :email, :celular, :cep, :endereco, :numero, :complemento, :bairro, :cidade, :estado, :estado_civil, :naturalidade, :escolaridade, :senha)";
+    $sql = "INSERT INTO usuarios (nome_completo, data_nascimento, idade, cpf, email, celular, senha) 
+            VALUES (:nome_completo, :data_nascimento, :idade, :cpf, :email, :celular,  :senha)";
 
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':nome_completo', $nome_completo);
     $stmt->bindParam(':data_nascimento', $data_nascimento);
     $stmt->bindParam(':idade', $idade);
-    $stmt->bindParam(':cpf', $cpf);   
-    $stmt->bindParam(':profissao', $profissao);
+    $stmt->bindParam(':cpf', $cpf);      
     $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':celular', $celular);
-    $stmt->bindParam(':cep', $cep);
-    $stmt->bindParam(':endereco', $endereco);
-    $stmt->bindParam(':numero', $numero);
-    $stmt->bindParam(':complemento', $complemento);
-    $stmt->bindParam(':bairro', $bairro);
-    $stmt->bindParam(':cidade', $cidade);
-    $stmt->bindParam(':estado', $estado);
-    $stmt->bindParam(':estado_civil', $estado_civil);
-    $stmt->bindParam(':naturalidade', $naturalidade);
-    $stmt->bindParam(':escolaridade', $escolaridade);
+    $stmt->bindParam(':celular', $celular);   
     $stmt->bindParam(':senha', $senha_hash);
 
     if ($stmt->execute()) {
         // Enviar e-mail de confirmação
         try {
             $destinatario = $email;
-            $remetente = "contato@waldmanpsicologia.com.br"; // Substitua pelo seu domínio
+            $remetente = "psicologosespecialistas@psicologosespecialistas.com.br"; // Substitua pelo seu domínio
             $assunto = "Confirmação de Cadastro";
            
             $headers = "From: " . $remetente . "\r\n";

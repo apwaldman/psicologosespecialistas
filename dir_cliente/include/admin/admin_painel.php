@@ -1,53 +1,21 @@
 <?php
-session_start();
 require_once __DIR__ . '/../auth_check.php';
+require_once __DIR__ . '/../conexao.php';
 
-// Verificar se o usuário é admin
+// Verificação básica de permissão
 if (!isset($_SESSION['usuario_admin']) || $_SESSION['usuario_admin'] != 1) {
-    header('Location: /acesso-negado.php');
+    header('Location: /index.php');
     exit;
 }
 
-// Conexão com o banco de dados
-require_once __DIR__ . '/../conexao.php';
+// Buscar todos os pacientes com seus últimos resultados
+$query = "SELECT u.id, u.nome_completo, u.cpf, r.* 
+          FROM usuarios u
+          JOIN teste_ysql_resultados r ON u.id = r.usuario_id
+          WHERE r.id IN (SELECT MAX(id) FROM teste_ysql_resultados GROUP BY usuario_id)
+          ORDER BY u.nome_completo";
 
-// Obter lista de usuários
-$usuarios = [];
-$query = "SELECT id, nome_completo, cpf FROM usuarios WHERE admin = 0 ORDER BY nome_completo";
-$stmt = Conexao::getConnection()->prepare($query);
-$stmt->execute();
-$usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-// Obter resultados se um usuário foi selecionado
-$resultados = [];
-$esquemas = [];
-$usuario_selecionado = null;
-
-if (isset($_GET['usuario_id']) && is_numeric($_GET['usuario_id'])) {
-    $usuario_id = intval($_GET['usuario_id']);
-    
-    // Obter informações do usuário selecionado
-    $query = "SELECT nome_completo, cpf FROM usuarios WHERE id = ?";
-    $stmt = $pdo->prepare($query);
-    $stmt->execute([$usuario_id]);
-    $usuario_selecionado = $stmt->fetch(PDO::FETCH_ASSOC);
-    
-    // Obter resultados do YSQL
-    $query = "SELECT r.*, e.nome as esquema_nome, e.descricao as esquema_descricao 
-              FROM teste_ysql_resultados r
-              JOIN teste_ysql_esquemas e ON r.esquema_id = e.id
-              WHERE r.usuario_id = ?
-              ORDER BY r.data_calculo DESC";
-    $stmt = $pdo->prepare($query);
-    $stmt->execute([$usuario_id]);
-    $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    
-    // Obter todos os esquemas para exibição
-    $query = "SELECT * FROM teste_ysql_esquemas ORDER BY id";
-    $stmt = $pdo->prepare($query);
-    $stmt->execute();
-    $esquemas = $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
+$pacientes = Conexao::getConnection()->query($query)->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -55,201 +23,145 @@ if (isset($_GET['usuario_id']) && is_numeric($_GET['usuario_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel do Administrador - Resultados YSQL</title>
+    <title>Resultados dos Pacientes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <style>
-        .sidebar {
-            background-color: #343a40;
-            color: white;
-            height: 100vh;
+        .esquema-card {
+            border-left: 4px solid;
+            margin-bottom: 10px;
         }
-        .nav-link {
-            color: rgba(255, 255, 255, 0.75);
+        .esquema-clinico {
+            border-color: #dc3545;
+            background-color: #fff8f8;
         }
-        .nav-link:hover, .nav-link.active {
-            color: white;
-            background-color: rgba(255, 255, 255, 0.1);
+        .esquema-ativado {
+            border-color: #fd7e14;
+            background-color: #fffaf5;
         }
-        .chart-container {
-            height: 300px;
-            margin-bottom: 30px;
+        .esquema-normal {
+            border-color: #28a745;
         }
-        .resultado-card {
-            transition: all 0.3s;
+        .progress-thin {
+            height: 6px;
         }
-        .resultado-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        .accordion-button:not(.collapsed) {
+            background-color: #f8f9fa;
         }
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-md-3 col-lg-2 d-md-block sidebar">
-                <div class="position-sticky pt-3">
-                    <div class="text-center mb-4">
-                        <h4>Admin: <?php echo htmlspecialchars($_SESSION['usuario_nome']); ?></h4>
-                        <small class="text-muted">Painel de Resultados</small>
-                    </div>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="admin_painel.php">
-                                <i class="bi bi-speedometer2"></i> Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="admin_resultados_ysql.php">
-                                <i class="bi bi-clipboard-data"></i> Resultados YSQL
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="admin_usuarios.php">
-                                <i class="bi bi-people"></i> Gerenciar Usuários
-                            </a>
-                        </li>
-                        <li class="nav-item mt-3">
-                            <a class="nav-link text-danger" href="logout.php">
-                                <i class="bi bi-box-arrow-right"></i> Sair
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Main content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Resultados YSQL</h1>
-                </div>
-
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Selecionar Usuário</h5>
-                        <form method="GET" action="admin_resultados_ysql.php">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <select class="form-select" name="usuario_id" required>
-                                        <option value="">Selecione um usuário...</option>
-                                        <?php foreach ($usuarios as $usuario): ?>
-                                            <option value="<?= $usuario['id'] ?>" <?= isset($_GET['usuario_id']) && $_GET['usuario_id'] == $usuario['id'] ? 'selected' : '' ?>>
-                                                <?= htmlspecialchars($usuario['nome_completo']) ?> (CPF: <?= htmlspecialchars(preg_replace('/(\d{3})(\d{3})(\d{3})(\d{2})/', '$1.$2.$3-$4', $usuario['cpf'])) ?>)
-                                            </option>
-                                        <?php endforeach; ?>
-                                    </select>
+    <div class="container mt-4">
+        <h2 class="mb-4">Resultados dos Pacientes</h2>
+        
+        <div class="accordion" id="pacientesAccordion">
+            <?php foreach ($pacientes as $paciente): ?>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#collapse<?= $paciente['id'] ?>">
+                            <?= htmlspecialchars($paciente['nome_completo']) ?> - 
+                            <?= htmlspecialchars($paciente['cpf']) ?>
+                        </button>
+                    </h2>
+                    <div id="collapse<?= $paciente['id'] ?>" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <h5>Teste realizado em: <?= date('d/m/Y H:i', strtotime($paciente['data_calculo'])) ?></h5>
+                            
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h5>Esquemas e Pontuações</h5>
+                                    <?php
+                                    $esquemas = [
+                                        'Privação Emocional' => $paciente['privacao_emocional'],
+                                        'Abandono' => $paciente['abandono'],
+                                        'Desconfiança/Abuso' => $paciente['desconfianca_abuso'],
+                                        'Isolamento Social' => $paciente['isolamento_social_alienacao'],
+                                        'Defectividade/Vergonha' => $paciente['defectividade_vergonha'],
+                                        'Fracasso' => $paciente['fracasso'],
+                                        'Dependência' => $paciente['dependencia_incompetencia'],
+                                        'Vulnerabilidade' => $paciente['vulnerabilidade_dano_doenca'],
+                                        'Emaranhamento' => $paciente['emaranhamento'],
+                                        'Subjugação' => $paciente['subjugacao'],
+                                        'Autossacrifício' => $paciente['autossacrificio'],
+                                        'Inibição Emocional' => $paciente['inibicao_emocional'],
+                                        'Padrões Inflexíveis' => $paciente['padroes_inflexiveis'],
+                                        'Arrogo/Grandiosidade' => $paciente['arrogo_grandiosidade'],
+                                        'Autocontrole Insuficiente' => $paciente['autocontrole_autodisciplina_insuficientes'],
+                                        'Busca de Aprovação' => $paciente['busca_aprovacao_reconhecimento'],
+                                        'Negatividade' => $paciente['negatividade_pessimismo'],
+                                        'Postura Punitiva' => $paciente['postura_punitiva']
+                                    ];
+                                    
+                                    foreach ($esquemas as $nome => $pontuacao):
+                                        $classe = $pontuacao >= 4 ? 'esquema-clinico' : 
+                                                 ($pontuacao >= 2.5 ? 'esquema-ativado' : 'esquema-normal');
+                                    ?>
+                                        <div class="card esquema-card <?= $classe ?> mb-2">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong><?= $nome ?></strong>
+                                                    <span><?= number_format($pontuacao, 2) ?>/6</span>
+                                                </div>
+                                                <div class="progress progress-thin mt-1">
+                                                    <div class="progress-bar" 
+                                                         style="width: <?= ($pontuacao/6)*100 ?>%"></div>
+                                                </div>
+                                                <small class="text-muted">
+                                                    <?= $pontuacao >= 4 ? 'Nível Clínico' : 
+                                                       ($pontuacao >= 2.5 ? 'Ativado' : 'Normal') ?>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
                                 </div>
-                                <div class="col-md-4">
-                                    <button type="submit" class="btn btn-primary w-100">
-                                        <i class="bi bi-search"></i> Buscar Resultados
-                                    </button>
+                                
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Resumo</h5>
+                                            <p><strong>Pontuação Geral:</strong> <?= number_format($paciente['total_geral'], 2) ?>/6</p>
+                                            
+                                            <h6 class="mt-4">Esquemas em Nível Clínico (≥4):</h6>
+                                            <?php
+                                            $clinicos = array_filter($esquemas, fn($p) => $p >= 4);
+                                            if (count($clinicos) > 0):
+                                                foreach ($clinicos as $nome => $pontuacao):
+                                                    echo "<p>- $nome: ".number_format($pontuacao, 2)."</p>";
+                                                endforeach;
+                                            else:
+                                                echo "<p class='text-muted'>Nenhum esquema em nível clínico</p>";
+                                            endif;
+                                            ?>
+                                            
+                                            <h6 class="mt-3">Esquemas Ativados (≥2.5):</h6>
+                                            <?php
+                                            $ativados = array_filter($esquemas, fn($p) => $p >= 2.5 && $p < 4);
+                                            if (count($ativados) > 0):
+                                                foreach ($ativados as $nome => $pontuacao):
+                                                    echo "<p>- $nome: ".number_format($pontuacao, 2)."</p>";
+                                                endforeach;
+                                            else:
+                                                echo "<p class='text-muted'>Nenhum esquema ativado</p>";
+                                            endif;
+                                            ?>
+                                            
+                                            <?php if (!empty($paciente['interpretacao'])): ?>
+                                                <div class="alert alert-info mt-3">
+                                                    <h6>Interpretação:</h6>
+                                                    <?= nl2br(htmlspecialchars($paciente['interpretacao'])) ?>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
-
-                <?php if ($usuario_selecionado): ?>
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h5 class="mb-0">
-                            Resultados para: <?= htmlspecialchars($usuario_selecionado['nome_completo']) ?>
-                            <small class="text-muted">CPF: <?= htmlspecialchars(preg_replace('/(\d{3})(\d{3})(\d{3})(\d{2})/', '$1.$2.$3-$4', $usuario_selecionado['cpf'])) ?></small>
-                        </h5>
-                    </div>
-                    
-                    <?php if (empty($resultados)): ?>
-                        <div class="card-body">
-                            <div class="alert alert-info">Nenhum resultado encontrado para este usuário.</div>
-                        </div>
-                    <?php else: ?>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-hover">
-                                    <thead class="table-dark">
-                                        <tr>
-                                            <th>Data</th>
-                                            <th>Esquema</th>
-                                            <th>Pontuação Total</th>
-                                            <th>Média</th>
-                                            <th>Interpretação</th>
-                                            <th>Ações</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php foreach ($resultados as $resultado): ?>
-                                            <tr>
-                                                <td><?= date('d/m/Y H:i', strtotime($resultado['data_calculo'])) ?></td>
-                                                <td>
-                                                    <strong><?= htmlspecialchars($resultado['esquema_nome']) ?></strong>
-                                                    <small class="d-block text-muted"><?= htmlspecialchars($resultado['esquema_descricao']) ?></small>
-                                                </td>
-                                                <td><?= $resultado['total_geral'] ?></td>
-                                                <td><?= number_format($resultado['media'], 2) ?></td>
-                                                <td><?= nl2br(htmlspecialchars(substr($resultado['interpretacao'], 0, 100) . (strlen($resultado['interpretacao']) > 100 ? '...' : ''))) ?></td>
-                                                <td>
-                                                    <a href="admin_detalhes_resultado.php?id=<?= $resultado['id'] ?>" class="btn btn-sm btn-outline-primary">
-                                                        <i class="bi bi-eye"></i> Detalhes
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        <?php endforeach; ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-                </div>
-                <?php endif; ?>
-            </main>
+            <?php endforeach; ?>
         </div>
     </div>
 
-    <!-- Bootstrap JS e Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
-    <?php if (!empty($resultados) && !empty($esquemas)): ?>
-    <script>
-        // Gráfico de médias por esquema
-        document.addEventListener('DOMContentLoaded', function() {
-            const ctx = document.createElement('canvas');
-            document.querySelector('.card-body').prepend(ctx);
-            ctx.classList.add('chart-container');
-            
-            const labels = <?= json_encode(array_column($esquemas, 'nome')) ?>;
-            const data = <?= json_encode(array_map(function($esquema) use ($resultados) {
-                $res = array_filter($resultados, function($r) use ($esquema) {
-                    return $r['esquema_nome'] === $esquema['nome'];
-                });
-                return $res ? current($res)['media'] : 0;
-            }, $esquemas)) ?>;
-            
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Média por Esquema',
-                        data: data,
-                        backgroundColor: 'rgba(54, 162, 235, 0.7)',
-                        borderColor: 'rgba(54, 162, 235, 1)',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 6
-                        }
-                    }
-                }
-            });
-        });
-    </script>
-    <?php endif; ?>
 </body>
 </html>

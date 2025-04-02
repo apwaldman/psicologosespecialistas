@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $confirmar_senha = $_POST['confirmar_senha'];
 
     if ($nova_senha !== $confirmar_senha) {
-        $mensagem = "As senhas n�o coincidem.";
+        $mensagem = "As senhas não coincidem.";
     } else {
         $conexao = new Conexao();
         $conn = $conexao->getConnection();
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             $mensagem = "Senha redefinida com sucesso!";
         } else {
-            $mensagem = "Token inv�lido ou expirado.";
+            $mensagem = "Token inválido ou expirado.";
         }
     }
 } else {
