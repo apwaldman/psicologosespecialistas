@@ -31,7 +31,6 @@ if (isset($_SESSION['flash_message'])) {
 <div class="container mt-5">
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h4>Bem-vindo(a), <?php echo isset($_SESSION['usuario_nome']) ? htmlspecialchars($_SESSION['usuario_nome']) : 'Usuário'; ?></h4>
-        <small class="text-muted">CPF: <?php echo isset($_SESSION['usuario_cpf']) ? preg_replace('/(\d{3})(\d{3})(\d{3})(\d{2})/', '$1.$2.$3-$4', $_SESSION['usuario_cpf']) : ''; ?></small>
     </div>
     
     <?php if ($flashMessage): ?>

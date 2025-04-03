@@ -10,35 +10,19 @@ class Autenticacao {
         $this->pdo = Conexao::getConnection();
     }
 
-    public function limparCPF($cpf) {
-        // Remove todos os caracteres não numéricos
-        $cpfLimpo = preg_replace('/[^0-9]/', '', $cpf);
-        
-        // Verifica se tem 11 dígitos após a limpeza
-        if (strlen($cpfLimpo) !== 11) {
-            return false;
-        }
-        
-        return $cpfLimpo;
-    }
-
-    public function autenticar($cpf, $senha) {
-        // Limpa e valida o CPF
-        $cpfLimpo = $this->limparCPF($cpf);
-        if (!$cpfLimpo) {
-            return ['sucesso' => false, 'erro' => 'CPF inválido. Digite os 11 dígitos.'];
+    public function autenticar($id_numero, $senha) {
+        if (empty($id_numero)) {
+            return ['sucesso' => false, 'erro' => 'Preencha o ID.'];
         }
 
-        // Validação básica dos campos
         if (empty($senha)) {
             return ['sucesso' => false, 'erro' => 'Preencha a senha.'];
         }
 
         try {
-            // Consulta o usuário no banco de dados incluindo o campo admin
-            $sql = "SELECT id, nome_completo, cpf, senha, admin FROM usuarios WHERE cpf = ?";
+            $sql = "SELECT id, nome_completo, id_numero, senha, admin FROM usuarios WHERE id_numero = ?";
             $stmt = $this->pdo->prepare($sql);
-            $stmt->execute([$cpfLimpo]);
+            $stmt->execute([$id_numero]);
             $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if (!$usuario) {
@@ -57,33 +41,46 @@ class Autenticacao {
     }
 }
 
+// Verifica se o usuário já está autenticado para evitar loops
+if (isset($_SESSION['usuario_id'])) {
+    $redirect_url = $_SESSION['redirect_url'] ?? ($_SESSION['usuario_admin'] == 1 ? '/admin_painel.php' : '/painel.php');
+    
+    // Evita redirecionamento para a página de login
+    if (strpos($redirect_url, 'index.php') !== false) {
+        $redirect_url = ($_SESSION['usuario_admin'] == 1 ? '/admin_painel.php' : '/painel.php');
+    }
+
+    header("Location: $redirect_url");
+    exit();
+}
+
 // Processamento do formulário
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $autenticacao = new Autenticacao();
-    $resultado = $autenticacao->autenticar($_POST['cpf'] ?? '', $_POST['senha'] ?? '');
+    $resultado = $autenticacao->autenticar($_POST['id_numero'] ?? '', $_POST['senha'] ?? '');
 
     if ($resultado['sucesso']) {
-        // Login bem-sucedido
         $_SESSION['usuario_id'] = $resultado['usuario']['id'];
         $_SESSION['usuario_nome'] = $resultado['usuario']['nome_completo'];
-        $_SESSION['usuario_cpf'] = $resultado['usuario']['cpf'];
+        $_SESSION['id_numero'] = $resultado['usuario']['id_numero'];
         $_SESSION['usuario_admin'] = $resultado['usuario']['admin'] ?? 0;
-        
-        // Redireciona para a URL armazenada ou para o painel apropriado
-        $redirect_url = $_SESSION['redirect_url'] ?? 
-                      ($_SESSION['usuario_admin'] == 1 ? '/admin_painel.php' : '/painel.php');
+
+        // Evita redirecionamento para a própria página de login
+        $redirect_url = $_SESSION['redirect_url'] ?? ($_SESSION['usuario_admin'] == 1 ? '/admin_painel.php' : '/painel.php');
         unset($_SESSION['redirect_url']);
-        
+
+        if (strpos($redirect_url, 'index.php') !== false) {
+            $redirect_url = ($_SESSION['usuario_admin'] == 1 ? '/admin_painel.php' : '/painel.php');
+        }
+
         header("Location: $redirect_url");
-        exit;
+        exit();
     } else {
-        // Armazena mensagem de erro e redireciona
         $_SESSION['erro'] = $resultado['erro'] ?? 'Erro desconhecido.';
         header("Location: ../../index.php");
         exit();
     }
 } else {
-    // Se não for POST, redireciona para index
     header("Location: ../../index.php");
     exit();
 }

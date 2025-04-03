@@ -12,24 +12,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Coletando os dados do formulário
     $nome_completo = strip_tags(trim($_POST['nome_completo']));
-    $data_nascimento = $_POST['data_nascimento'];
-    $idade = $_POST['idade'];
-        // Remover máscaras de CPF, e Celular
-    $cpf = preg_replace('/[^0-9]/', '', $_POST['cpf']);
-    $celular = preg_replace('/[^0-9]/', '', $_POST['celular']);
-    $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);    
+    $id_numero = $_POST['id_numero'];
     $senha = $_POST['senha'];
     $confirmacao_senha = $_POST['confirmacao_senha'];
     $autoriza_pesquisa = isset($_POST['autoriza_pesquisa']) ? 1 : 0;
-    
 
     // Validando os campos obrigatórios
     $campos_obrigatorios = [
         'nome_completo' => $nome_completo,
-        'data_nascimento' => $data_nascimento,
-        'cpf' => $cpf,
-        'email' => $email,
-        'celular' => $celular,
+        'id_numero' => $id_numero,       
         'senha' => $senha
     ];
 
@@ -48,22 +39,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 
-    // Validando o e-mail
-    if (!$email) {
-        $_SESSION['erro_email'] = "Por favor, insira um endereço de e-mail válido.";
-        header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
-        exit();
-    }
-
-    // Verificando se o CPF ou email já existe no banco de dados
-    $sql_check = "SELECT * FROM usuarios WHERE cpf = :cpf OR email = :email";
+    // Verificando se o id já existe no banco de dados
+    $sql_check = "SELECT * FROM usuarios WHERE id_numero = :id_numero";
     $stmt_check = $conn->prepare($sql_check);
-    $stmt_check->bindParam(':cpf', $cpf);
-    $stmt_check->bindParam(':email', $email);
+    $stmt_check->bindParam(':id_numero', $id_numero);    
     $stmt_check->execute();
     
     if ($stmt_check->rowCount() > 0) {
-        $_SESSION['erro_cpf'] = "Já existe um usuário com este CPF ou e-mail.";
+        $_SESSION['erro_id_numero'] = "Já existe um usuário com este ID.";
         header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
         exit();
     }
@@ -72,49 +55,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha_hash = password_hash($senha, PASSWORD_BCRYPT);
 
     // Inserindo os dados no banco
-    $sql = "INSERT INTO usuarios (nome_completo, data_nascimento, idade, cpf, email, celular, senha, autoriza_pesquisa) 
-            VALUES (:nome_completo, :data_nascimento, :idade, :cpf, :email, :celular,  :senha, :autoriza_pesquisa)";
+    $sql = "INSERT INTO usuarios (nome_completo, id_numero, senha, autoriza_pesquisa) 
+            VALUES (:nome_completo, :id_numero, :senha, :autoriza_pesquisa)";
 
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':nome_completo', $nome_completo);
-    $stmt->bindParam(':data_nascimento', $data_nascimento);
-    $stmt->bindParam(':idade', $idade);
-    $stmt->bindParam(':cpf', $cpf);      
-    $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':celular', $celular);   
+    $stmt->bindParam(':id_numero', $id_numero);      
     $stmt->bindParam(':senha', $senha_hash);
     $stmt->bindParam(':autoriza_pesquisa', $autoriza_pesquisa);
 
     if ($stmt->execute()) {
-        // Enviar e-mail de confirmação
-        try {
-            $destinatario = $email;
-            $remetente = "psicologosespecialistas@psicologosespecialistas.com.br"; // Substitua pelo seu domínio
-            $assunto = "Confirmação de Cadastro";
-           
-            $headers = "From: " . $remetente . "\r\n";
-            $headers .= "Reply-To: " . $email . "\r\n";
-            $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-
-            $corpo_email = "<strong>Olá, $nome_completo!</strong><br><br>";
-            $corpo_email .= "Por favor, clique no link abaixo para confirmar seu cadastro:<br><br>";
-            $corpo_email .= "<a href='https://cliente.psicologosespecialistas.com.br/confirmar_cadastro.php?email=" . urlencode($email) . "&token=" . md5($email . time()) . "'>Confirmar Cadastro</a><br><br>";
-            $corpo_email .= "Atenciosamente,<br>Site Psicologos Esepecialistas";
-            
-            if (mail($destinatario, $assunto, $corpo_email, $headers)) {
-                $_SESSION['sucesso'] = "Cadastro realizado com sucesso! Um e-mail de confirmação foi enviado.";
-                header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
-                exit();
-            } else {
-                $_SESSION['erro_email'] = "Erro ao enviar e-mail de confirmação. Tente novamente mais tarde.";
-                header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
-                exit();
-            }
-        } catch (Exception $e) {
-            $_SESSION['erro_email'] = "Erro ao enviar e-mail de confirmação. " . $e->getMessage();
-            header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
-            exit();
-        }
+        $_SESSION['sucesso'] = "Cadastro realizado com sucesso!";
+        header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');
+        exit();        
     } else {
         $_SESSION['erro_banco'] = "Erro ao cadastrar usuário. Tente novamente mais tarde.";
         header('Location: https://cliente.psicologosespecialistas.com.br/cadastro.php');

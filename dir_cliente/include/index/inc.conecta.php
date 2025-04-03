@@ -14,6 +14,7 @@ if (isset($_SESSION['usuario_id'])) {
 // Verifica se há uma mensagem de erro
 $erro = '';
 if (isset($_GET['erro'])) {
-    $erro = '<div class="alert alert-danger">CPF ou senha incorretos.</div>';
+    $erro = '<div class="alert alert-danger">ID ou senha incorretos.</div>';
 }
+
 ?>

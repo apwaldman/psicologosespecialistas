@@ -8,26 +8,15 @@ if (isset($_SESSION['erro_nome_completo'])) {
     $mensagens[] = ['tipo' => 'erro', 'texto' => $_SESSION['erro_nome_completo']];
     unset($_SESSION['erro_nome_completo']);
 }
-if (isset($_SESSION['erro_data_nascimento'])) {
-    $mensagens[] = ['tipo' => 'erro', 'texto' => $_SESSION['erro_data_nascimento']];
-    unset($_SESSION['erro_data_nascimento']);
+if (isset($_SESSION['erro_id_numero'])) {
+    $mensagens[] = ['tipo' => 'erro', 'texto' => $_SESSION['erro_id_numero']];
+    unset($_SESSION['erro_id_numero']);
 }
 if (isset($_SESSION['erro_senha'])) {
     $mensagens[] = ['tipo' => 'erro', 'texto' => $_SESSION['erro_senha']];
     unset($_SESSION['erro_senha']);
 }
-if (isset($_SESSION['erro_cpf'])) {
-    $mensagens[] = ['tipo' => 'erro', 'texto' => $_SESSION['erro_cpf']];
-    unset($_SESSION['erro_cpf']);
-}
-if (isset($_SESSION['erro_email'])) {
-    $mensagens[] = ['tipo' => 'erro', 'texto' => $_SESSION['erro_email']];
-    unset($_SESSION['erro_email']);
-}
-if (isset($_SESSION['erro_celular'])) {
-    $mensagens[] = ['tipo' => 'erro', 'texto' => $_SESSION['erro_celular']];
-    unset($_SESSION['erro_celular']);
-}
+
 if (isset($_SESSION['erro_banco'])) {
     $mensagens[] = ['tipo' => 'erro', 'texto' => $_SESSION['erro_banco']];
     unset($_SESSION['erro_banco']);

@@ -9,7 +9,7 @@ if (!isset($_SESSION['usuario_admin']) || $_SESSION['usuario_admin'] != 1) {
 }
 
 // Buscar todos os pacientes com seus últimos resultados
-$query = "SELECT u.id, u.nome_completo, u.cpf, r.* 
+$query = "SELECT u.id, u.nome_completo, u.id_numero, r.* 
           FROM usuarios u
           JOIN teste_ysql_resultados r ON u.id = r.usuario_id
           WHERE r.id IN (SELECT MAX(id) FROM teste_ysql_resultados GROUP BY usuario_id)
@@ -98,6 +98,17 @@ $pacientes = Conexao::getConnection()->query($query)->fetchAll(PDO::FETCH_ASSOC)
     </style>
 </head>
 <body>
+
+<!-- Grey with black text -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+    
+        <ul class="navbar-nav">            
+            <li class="nav-item">
+                <a class="nav-link" href="../../logout.php"><i class="bi bi-box-arrow-right"></i> Sair</a>
+            </li>      
+        </ul>    
+       
+</nav>
     <div class="container mt-4 no-print">
         <h2 class="mb-4">Resultados dos Pacientes</h2>
         

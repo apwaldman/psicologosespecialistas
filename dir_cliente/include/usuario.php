@@ -2,10 +2,10 @@
 require_once __DIR__ . 'conexao.php';
 
 class Usuario {
-    public static function verificarCredenciais($cpf, $senha) {
+    public static function verificarCredenciais($id_numero, $senha) {
         $conn = Conexao::getConnection();
-        $stmt = $conn->prepare("SELECT id, senha FROM usuarios WHERE cpf = :cpf");
-        $stmt->bindParam(':cpf', $cpf);
+        $stmt = $conn->prepare("SELECT id, senha FROM usuarios WHERE id_numero = :id_numero");
+        $stmt->bindParam(':id_numero', $id_numero);
         $stmt->execute();
         $usuario = $stmt->fetch();
 

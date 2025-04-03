@@ -1,21 +1,6 @@
 
     $(document).ready(function() {
-        // Máscaras
-        $('#cpf').mask('000.000.000-00');       
-        $('#celular').mask('+55 (00) 00000-0000');
-        $('#cep').mask('00000-000');
-
-        // Calcular idade
-        $('#data_nascimento').on('change', function() {
-            const dob = new Date($(this).val());
-            const today = new Date();
-            let age = today.getFullYear() - dob.getFullYear();
-            const monthDiff = today.getMonth() - dob.getMonth();
-            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
-                age--;
-            }
-            $('#idade').val(age);
-        });
+      
 
         // Validação em tempo real
         $('input').on('blur', function() {
@@ -29,137 +14,6 @@
         });
 
        
-       // Validação de CPF
-        $('#cpf').on('blur', function() {
-            const cpf = $(this).val().replace(/\D/g, ''); // Remove caracteres não numéricos
-            if (cpf.length !== 11) {
-                $('#error-cpf').text('CPF inválido.'); // Verifica se o CPF tem 11 dígitos
-            } else {
-                if (validaCPF(cpf)) { // Verifica se o CPF é válido
-                    $('#error-cpf').text(''); // Limpa a mensagem de erro
-                    validaCpfBanco(cpf); // Chama a função para verificar no banco de dados
-                } else {
-                    $('#error-cpf').text('CPF inválido.'); // Exibe mensagem de erro se o CPF for inválido
-                }
-            }
-        });
-
-        // Função para validar o CPF
-        function validaCPF(cpf) {
-            cpf = cpf.replace(/[^\d]+/g, ''); // Remove caracteres não numéricos
-            if (cpf === '') return false; // Verifica se o CPF está vazio
-
-            // Verifica CPFs inválidos conhecidos
-            const cpfsInvalidos = [
-                "00000000000", "11111111111", "22222222222", "33333333333",
-                "44444444444", "55555555555", "66666666666", "77777777777",
-                "88888888888", "99999999999", "01234567890"
-            ];
-            if (cpfsInvalidos.includes(cpf)) return false;
-
-            // Validação do primeiro dígito verificador
-            let add = 0;
-            for (let i = 0; i < 9; i++) {
-                add += parseInt(cpf.charAt(i)) * (10 - i);
-            }
-            let rev = 11 - (add % 11);
-            if (rev === 10 || rev === 11) rev = 0;
-            if (rev !== parseInt(cpf.charAt(9))) return false;
-
-            // Validação do segundo dígito verificador
-            add = 0;
-            for (let i = 0; i < 10; i++) {
-                add += parseInt(cpf.charAt(i)) * (11 - i);
-            }
-            rev = 11 - (add % 11);
-            if (rev === 10 || rev === 11) rev = 0;
-            if (rev !== parseInt(cpf.charAt(10))) return false;
-
-            return true; // CPF válido
-        }
-        
-        function validaCpfBanco(cpf){
-            $.ajax({
-                url: 'https://cliente.psicologosespecialistas.com.br/include/cadastro/verifica_cpf.php',
-                method: 'POST',
-                data: { cpf: cpf },
-                dataType: 'json',
-                success: function(response) {
-                    if (response.exists) {
-                        $('#error-cpf').text('CPF já cadastrado.');
-                        // Exibir popup personalizado
-                        $('#cpfPopup').fadeIn();
-                    } else if (response.error) {
-                        alert('Erro ao verificar CPF: ' + response.error);
-                    } else {
-                        $('#error-cpf').text('');
-                    }
-                },
-                error: function(xhr, status, error) {
-                    alert('Erro ao verificar CPF. Tente novamente.');
-                }
-            });
-        }
-
-        // Fechar popup
-        $('#btnFecharPopup').on('click', function() {
-            $('#cpfPopup').fadeOut();
-        });
-
-        // Redirecionar para recuperar senha
-        $('#btnRecuperarSenha').on('click', function() {
-            window.location.href = 'recuperar_senha.php';
-        });
-
-        // Redirecionar para login
-        $('#btnIrParaLogin').on('click', function() {
-            window.location.href = 'index.php';
-        });
-
-        // Validação de e-mail
-        $('#email').on('blur', function() {
-            const email = $(this).val();                        
-            if (validateEmail(email)) { // Verifica se o email é válido
-                $('#error-email').text(''); // Limpa a mensagem de erro
-                validaEmailBanco(email); // Chama a função para verificar no banco de dados
-            } else {
-                $('#error-email').text('Email inválido.'); // Exibe mensagem de erro se o CPF for inválido
-            }
-        });
-
-
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        function validaEmailBanco(email){
-            $.ajax({
-                url: 'https://cliente.psicologosespecialistas.com.br/include/cadastro/verifica_email.php',
-                method: 'POST',
-                data: { email: email },
-                dataType: 'json',
-                success: function(response) {
-                    if (response.exists) {
-                        $('#error-email').text('E-mail já cadastrado.');
-                        // Exibir popup personalizado
-                        $('#emailPopup').fadeIn();
-                    } else if (response.error) {
-                        alert('Erro ao verificar Email: ' + response.error);
-                    } else {
-                        $('#error-email').text('');
-                    }
-                },
-                error: function(xhr, status, error) {
-                    alert('Erro ao verificar Email. Tente novamente.');
-                }
-            });
-        }
-
-        // Fechar popup
-        $('#btnFecharPopupEmail').on('click', function() {
-            $('#emailPopup').fadeOut();
-        });
 
         // Fechar popup das mensagens de erro
         $('#btnFecharPopupMsgErro').on('click', function() {
@@ -171,54 +25,12 @@
 function saveFormData() {
     const formData = {
         nome_completo: document.getElementById('nome_completo').value,
-        data_nascimento: document.getElementById('data_nascimento').value,
-        idade: document.getElementById('idade').value,
-        cpf: document.getElementById('cpf').value,        
-        profissao: document.getElementById('profissao').value,
-        email: document.getElementById('email').value,
-        celular: document.getElementById('celular').value,
-        cep: document.getElementById('cep').value,
-        endereco: document.getElementById('endereco').value,
-        numero: document.getElementById('numero').value,
-        complemento: document.getElementById('complemento').value,
-        bairro: document.getElementById('bairro').value,
-        cidade: document.getElementById('cidade').value,
-        estado: document.getElementById('estado').value,
-        estado_civil: document.getElementById('estado_civil').value,
-        naturalidade: document.getElementById('naturalidade').value,
-        escolaridade: document.getElementById('escolaridade').value,
+        id_numero: document.getElementById('id_numero').value,       
         senha: document.getElementById('senha').value,
         confirmacao_senha: document.getElementById('confirmacao_senha').value
     };
 
     // Salva os dados no sessionStorage
-    sessionStorage.setItem('formData', JSON.stringify(formData));
-}
-
-// Função para salvar os dados do formulário no sessionStorage
-function saveFormData() {
-    const formData = {
-        nome_completo: document.getElementById('nome_completo').value,
-        data_nascimento: document.getElementById('data_nascimento').value,
-        idade: document.getElementById('idade').value,
-        cpf: document.getElementById('cpf').value,
-        profissao: document.getElementById('profissao').value,
-        email: document.getElementById('email').value,
-        celular: document.getElementById('celular').value,
-        cep: document.getElementById('cep').value,
-        endereco: document.getElementById('endereco').value,
-        numero: document.getElementById('numero').value,
-        complemento: document.getElementById('complemento').value,
-        bairro: document.getElementById('bairro').value,
-        cidade: document.getElementById('cidade').value,
-        estado: document.getElementById('estado').value,
-        estado_civil: document.getElementById('estado_civil').value,
-        naturalidade: document.getElementById('naturalidade').value,
-        escolaridade: document.getElementById('escolaridade').value,
-        senha: document.getElementById('senha').value,
-        confirmacao_senha: document.getElementById('confirmacao_senha').value
-    };
-
     sessionStorage.setItem('formData', JSON.stringify(formData));
 }
 
@@ -228,22 +40,7 @@ function populateFormData() {
 
     if (formData) {
         document.getElementById('nome_completo').value = formData.nome_completo;
-        document.getElementById('data_nascimento').value = formData.data_nascimento;
-        document.getElementById('idade').value = formData.idade;
-        document.getElementById('cpf').value = formData.cpf;       
-        document.getElementById('profissao').value = formData.profissao;
-        document.getElementById('email').value = formData.email;
-        document.getElementById('celular').value = formData.celular;
-        document.getElementById('cep').value = formData.cep;
-        document.getElementById('endereco').value = formData.endereco;
-        document.getElementById('numero').value = formData.numero;
-        document.getElementById('complemento').value = formData.complemento;
-        document.getElementById('bairro').value = formData.bairro;
-        document.getElementById('cidade').value = formData.cidade;
-        document.getElementById('estado').value = formData.estado;
-        document.getElementById('estado_civil').value = formData.estado_civil;
-        document.getElementById('naturalidade').value = formData.naturalidade;
-        document.getElementById('escolaridade').value = formData.escolaridade;
+        document.getElementById('id_numero').value = formData.id_numero;       
         document.getElementById('senha').value = formData.senha;
         document.getElementById('confirmacao_senha').value = formData.confirmacao_senha;
     }
@@ -275,4 +72,3 @@ document.querySelector('form').addEventListener('submit', function(event) {
         clearFormData();
     }
 });
-
