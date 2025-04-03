@@ -92,7 +92,7 @@
 
         <div class="form-check mb-3">
             <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="autorizaPesquisa"> <?php include('modal-autoriza-uso-pesquisa.php'); ?>
+                <input class="form-check-input" type="checkbox" name="autoriza_pesquisa" id = "autoriza_pesquisa" value="1"> <?php include('modal-autoriza-uso-pesquisa.php'); ?>
             </label>
         </div>
 

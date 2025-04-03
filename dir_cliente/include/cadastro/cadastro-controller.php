@@ -20,6 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);    
     $senha = $_POST['senha'];
     $confirmacao_senha = $_POST['confirmacao_senha'];
+    $autoriza_pesquisa = isset($_POST['autoriza_pesquisa']) ? 1 : 0;
+    
 
     // Validando os campos obrigatórios
     $campos_obrigatorios = [
@@ -70,8 +72,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha_hash = password_hash($senha, PASSWORD_BCRYPT);
 
     // Inserindo os dados no banco
-    $sql = "INSERT INTO usuarios (nome_completo, data_nascimento, idade, cpf, email, celular, senha) 
-            VALUES (:nome_completo, :data_nascimento, :idade, :cpf, :email, :celular,  :senha)";
+    $sql = "INSERT INTO usuarios (nome_completo, data_nascimento, idade, cpf, email, celular, senha, autoriza_pesquisa) 
+            VALUES (:nome_completo, :data_nascimento, :idade, :cpf, :email, :celular,  :senha, :autoriza_pesquisa)";
 
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':nome_completo', $nome_completo);
@@ -81,6 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':celular', $celular);   
     $stmt->bindParam(':senha', $senha_hash);
+    $stmt->bindParam(':autoriza_pesquisa', $autoriza_pesquisa);
 
     if ($stmt->execute()) {
         // Enviar e-mail de confirmação
@@ -96,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $corpo_email = "<strong>Olá, $nome_completo!</strong><br><br>";
             $corpo_email .= "Por favor, clique no link abaixo para confirmar seu cadastro:<br><br>";
             $corpo_email .= "<a href='https://cliente.psicologosespecialistas.com.br/confirmar_cadastro.php?email=" . urlencode($email) . "&token=" . md5($email . time()) . "'>Confirmar Cadastro</a><br><br>";
-            $corpo_email .= "Atenciosamente,<br>Equipe Waldman Psicologia";
+            $corpo_email .= "Atenciosamente,<br>Site Psicologos Esepecialistas";
             
             if (mail($destinatario, $assunto, $corpo_email, $headers)) {
                 $_SESSION['sucesso'] = "Cadastro realizado com sucesso! Um e-mail de confirmação foi enviado.";

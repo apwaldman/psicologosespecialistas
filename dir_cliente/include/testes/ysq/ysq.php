@@ -62,7 +62,7 @@ try {
             </li>      
         </ul> 
     </nav>
-    
+
     <div class="container mt-5 mb-10">
         <div class="card shadow-lg">
             <div class="card-header bg-primary text-white">
@@ -136,77 +136,76 @@ try {
         </div>
     </div>
     <script src="ysq-cache.js"></script>
-    
     <script>
     // Validação do formulário com destaque para questões não respondidas
-    document.getElementById('ysq-form').addEventListener('submit', function(e) {
-        let todasRespondidas = true;
-        const cards = document.querySelectorAll('.card'); // Seleciona todos os cards de questões
+document.getElementById('ysq-form').addEventListener('submit', function(e) {
+    let todasRespondidas = true;
+    const cards = document.querySelectorAll('.card'); // Seleciona todos os cards de questões
+    
+    // Remove qualquer destaque anterior
+    cards.forEach(card => {
+        card.classList.remove('border-danger', 'text-danger');
+        const alertElement = card.querySelector('.alert-responda');
+        if (alertElement) {
+            alertElement.remove();
+        }
+    });
+    
+    // Verifica cada questão
+    document.querySelectorAll('[data-question]').forEach(questionGroup => {
+        const questionId = questionGroup.dataset.question;
+        const card = questionGroup.closest('.card');
+        const checkedRadio = questionGroup.querySelector('input[type="radio"]:checked');
         
-        // Remove qualquer destaque anterior
-        cards.forEach(card => {
-            card.classList.remove('border-danger', 'text-danger');
-            const alertElement = card.querySelector('.alert-responda');
-            if (alertElement) {
-                alertElement.remove();
-            }
-        });
-        
-        // Verifica cada questão
-        document.querySelectorAll('[data-question]').forEach(questionGroup => {
-            const questionId = questionGroup.dataset.question;
-            const card = questionGroup.closest('.card');
-            const checkedRadio = questionGroup.querySelector('input[type="radio"]:checked');
+        if (!checkedRadio) {
+            todasRespondidas = false;
+            // Adiciona destaque visual
+            card.classList.add('border-danger');
             
-            if (!checkedRadio) {
-                todasRespondidas = false;
-                // Adiciona destaque visual
-                card.classList.add('border-danger');
-                
-                // Adiciona mensagem de alerta (se ainda não existir)
-                if (!card.querySelector('.alert-responda')) {
-                    const alertDiv = document.createElement('div');
-                    alertDiv.className = 'alert alert-danger alert-responda mt-2';
-                    alertDiv.textContent = 'Por favor, responda esta questão';
-                    card.querySelector('.card-body').appendChild(alertDiv);
-                }
-            }
-        });
-        
-        if (!todasRespondidas) {
-            e.preventDefault();
-            // Rolagem suave para a primeira questão não respondida
-            const firstUnanswered = document.querySelector('.border-danger');
-            if (firstUnanswered) {
-                firstUnanswered.scrollIntoView({ 
-                    behavior: 'smooth', 
-                    block: 'center' 
-                });
+            // Adiciona mensagem de alerta (se ainda não existir)
+            if (!card.querySelector('.alert-responda')) {
+                const alertDiv = document.createElement('div');
+                alertDiv.className = 'alert alert-danger alert-responda mt-2';
+                alertDiv.textContent = 'Por favor, responda esta questão';
+                card.querySelector('.card-body').appendChild(alertDiv);
             }
         }
     });
     
-    // Ativa o estado 'active' nos botões de rádio quando selecionados
-    document.querySelectorAll('.btn-group input[type="radio"]').forEach(radio => {
-        radio.addEventListener('change', function() {
-            // Remove 'active' de todos os botões do grupo
-            const groupName = this.name;
-            document.querySelectorAll(`input[name="${groupName}"]`).forEach(r => {
-                r.closest('label')?.classList.remove('active');
+    if (!todasRespondidas) {
+        e.preventDefault();
+        // Rolagem suave para a primeira questão não respondida
+        const firstUnanswered = document.querySelector('.border-danger');
+        if (firstUnanswered) {
+            firstUnanswered.scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'center' 
             });
-            
-            // Adiciona 'active' apenas ao selecionado
-            if (this.checked) {
-                this.closest('label')?.classList.add('active');
-                
-                // Remove o destaque de erro se existir
-                const card = this.closest('.card');
-                card?.classList.remove('border-danger');
-                const alertElement = card?.querySelector('.alert-responda');
-                if (alertElement) {
-                    alertElement.remove();
-                }
-            }
+        }
+    }
+});
+
+// Ativa o estado 'active' nos botões de rádio quando selecionados
+document.querySelectorAll('.btn-group input[type="radio"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        // Remove 'active' de todos os botões do grupo
+        const groupName = this.name;
+        document.querySelectorAll(`input[name="${groupName}"]`).forEach(r => {
+            r.closest('label')?.classList.remove('active');
         });
+        
+        // Adiciona 'active' apenas ao selecionado
+        if (this.checked) {
+            this.closest('label')?.classList.add('active');
+            
+            // Remove o destaque de erro se existir
+            const card = this.closest('.card');
+            card?.classList.remove('border-danger');
+            const alertElement = card?.querySelector('.alert-responda');
+            if (alertElement) {
+                alertElement.remove();
+            }
+        }
     });
+});
 </script>
