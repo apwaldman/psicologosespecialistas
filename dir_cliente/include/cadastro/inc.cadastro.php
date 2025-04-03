@@ -90,8 +90,14 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-primary" onclick="saveFormData()">Cadastrar</button>
+        <div class="form-check mb-3">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="autorizaPesquisa"> <?php include('modal-autoriza-uso-pesquisa.php'); ?>
+            </label>
+        </div>
 
+        <button type="submit" class="btn btn-primary" onclick="saveFormData()">Cadastrar</button>
+        <a href="https://cliente.psicologosespecialistas.com.br/index.php" class="btn btn-success">Voltar</a>
     </form>
 </div>
 
