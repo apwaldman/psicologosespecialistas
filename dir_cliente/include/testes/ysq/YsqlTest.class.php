@@ -39,10 +39,9 @@ class YsqlTest {
                 $pontuacoes[$esquema['esquema_id']] = $esquema['pontuacao'];
             }
             
-            $totalGeral = $this->calcularTotalGeral($pontuacoesArray);
             $interpretacao = $this->gerarInterpretacao($pontuacoesArray);
             
-            $resultadoId = $this->salvarResultados($usuario_id, $totalGeral, $interpretacao, $pontuacoes, $respostaId);
+            $resultadoId = $this->salvarResultados($usuario_id, $interpretacao, $pontuacoes, $respostaId);
             
             $this->db->commit();
             
@@ -160,22 +159,20 @@ class YsqlTest {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     
-    private function calcularTotalGeral($pontuacoes) {
-        if (count($pontuacoes) === 0) return 0;
-        
-        $soma = 0;
-        $count = 0;
-        
-        foreach ($pontuacoes as $esquema) {
-            $soma += $esquema['pontuacao'];
-            $count++;
-        }
-        
-        return round($soma / $count, 2);
-    }
+    
     
     private function gerarInterpretacao($pontuacoes) {
-        // Ordenar por pontuação (maior primeiro)
+        // First get all schema descriptions from database
+        $stmt = $this->db->query("SELECT id, nome, descricao FROM teste_ysql_esquemas");
+        $esquemasInfo = [];
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $esquemasInfo[$row['id']] = [
+                'nome' => $row['nome'],
+                'descricao' => $row['descricao']
+            ];
+        }
+        
+        // Sort by score (highest first)
         usort($pontuacoes, function($a, $b) {
             return $b['pontuacao'] <=> $a['pontuacao'];
         });
@@ -190,24 +187,25 @@ class YsqlTest {
                 $esquema['questoes_respondidas']);
         }
         
-        $mediaGeral = $this->calcularTotalGeral($pontuacoes);
-        $output .= "\nMédia Geral: {$mediaGeral}/6\n\n";
         
-        $output .= "Esquemas mais elevados:\n";
-        for ($i = 0; $i < min(3, count($pontuacoes)); $i++) {
-            $output .= sprintf("- %s: %.2f/6\n", 
-                $pontuacoes[$i]['nome'], 
-                $pontuacoes[$i]['pontuacao']);
-        }
+        // Filter only elevated schemas (≥4)
+        $esquemasElevados = array_filter($pontuacoes, fn($e) => $e['pontuacao'] >= 4);
         
-        $output .= "\nInterpretação:\n";
-        if ($mediaGeral < 2.5) {
-            $output .= "Baixa ativação de esquemas";
-        } elseif ($mediaGeral < 4) {
-            $output .= "Ativação moderada de esquemas";
+        if (!empty($esquemasElevados)) {
+            $output .= "ESQUEMAS ELEVADOS E SUAS INTERPRETAÇÕES:\n";
+            foreach ($esquemasElevados as $esquema) {
+                $output .= sprintf("\n%s: %.2f/6\n", $esquema['nome'], $esquema['pontuacao']);
+                
+                // Add schema description if available
+                if (isset($esquemasInfo[$esquema['esquema_id']])) {
+                    $output .= "Significado: " . $esquemasInfo[$esquema['esquema_id']]['descricao'] . "\n";
+                }
+            }
         } else {
-            $output .= "Alta ativação de esquemas";
+            $output .= "Ausência de indícios de esquemas iniciais desadaptativos\n";
         }
+        
+       
         
         return $output;
     }
@@ -224,7 +222,7 @@ class YsqlTest {
         return $esquemas;
     }
     
-    private function salvarResultados($usuario_id, $totalGeral, $interpretacao, $pontuacoes, $respostaId) {
+    private function salvarResultados($usuario_id, $interpretacao, $pontuacoes, $respostaId) {
         $mapeamentoEsquemas = [
             1 => 'privacao_emocional',
             2 => 'abandono',
@@ -248,8 +246,7 @@ class YsqlTest {
         
         $dados = [
             'usuario_id' => $usuario_id,
-            'resposta_id' => $respostaId,
-            'total_geral' => $totalGeral,
+            'resposta_id' => $respostaId,            
             'interpretacao' => $interpretacao,
             'data_calculo' => date('Y-m-d H:i:s')
         ];
