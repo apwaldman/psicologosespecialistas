@@ -30,6 +30,9 @@ class YsqlTest {
             $respostas = $this->extrairRespostas($postData);
             $respostaId = $this->salvarRespostasIndividuais($usuario_id, $respostas);
             
+            // Novo: Salva cada item individualmente na tabela de itens
+            $this->salvarRespostasItens($respostaId, $usuario_id, $respostas);
+            
             // Calcula pontuações corretamente
             $pontuacoesArray = $this->calcularPontuacoes($respostas);
             
@@ -60,7 +63,22 @@ class YsqlTest {
             ];
         }
     }
-
+    private function salvarRespostasItens($resposta_id, $usuario_id, $respostas) {
+        $sql = "INSERT INTO teste_ysql_resposta_itens 
+                (resposta_id, questao_id, valor, usuario_id) 
+                VALUES (:resposta_id, :questao_id, :valor, :usuario_id)";
+        
+        $stmt = $this->db->prepare($sql);
+        
+        foreach ($respostas as $questao_id => $valor) {
+            $stmt->execute([
+                ':resposta_id' => $resposta_id,
+                ':questao_id' => $questao_id,
+                ':valor' => $valor,
+                ':usuario_id' => $usuario_id
+            ]);
+        }
+    }
     private function salvarRespostasIndividuais($usuario_id, $respostas) {
         $data = date('Y-m-d H:i:s');
         
