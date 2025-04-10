@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Abrir no Chrome (porta 80)",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost/psicologosespecialistas/dir_cliente/index.php",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Escutar Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9003, 
+            "pathMappings": {
+                "D:\\xampp\\htdocs\\psicologosespecialistas\\dir_cliente\\index.php": "${workspaceFolder}"
+            },
+            "log": true
+        },
+        {
+            "name": "Depurar script atual",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9003,
+            "env": {
+                "XDEBUG_MODE": "debug"
+            }
+        }
+    ]
+}

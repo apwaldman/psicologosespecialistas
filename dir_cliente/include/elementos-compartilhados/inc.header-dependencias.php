@@ -38,7 +38,7 @@
   gtag('js', new Date());
   gtag('config', 'G-ZG642TW7B5');
 </script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>

@@ -1,6 +1,6 @@
 <?php
 class PrintGenerator {
-    public static function prepareContent($content, $pacienteId) {
+    public static function prepareContent($content, $pacienteId, $pacienteNome) {
         // Remove botões e elementos não necessários para impressão
         $dom = new DOMDocument();
         @$dom->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
@@ -18,14 +18,18 @@ class PrintGenerator {
         $header->setAttribute('style', 'text-align: center; margin-bottom: 20px;');
         
         $title = $dom->createElement('h3', 'Resultado do Teste YSQL');
-        $subtitle = $dom->createElement('p', 'Paciente ID: ' . $pacienteId);
+        $subtitle = $dom->createElement('p', 'Paciente: ' . $pacienteNome . ' (ID: ' . $pacienteId . ')');
         $subtitle->setAttribute('style', 'font-size: 12px; margin-top: 5px;');
         
         $header->appendChild($title);
         $header->appendChild($subtitle);
         
         $body = $dom->getElementsByTagName('body')->item(0);
-        $body->insertBefore($header, $body->firstChild);
+        if ($body->firstChild) {
+            $body->insertBefore($header, $body->firstChild);
+        } else {
+            $body->appendChild($header);
+        }
         
         // Adiciona rodapé de impressão
         $footer = $dom->createElement('div');
