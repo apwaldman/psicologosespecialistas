@@ -1,0 +1,88 @@
+
+        .esquema-card {
+            border-left: 3px solid;
+            margin-bottom: 8px;
+            height: 100%;
+        }
+        .esquema-ativo {
+            border-color: #dc3545;
+            background-color: #fff8f8;
+        }
+        .esquema-inativo {
+            border-color: #6c757d;
+            background-color: #f8f9fa;
+        }
+        .progress-thin {
+            height: 4px;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #f8f9fa;
+        }
+        .accordion-actions {
+            position: absolute;
+            right: 15px;
+        }
+        .esquema-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        .compact-card .card-body {
+            padding: 0.5rem;
+        }
+        .compact-card h5 {
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+        }
+        .compact-card p, .compact-card h6 {
+            font-size: 0.8rem;
+            margin-bottom: 0.2rem;
+        }
+        .compact-card .alert {
+            padding: 0.4rem;
+            margin-top: 0.4rem;
+            font-size: 0.8rem;
+        }
+        .paciente-header {
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+        }
+        .esquema-nome {
+            font-size: 0.8rem;
+        }
+        .esquema-pontos {
+            font-size: 0.8rem;
+        }
+        .esquema-nivel {
+            font-size: 0.7rem;
+        }
+        @media (max-width: 768px) {
+            .esquema-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media print {
+            body {
+                font-size: 9px;
+            }
+            .print-content {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .card {
+                page-break-inside: avoid;
+                margin-bottom: 3px;
+            }
+            .esquema-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+            }
+            @page {
+                size: auto;
+                margin: 3mm;
+            }
+        }
