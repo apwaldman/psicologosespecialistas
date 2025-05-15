@@ -40,7 +40,7 @@ function gerarLinhasTabela($dados) {
 $dadosTabela = [
     [
         'imagem' => [
-            'src' => 'https://psicologosespecialistas.com.br/php-include/image/index/psicologa-especialista-no-tratamento-de-tea-e-de-tdah.webp',
+            'src' => 'https://tea-tdah-adulto.psicologosespecialistas.com.br/image/sobre/psicologa-especialista-no-tratamento-de-tea-e-de-tdah-adulto.webp',
             'alt' => 'Psicóloga especialista em avaliação e tratamento de tea e tdah em adultos'
         ],
         'nome' => 'Daniele Mendes - CRP 07/21763',

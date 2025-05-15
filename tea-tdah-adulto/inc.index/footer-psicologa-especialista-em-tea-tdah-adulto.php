@@ -1,4 +1,5 @@
-<footer class="container-fluid bg-light text-center text-dark footer-custom py-3">
+
+ <footer class="footer mt-5 py-3 bg-light text-center border-top">
     <div class="container">
         <div class="row align-items-center">
            <p><strong>Psicóloga Clínica Daniele Mendes - CRP 07/21763</strong></p>
@@ -21,3 +22,4 @@
         </div>
     </div>
 </footer>
+</body>

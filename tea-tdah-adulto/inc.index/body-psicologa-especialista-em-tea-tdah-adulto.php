@@ -1,59 +1,57 @@
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <img src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/logo.webp" 			
-            alt="Psicologa Daniele Mendes da Silva - especialista em atendimento psicologico de tdah e tea em adultos" 
-            title="Psicologa Daniele Mendes da Silva - especialista em atendimento psicologico de tdah e tea em adultos" 			
+        <img src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/logo.webp"
+            alt="Psicologa Daniele Mendes da Silva - especialista em atendimento psicologico de tdah e tea em adultos"
+            title="Psicologa Daniele Mendes da Silva - especialista em atendimento psicologico de tdah e tea em adultos"
             class="img-fluid"
             width="100"
-            height="100"
-            >         
+            height="100">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto"> 
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" 
-                        href="#" 
+                    <a class="nav-link"
+                        href="#"
                         title="Daniele Mendes - CRP 07/21763 Psicóloga especializada no tratamento de tea e de tdah em adultos.">
                         <strong>Daniele Mendes - CRP 07/21763</strong>
                     </a>
-                </li>               
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" 
-                        href="#psicologa-especializada-no-tratamento-de-tea-e-de-tdah-em-adultos" 
+                    <a class="nav-link"
+                        href="#psicologa-especializada-no-tratamento-de-tea-e-de-tdah-em-adultos"
                         title="Psicóloga especializada no tratamento de tea e de tdah em adultos.">
                         Sobre
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" 
-                        href="#servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos" 
+                    <a class="nav-link"
+                        href="#servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos"
                         title="Serviços Psicóloga especializada no tratamento de tea e de tdah em adultos.">
                         Serviços
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" 
-                        href="#depoimentos-servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos" 
+                    <a class="nav-link"
+                        href="#depoimentos-servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos"
                         title="Depoimentos Psicóloga especializada no tratamento de tea e de tdah em adultos.">
                         Depoimentos
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  
-                    href="https://psicologosespecialistas.com.br/"  target="_blank"
-                    title="Psicólogos especialistas">
-                        <img src="https://psicologosespecialistas.com.br/php-include/image/logo-psicologos-especialistas.webp" 
-                            alt="Psicólogos especialistas: aqui você encontra o profissional certo!" 
-                            loading="lazy" 
+                    <a class="nav-link"
+                        href="https://psicologosespecialistas.com.br/" target="_blank"
+                        title="Psicólogos especialistas">
+                        <img src="https://psicologosespecialistas.com.br/php-include/image/logo-psicologos-especialistas.webp"
+                            alt="Psicólogos especialistas: aqui você encontra o profissional certo!"
+                            loading="lazy"
                             style="height: 24px; width: auto; vertical-align: middle;">
                     </a>
                 </li>
-			</ul>
-		</div>
-	</div>
+            </ul>
+        </div>
+    </div>
 </nav>
 <?php include 'icone-whatsapp.php'; ?>
 
@@ -62,10 +60,10 @@
     <h2 class="text-secondary text-center" id="psicologa-clinica-especialista-em-neuropsicopegagogia-atendimento-online">Atendimento online e presencial</h2>
     <div typeof="Course">
         <p property="name">
-            Psicóloga com 12 anos de experiência clínica, atua no atendimento psicológico de adolescentes, adultos e idosos, com foco em demandas 
-            relacionadas a depressão, ansiedade, transtorno afetivo bipolar (TAB), traumas, abuso e dependência emocional. Especialista em avaliação psicológica 
-            e neuropsicológica, realiza diagnóstico e tratamento tardio para adultos com TEA (Transtorno do Espectro Autista) e TDAH (Transtorno de Déficit de 
-            Atenção e Hiperatividade). Além disso, oferece supervisão clínica para psicólogos, com projetos voltados para iniciantes e profissionais recém-formados, 
+            Psicóloga com 12 anos de experiência clínica, atua no atendimento psicológico de adolescentes, adultos e idosos, com foco em demandas
+            relacionadas a depressão, ansiedade, transtorno afetivo bipolar (TAB), traumas, abuso e dependência emocional. Especialista em avaliação psicológica
+            e neuropsicológica, realiza diagnóstico e tratamento tardio para adultos com TEA (Transtorno do Espectro Autista) e TDAH (Transtorno de Déficit de
+            Atenção e Hiperatividade). Além disso, oferece supervisão clínica para psicólogos, com projetos voltados para iniciantes e profissionais recém-formados,
             promovendo desenvolvimento e capacitação na área.
         </p>
         <div property="provider" typeof="CollegeOrUniversity">
@@ -103,7 +101,7 @@
             <link itemprop="url"
                 href="https://tea-tdah-adulto.psicologosespecialistas.com.br/">
         </span>
-    </div>    
+    </div>
 </div>
 
 <div class="container" id="psicologa-especializada-no-tratamento-de-tea-e-de-tdah-em-adultos">
@@ -111,11 +109,11 @@
         <div class="col-sm-3 col-md-3">
             <img
                 loading="lazy"
-                src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/sobre/psicologa-especialista-no-tratamento-de-tea-e-de-tdah.webp"
+                src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/sobre/psicologa-especialista-no-tratamento-de-tea-e-de-tdah-adulto.webp"
                 alt="Psicóloga especialista no tratamento de Transtorno do Espectro Autista (TEA) e de Transtorno de Déficit de Atenção e de Hiperatividade em adultos"
                 class="img-fluid rounded shadow"
-                width="2400"
-                height="1350">
+                width="720"
+                height="726">
         </div>
         <div class="col-sm-9 col-md-9">
             <h2>Daniele Mendes - CRP 07/21763</h2>
@@ -140,13 +138,13 @@
         <div class="col-sm-9 col-md-9" itemscope itemtype="http://schema.org/Service">
             <h3 itemprop="name">Avaliação e Tratamento Tardio para TDAH e TEA em Adultos</h3>
             <p itemprop="description">
-                O serviço especializado em avaliação e tratamento tardio para <strong>Transtorno do Déficit de Atenção e Hiperatividade (TDAH)</strong> e 
-                <strong>Transtorno do Espectro Autista (TEA)</strong> oferece suporte abrangente para adultos que não receberam diagnóstico na infância. Com o uso de abordagens 
+                O serviço especializado em avaliação e tratamento tardio para <strong>Transtorno do Déficit de Atenção e Hiperatividade (TDAH)</strong> e
+                <strong>Transtorno do Espectro Autista (TEA)</strong> oferece suporte abrangente para adultos que não receberam diagnóstico na infância. Com o uso de abordagens
                 baseadas em evidências, proporcionando um diagnóstico preciso e planos de tratamento personalizados que promovem bem-estar, autonomia e qualidade de vida.
             </p>
             <p>
-                A avaliação é realizada por psicóloga qualificada, com ampla experiência no manejo de casos tardios. Ofereço técnicas como terapia cognitivo-comportamental 
-                (TCC) para lidar com desafios do dia a dia, incluindo organização, gestão de tempo e habilidades sociais. Meu objetivo é garantir que você tenha o suporte necessário 
+                A avaliação é realizada por psicóloga qualificada, com ampla experiência no manejo de casos tardios. Ofereço técnicas como terapia cognitivo-comportamental
+                (TCC) para lidar com desafios do dia a dia, incluindo organização, gestão de tempo e habilidades sociais. Meu objetivo é garantir que você tenha o suporte necessário
                 para alcançar seus objetivos e superar limitações.
             </p>
             <p>
@@ -154,7 +152,6 @@
             </p>
             <meta itemprop="provider" content="Clínica Especializada em Avaliação Psicológica">
             <meta itemprop="areaServed" content="Adultos com TDAH e TEA">
-            <meta itemprop="keywords" content="tratamento tardio TDAH, avaliação tardia TEA, psicóloga especialista, terapia cognitivo-comportamental, tratamento TEA adultos, diagnóstico TDAH adultos">
         </div>
         <div class="col-sm-3 col-md-3 my-1">
             <img
@@ -396,10 +393,91 @@
             </div>
         </div>
     </div>
+    <div class="accordion mt-5" itemscope itemtype="https://schema.org/HowTo">
+        <meta itemprop="name" content="Como funciona a Avaliação e Tratamento Tardio para TDAH, TEA e Traumas em Adultos">
+        <meta itemprop="description" content="Descubra o processo passo a passo de avaliação psicológica tardia para TDAH e TEA em adultos, tratamento baseado em TCC, técnicas para trauma psicológico e benefícios da terapia.">
+
+        <!-- Passo 1 -->
+        <div class="accordion-item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+            <h2 class="accordion-header">
+                <button class="accordion-button bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#stepOne" aria-expanded="true" itemprop="name">
+                    Avaliação Tardia para TDAH e TEA em Adultos
+                </button>
+            </h2>
+            <div id="stepOne" class="accordion-collapse collapse show" data-bs-parent="#treatmentMethods">
+                <div class="accordion-body" itemprop="text">
+                    Realizada por psicóloga especialista com abordagem em Terapia Cognitivo-Comportamental (TCC), utilizando:
+                    <ul>
+                        <li>Análise detalhada de sintomas neuropsicológicos</li>
+                        <li>Histórico de vida e funcionamento diário</li>
+                        <li>Entrevistas clínicas e protocolos validados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="accordion-item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#stepTwo" itemprop="name">
+                    Benefícios do Tratamento Psicológico Tardio
+                </button>
+            </h2>
+            <div id="stepTwo" class="accordion-collapse collapse" data-bs-parent="#treatmentMethods">
+                <div class="accordion-body" itemprop="text">
+                    A intervenção traz benefícios significativos para a saúde mental do adulto com TDAH ou TEA:
+                    <ul>
+                        <li><strong>Autonomia:</strong> Melhor organização e gestão do tempo</li>
+                        <li><strong>Habilidades sociais:</strong> Desenvolvimento de estratégias para interações</li>
+                        <li><strong>Qualidade de vida:</strong> Redução de sintomas incapacitantes e melhora emocional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="accordion-item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#stepThree" itemprop="name">
+                    Terapia Cognitivo-Comportamental (TCC) no Tratamento
+                </button>
+            </h2>
+            <div id="stepThree" class="accordion-collapse collapse" data-bs-parent="#treatmentMethods">
+                <div class="accordion-body" itemprop="text">
+                    A TCC é uma abordagem eficaz para adultos com neurodivergências e traumas:
+                    <ul>
+                        <li>Reestruturação cognitiva e autoconhecimento</li>
+                        <li>Controle da impulsividade e da ansiedade</li>
+                        <li>Melhoria nas relações interpessoais e autoestima</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="accordion-item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#stepFour" itemprop="name">
+                    Técnicas Psicológicas para Tratamento do Trauma
+                </button>
+            </h2>
+            <div id="stepFour" class="accordion-collapse collapse" data-bs-parent="#treatmentMethods">
+                <div class="accordion-body" itemprop="text">
+                    Tratamento baseado em evidências para traumas e vivências dolorosas:
+                    <ul>
+                        <li><strong>Regulação emocional:</strong> Estratégias práticas de enfrentamento</li>
+                        <li><strong>Exposição controlada:</strong> Redução de reatividade e medo</li>
+                        <li><strong>Reconstrução do self:</strong> Fortalecimento da autoestima e dos vínculos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 
 
 <a href="#navbarNav" class="back-to-top">
     <i class="fas fa-angle-double-up"></i>
 </a>
-

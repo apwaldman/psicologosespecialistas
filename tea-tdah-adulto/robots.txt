@@ -1,5 +1,5 @@
 User-agent: *
-Disallow:
-
+Allow: /
+# Sitemaps
 Sitemap: https://tea-tdah-adulto.psicologosespecialistas.com.br/sitemap.xml
 Sitemap: https://tea-tdah-adulto.psicologosespecialistas.com.br/sitemap-images.xml
