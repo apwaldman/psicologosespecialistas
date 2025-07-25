@@ -41,6 +41,20 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"
+                        href="#perguntas-e-respostas-tratamento-transtorno-de-deficit-de-atencao-e-hiperatividade-e-transtorno-do-espectro-autista-em-adultos"
+                        title="Pergutas e respostas: tratamento de transtorno do déficit de atenção e de transtorno do espectro autista em adultos.">
+                        Perguntas e respostas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="#curiosidades-sobre-transtorno-de-deficit-de-atencao-e-hiperatividade-em-adultos-e-curiosidades-sobre-transtorno-do-espectro-autista-em-adultos"
+                        title="Pergutas e respostas: tratamento de transtorno do déficit de atenção e de transtorno do espectro autista em adultos.">
+                        Curiosidades
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
                         href="https://psicologosespecialistas.com.br/" target="_blank"
                         title="Psicólogos especialistas">
                         <img src="https://psicologosespecialistas.com.br/php-include/image/logo-psicologos-especialistas.webp"
@@ -104,6 +118,7 @@
     </div>
 </div>
 
+<!--INICIO SOBRE -->
 <div class="container" id="psicologa-especializada-no-tratamento-de-tea-e-de-tdah-em-adultos">
     <div class="row">
         <div class="col-sm-3 col-md-3">
@@ -131,7 +146,9 @@
     </div>
     <hr>
 </div>
+<!--FIM SOBRE -->
 
+<!--INICIO SERVIÇOS -->
 <div class="container my-2" id="servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos">
     <h2 class="text-success text-center">Serviços</h2>
     <div class="row">
@@ -250,153 +267,380 @@
     </div>
     <hr>
 </div>
+<!--FIM SERVIÇOS -->
 
+
+<!--INICIO DEPOIMENTOS -->
 <div class="container my-2" id="depoimentos-servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos">
-    <div class="row">
-        <h2 class="text-success text-center">Depoimentos</h2> <!-- Removido itemprop="name" incorreto -->
 
-        <div class="col-sm-4 col-md-4">
-            <div id="depoimentoCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img
-                            loading="lazy"
-                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-que-atende-cognitivo-comportamental-adultos.webp"
-                            alt="Atendimento psicológico na abordagem cognitivo-comportamental"
-                            class="img-fluid rounded shadow"
-                            width="2400"
-                            height="1350">
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            loading="lazy"
-                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-que-atende-tdah-em-adultos.webp"
-                            alt="Psicologa especializada no atendimento de pacientes com TDAH - Transtorno do Déficit de Atenção e de Hiperatividade"
-                            class="img-fluid rounded shadow"
-                            width="2400"
-                            height="1350">
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            loading="lazy"
-                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-que-atende-tea-autismo-em-adultos.webp"
-                            alt="Psicologa especializada no atendimento de pacientes com TEA - Transtorno do Espectro Autista"
-                            class="img-fluid rounded shadow"
-                            width="2400"
-                            height="1350">
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            loading="lazy"
-                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-que-faz-mentoria-na-linha-cognitivo-comportamental.webp"
-                            alt="Psicologa que oferece mentoria na abordagem cognitivo-comportamental"
-                            class="img-fluid rounded shadow"
-                            width="2400"
-                            height="1350">
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            loading="lazy"
-                            src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/depoimentos/psicologa-supervisora-na-linha-cognitivo-comportamental.webp"
-                            alt="Psicologa que oferece supervisão na abordagem cognitivo-comportamental"
-                            class="img-fluid rounded shadow"
-                            width="2400"
-                            height="1350">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#depoimentoCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#depoimentoCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+    <h2 class="text-success text-center">Depoimentos</h2>
+
+
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4"> <div class="ratio ratio-1x1">
+            <video
+                src="https://tea-tdah-adulto.psicologosespecialistas.com.br/video/video-psicologa-supervisora-em-tcc.mp4"
+                class="border rounded shadow-lg"
+                controls
+                preload="metadata"
+                poster="https://tea-tdah-adulto.psicologosespecialistas.com.br/video/tumbnail-video-psicologa-supervisora-em-tcc.webp">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div></div>
+    <div class="col-md-4"></div>
+    </div>
+
+    
+
+    <h2 class="mb-4 text-center fw-bold text-dark">O que dizem nossos pacientes</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Agradeço o acompanhamento da Psicóloga Daniele. Sempre muito acolhedora e atenciosa. Fiz terapia 1 ano, retornei com outras questões e agora estou em alta. Feliz com resultado novamente. Indico sempre o seu trabalho sério e humano."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente J.M.S
+                </h5>
             </div>
         </div>
+    </div>
 
-        <div class="col-sm-4 col-md-4 d-flex justify-content-center align-items-center">
-            <div id="depoimentoEscritoCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <blockquote class="blockquote text-center mb-4 px-4">
-                            <p><i>"Iniciei o processo terapêutico há poucos meses com a dra Daniele, estou amando. Já tive ótimos resultados. É uma profissional muito humana, acolhedora e segura no que faz."</i></p>
-                            <footer class="blockquote-footer">
-                                <span>
-                                    Paciente <span>Z.S.</span>
-                                </span>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="blockquote text-center mb-4 px-4">
-                            <p><i>"Gratidão por tudo dra Daniele. Só tenho agradecer tudo que fez por mim. Indico demais."</i></p>
-                            <footer class="blockquote-footer">
-                                <span>
-                                    Paciente <span>F. M.</span>
-                                </span>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="blockquote text-center mb-4 px-4">
-                            <p><i>"Amo as sessões de terapia, são muito dinâmicas e não vejo o tempo passar. Aprendi muito. Obrigada. Indico de olhos fechados o seu trabalho."</i></p>
-                            <footer class="blockquote-footer">
-                                <span>
-                                    Paciente <span>J. O.</span>
-                                </span>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="blockquote text-center mb-4 px-4">
-                            <p><i>"Realizei avaliação para obter meu diagnóstico e indico a dra Daniele. É uma profissional humana, acolhedora e muito competente. Indico o seu trabalho."</i></p>
-                            <footer class="blockquote-footer">
-                                <span>
-                                    Paciente <span>K. M.</span>
-                                </span>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="blockquote text-center mb-4 px-4">
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Só tenho agradecer a dra. Encontrei ela no pior momento da minha vida. E se estou em pé hoje devo tudo a ela. Gratidão!!! Indicarei o seu trabalho sempre."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente M.A.S
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Fui buscar uma avaliação tardia com a Dra. Daniele. O acolhimento, a ética e seriedade no seu atendimento me cativaram. Ela não é somente uma profissional, é um ser humano excepcional. O processo doloroso, foi tão leve que nem senti. Ela tornou o momento extremamente acolhedor. Agradeço imensamente por tudo."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente V.S.O
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Iniciei o processo terapêutico há poucos meses com a dra Daniele, estou amando. Já tive ótimos resultados. É uma profissional muito humana, acolhedora e segura no que faz."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente Z.S.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Gratidão por tudo dra Daniele. Só tenho agradecer tudo que fez por mim. Indico demais."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente F.M
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Amo as sessões de terapia, são muito dinâmicas e não vejo o tempo passar. Aprendi muito. Obrigada. Indico de olhos fechados o seu trabalho."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente J. O.
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Realizei avaliação para obter meu diagnóstico e indico a dra Daniele. É uma profissional humana, acolhedora e muito competente. Indico o seu trabalho."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente K. M.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Excelente profissional, super indico!!"
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente J.A.Z
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Profissional extremamente ética, qualificada, de excelência. Recomendo de olhos fechados."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente I.A.C.
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Ótima profissional. Dedicada e ética!"
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente R.S.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Estou feliz e satisfeita, com tão pouco tempo no tratamento.. Super atenciosa, desde a acolhida até o presente momento... Super indico, e parabéns por ser tão especial no que faz..."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente K.F.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <p class="card-text text-muted fst-italic mb-3">
+                    "Uma referência nas avaliações de TEA e de TDAH em adultos. Seu material é de qualidade."
+                </p>
+                <h5 class="card-title text-end fw-semibold text-success">
+                    — Paciente A.P.W.
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+       <blockquote class="blockquote text-center mb-4 mt-5 px-4">
                             <p><i>"Os relatos foram autorizados e as identidades preservadas."</i></p>
                             <footer class="blockquote-footer">
                                 <span>
                                     Psic. Daniele
                                 </span>
                             </footer>
-                        </blockquote>
-                    </div>
+                        </blockquote> 
+    <hr>
+</div>
+<!--FIM DEPOIMENTOS -->
+
+
+<!--INICIO PERGUNTAS E RESPOSTAS -->
+<div class="container my-2" id="perguntas-e-respostas-tratamento-transtorno-de-deficit-de-atencao-e-hiperatividade-e-transtorno-do-espectro-autista-em-adultos">
+    <h2 class="text-center mb-5 display-6 text-primary">Perguntas Frequentes</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>Quais são os sinais de autismo em adultos?</h3>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#depoimentoEscritoCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#depoimentoEscritoCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="card-body card-body-custom">
+                    <p>
+                        Em adultos, os sinais de autismo incluem dificuldade de comunicação social, sensibilidade a estímulos sensoriais, interesse intenso por temas específicos, resistência à mudança de rotina e dificuldades em compreender nuances sociais.
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="col-sm-4 col-md-4">
-            <div class="ratio ratio-1x1">
-                <video
-                    src="https://tea-tdah-adulto.psicologosespecialistas.com.br/video/video-psicologa-supervisora-em-tcc.mp4"
-                    class="border rounded shadow-lg"
-                    controls
-                    preload="metadata"
-                    poster="https://tea-tdah-adulto.psicologosespecialistas.com.br/video/tumbnail-video-psicologa-supervisora-em-tcc.webp">
-                    Seu navegador não suporta a tag de vídeo.
-                </video>
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>Como saber se tenho TDAH na vida adulta?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        O TDAH pode se manifestar em adultos como desorganização, procrastinação crônica, dificuldade de concentração, impulsividade, baixa tolerância à frustração e sensação constante de inquietação. Um diagnóstico clínico é necessário.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>É possível ter autismo e TDAH ao mesmo tempo?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        Sim. Muitos adultos apresentam comorbidade entre TEA e TDAH, o que exige uma abordagem terapêutica integrada e personalizada.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>Adultos com TDAH ou autismo precisam de acompanhamento psicológico?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        Sim. O acompanhamento psicológico é essencial para desenvolver habilidades adaptativas, melhorar a autoestima e lidar com desafios emocionais e comportamentais.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>Como a terapia pode ajudar adultos com TEA ou TDAH?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        A terapia pode ajudar a compreender melhor o funcionamento neurodivergente, construir estratégias práticas para lidar com o dia a dia e promover bem-estar emocional.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>TDAH em adultos pode causar dificuldades no trabalho?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        Sim. Adultos com TDAH podem enfrentar dificuldades para manter foco, cumprir prazos, gerenciar o tempo e lidar com tarefas rotineiras, impactando o desempenho profissional.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>O autismo em adultos pode passar despercebido?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        Sim. Muitos adultos são diagnosticados tardiamente porque aprenderam a mascarar os sintomas ou porque os sinais foram confundidos com timidez, ansiedade ou traços de personalidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>Existe tratamento medicamentoso para TDAH em adultos?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        Sim. Medicamentos estimulantes e não estimulantes podem ser prescritos por psiquiatras para auxiliar no controle dos sintomas, sempre com acompanhamento médico.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>Como o TDAH afeta os relacionamentos?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        Pode gerar conflitos devido à impulsividade, esquecimento e desatenção. A comunicação assertiva e a psicoeducação podem melhorar a convivência afetiva e familiar.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>Adultos com autismo podem viver de forma independente?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        Sim. Com apoio adequado, muitos adultos autistas vivem de forma autônoma, trabalham e mantêm relacionamentos. A independência varia conforme o grau de suporte necessário.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>Existe teste online confiável para autismo ou TDAH?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        Alguns questionários podem ajudar na triagem inicial, mas apenas um profissional habilitado pode realizar o diagnóstico com base em critérios clínicos e avaliações formais.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-question">
+                <div class="card-header card-header-custom">
+                    <h3>Quem pode diagnosticar TDAH ou autismo em adultos?</h3>
+                </div>
+                <div class="card-body card-body-custom">
+                    <p>
+                        O diagnóstico deve ser feito por profissionais qualificados, como psicólogos ou psiquiatras, por meio de entrevistas clínicas, escalas diagnósticas e histórico do paciente.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
+</div>
+<!--FIM PERGUNTAS E RESPOSTAS -->
+
+<!--INICIO CURIOSIDADES -->
+<div class="container my-2" id="curiosidades-sobre-transtorno-de-deficit-de-atencao-e-hiperatividade-em-adultos-e-curiosidades-sobre-transtorno-do-espectro-autista-em-adultos">
     <div class="accordion mt-5" itemscope itemtype="https://schema.org/HowTo">
         <meta itemprop="name" content="Como funciona a Avaliação e Tratamento Tardio para TDAH, TEA e Traumas em Adultos">
         <meta itemprop="description" content="Descubra o processo passo a passo de avaliação psicológica tardia para TDAH e TEA em adultos, tratamento baseado em TCC, técnicas para trauma psicológico e benefícios da terapia.">
-
+        <h2 class="text-center mb-5 display-6 text-sucess">Curiosidades dos pacientes</h2>
         <!-- Passo 1 -->
         <div class="accordion-item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
             <h2 class="accordion-header">
@@ -473,9 +717,11 @@
             </div>
         </div>
     </div>
-
-
 </div>
+<!--FIM INICIO CURIOSIDADES -->
+
+
+
 
 
 <a href="#navbarNav" class="back-to-top">
