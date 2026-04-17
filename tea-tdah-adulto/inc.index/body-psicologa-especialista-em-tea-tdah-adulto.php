@@ -27,6 +27,14 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"
+                        href="#livro-autismo-conflito-e-justica"
+                        title="Livro Autismo conflito e justiça.">
+                        Livro
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link"
                         href="#servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos"
                         title="Serviços Psicóloga especializada no tratamento de tea e de tdah em adultos.">
                         Serviços
@@ -70,56 +78,68 @@
 <?php include 'icone-whatsapp.php'; ?>
 
 <div class="container my-5">
-    <h1 class="text-secondary text-center" id="psicologa-clinica-especialista-em-neuropsicopegagogia">Psicóloga Clínica, Especialista em Neuropsicopedagogia</h1>
-    <h2 class="text-secondary text-center" id="psicologa-clinica-especialista-em-neuropsicopegagogia-atendimento-online">Atendimento online e presencial</h2>
-    <div typeof="Course">
-        <p property="name">
-            Psicóloga com 12 anos de experiência clínica, atua no atendimento psicológico de adolescentes, adultos e idosos, com foco em demandas
-            relacionadas a depressão, ansiedade, transtorno afetivo bipolar (TAB), traumas, abuso e dependência emocional. Especialista em avaliação psicológica
-            e neuropsicológica, realiza diagnóstico e tratamento tardio para adultos com TEA (Transtorno do Espectro Autista) e TDAH (Transtorno de Déficit de
-            Atenção e Hiperatividade). Além disso, oferece supervisão clínica para psicólogos, com projetos voltados para iniciantes e profissionais recém-formados,
-            promovendo desenvolvimento e capacitação na área.
-        </p>
-        <div property="provider" typeof="CollegeOrUniversity">
-            <a property="url"
-                href="https://wa.me/5555991820758?text=Vim%20por%20meio%20do%20seu%20site%20e%20gostaria%20de%20falar%20sobre.https://tea-tdah-adulto.psicologosespecialistas.com.br/">
-                <span property="name">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="#ffffff">
-                        <path
-                            d="M380.9 97.1C339.1 55.3 283.2 32 224 32 123.2 32 41 116.5 41 221.7c0 44.4 14.8 85.5 40.2 119.3L32 480l143.4-48.3c37.6 19.8 79.8 30.6 122.4 30.6h.1c100.6 0 182.9-84.5 182.9-189.7-.1-50.7-20-98.3-59.9-138.5zM224 438.7c-36.2 0-72.1-9.7-103.3-28.2l-7.4-4.4-85.4 28.8 28.7-83.7-5.4-7.6c-24.6-34.5-37.8-75-37.8-117C13.4 131 101.6 49.4 224 49.4c52.1 0 100.5 19.5 137.2 55 36.4 35.1 56.4 81.9 56.5 132.4.1 97.7-79 177.9-177.7 177.9z">
-                        </path>
-                    </svg>
-                </span>
-            </a>
+    <div class="row align-items-center">
+        <div class="col-12 text-center mb-4">
+            <h1 class="text-secondary display-6" id="psicologa-clinica-especialista">Psicóloga Clínica Especialista</h1>
+            <h2 class="text-success h4" id="atendimento-online-presencial">Atendimento Online e Presencial</h2>
+        </div>
+
+        <div class="col-md-12" typeof="Course">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="lead text-muted" property="name">
+                        Psicóloga com <strong>14 anos de experiência clínica</strong>, focada no atendimento de adolescentes, adultos e idosos. 
+                        Especialista em demandas de alta complexidade e diagnósticos tardios.
+                    </p>
+                    
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Depressão e Ansiedade</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Transtorno Afetivo Bipolar (TAB)</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Traumas e Dependência Emocional</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Diagnóstico Tardio TEA e TDAH</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Avaliação Neuropsicológica</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Supervisão Clínica para Psicólogos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 d-flex align-items-center justify-content-center mt-4 mt-lg-0" property="provider" typeof="CollegeOrUniversity">
+                    <a class="btn btn-success btn-lg px-4 py-3 shadow-sm d-flex align-items-center gap-2" 
+                       property="url"
+                       href="https://wa.me/5555991820758?text=Vim%20por%20meio%20do%20seu%20site%20e%20gostaria%20de%20falar%20sobre.https://tea-tdah-adulto.psicologosespecialistas.com.br/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 448 512">
+                            <path d="M380.9 97.1C339.1 55.3 283.2 32 224 32 123.2 32 41 116.5 41 221.7c0 44.4 14.8 85.5 40.2 119.3L32 480l143.4-48.3c37.6 19.8 79.8 30.6 122.4 30.6h.1c100.6 0 182.9-84.5 182.9-189.7-.1-50.7-20-98.3-59.9-138.5zM224 438.7c-36.2 0-72.1-9.7-103.3-28.2l-7.4-4.4-85.4 28.8 28.7-83.7-5.4-7.6c-24.6-34.5-37.8-75-37.8-117C13.4 131 101.6 49.4 224 49.4c52.1 0 100.5 19.5 137.2 55 36.4 35.1 56.4 81.9 56.5 132.4.1 97.7-79 177.9-177.7 177.9z"></path>
+                        </svg>
+                        Agendar Consulta Online
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+    <hr class="mt-5">
+</div>
 
-    <div itemscope itemtype="https://schema.org/Product" id="psicologa-para-tratamento-de-tdah-e-tea-em-adultos">
-        <meta itemprop="name" content="Psicóloga Clínica que realiza tratamento de tea (transtorno do espectro autista) e tdah (transtorno de déficit de atenção e hiperatividade) em adultos">
-        <meta itemprop="description"
-            content="Psicóloga com 12 anos de experiência clínica, atua no atendimento psicológico de adolescentes, adultos e idosos, com foco em demandas 
-            relacionadas a depressão, ansiedade, transtorno afetivo bipolar (TAB), traumas, abuso e dependência emocional. Especialista em avaliação psicológica 
-            e neuropsicológica, realiza diagnóstico e tratamento tardio para adultos com TEA (Transtorno do Espectro Autista) e TDAH (Transtorno de Déficit de 
-            Atenção e Hiperatividade). Além disso, oferece supervisão clínica para psicólogos, com projetos voltados para iniciantes e profissionais recém-formados, 
-            promovendo desenvolvimento e capacitação na área.">
-        <meta itemprop="brand" content="Psicologa Daniele Mendes da Silva">
-        <meta itemprop="sku" content="012024">
-        <meta itemprop="image"
-            content="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/logo.webp">
-        <meta itemprop="hasMerchantReturnPolicy" content="https://tea-tdah-adulto.psicologosespecialistas.com.br/">
-
-        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <meta itemprop="price" content="700">
-            <meta itemprop="priceCurrency" content="BRL">
-            <link itemprop="availability" href="https://schema.org/InStock">
-            <link itemprop="url"
-                href="https://tea-tdah-adulto.psicologosespecialistas.com.br/">
-        </span>
-    </div>
+<div itemscope itemtype="https://schema.org/Product" id="psicologa-para-tratamento-de-tdah-e-tea-em-adultos" class="d-none">
+    <meta itemprop="name" content="Psicóloga Clínica que realiza tratamento de tea e tdah em adultos">
+    <meta itemprop="description" content="Psicóloga com 14 anos de experiência clínica...">
+    <meta itemprop="brand" content="Psicologa Daniele Mendes da Silva">
+    <meta itemprop="sku" content="012024">
+    <meta itemprop="image" content="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/logo.webp">
+    <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <meta itemprop="price" content="700">
+        <meta itemprop="priceCurrency" content="BRL">
+    </span>
 </div>
 
 <!--INICIO SOBRE -->
-<div class="container" id="psicologa-especializada-no-tratamento-de-tea-e-de-tdah-em-adultos">
+<div class="container mt-5 mb-5" id="psicologa-especializada-no-tratamento-de-tea-e-de-tdah-em-adultos">
     <div class="row">
         <div class="col-sm-3 col-md-3">
             <img
@@ -133,23 +153,62 @@
         <div class="col-sm-9 col-md-9">
             <h2>Daniele Mendes - CRP 07/21763</h2>
             <ul class="list-unstyled">
-                <li><i class="fas fa-check-circle text-success me-2"></i> Graduada há 12 anos pelo Centro Universitário Franciscano - Santa Maria/ RS.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Graduada há 14 anos pelo Centro Universitário Franciscano - Santa Maria/ RS.</li>
                 <li><i class="fas fa-check-circle text-success me-2"></i> Especialista em Neuropsicopedagogia - Universidade Leonardo da Vinci.</li>
                 <li><i class="fas fa-check-circle text-success me-2"></i> Especialista em Gestão por competências - Universidade Leonardo da Vinci.</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Especialista em Terapia cognitivo comportamental - universidade Leonardo da Vinci.</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Atua há 12 anos na clínica, no atendimento de adolescentes, adultos e idosos.</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Atende demandas: depressão, ansiedade, TAB, traumas, abuso, dependência emocional.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Especialista em Terapia cognitivo comportamental - Universidade Leonardo da Vinci.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Pós–Graduanda em Neuropsicologia - Universidade Leonardo da Vinci.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Atua há 14 anos na clínica, no atendimento de adolescentes, adultos e idosos.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Atende demandas: depressão, ansiedade, TAB, traumas, abuso, dependência emocional e autoconhecimento.</li>
                 <li><i class="fas fa-check-circle text-success me-2"></i> Realiza avaliação psicológica (neuro)/ diagnóstico e tratamento tardio para adultos TEA e TDAH.</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Supervisão clínica para psicólogos com projetos para iniciantes e recém - formados.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Supervisão clínica para psicólogos com projetos para iniciantes e recém-formados.</li>
             </ul>
-        </div>
+        </div>        
     </div>
     <hr>
 </div>
 <!--FIM SOBRE -->
 
+
+<!--INICIO LIVRO -->
+<?php include 'modal-livro.php'; ?>
+<div class="container  mt-5 mb-5" id="livro-autismo-conflito-e-justica">
+    <div class="row align-items-stretch"> <!-- Adicionado align-items-stretch -->
+        <div class="col-sm-3 col-md-3 text-center d-flex flex-column justify-content-between">
+            <div class="d-flex align-items-center justify-content-center flex-grow-1">
+                <img
+                    loading="lazy"
+                    src="https://tea-tdah-adulto.psicologosespecialistas.com.br/image/livro/daniele-mendes-psicologa-autora-livro-autismo-conflito-e-justica.webp"
+                    alt="Psicóloga co-autora do livro Autismo conflito e justiça - Transtorno do Espectro Autista (TEA) em adultos"
+                    class="img-fluid"
+                    width="310"
+                    height="313"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalLivro"
+                    style="cursor: pointer;">
+            </div>
+               
+        </div>
+        <div class="col-sm-9 col-md-9">
+            <div>
+                <h2>Capítulo: A “inclusão” da Criança Autista no Ambiente Escolar</h2> 
+                <p>O capítulo aborda a inclusão da criança autista no ambiente escolar, destacando que, apesar dos avanços legais e educacionais, muitas crianças com TEA ainda vivenciam a desvalidação, caracterizada pela falta de reconhecimento de suas necessidades, emoções e particularidades. Essa desvalidação pode se manifestar por meio de incompreensão, estigmatização, práticas disciplinares inadequadas e exclusão social, gerando impactos negativos no desenvolvimento emocional, social e acadêmico da criança. O texto enfatiza a importância da empatia, da formação adequada de educadores, de políticas educacionais inclusivas e do respeito aos direitos legais das crianças com autismo, ressaltando que a construção de um ambiente escolar acolhedor e validante é fundamental para garantir participação, pertencimento e desenvolvimento pleno.</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-center flex-grow-1 mt-3">
+                <a href="https://www.amazon.com.br/AUTISMO-CONFLITO-JUSTI%C3%87A-proteger-construir-ebook/dp/B0F6RZQBS7" 
+                target="_blank" 
+                class="btn btn-success">
+                    Adquira agora
+                </a>
+            </div> 
+        </div>        
+    </div>
+    <hr>
+</div>
+<!--FIM LIVRO -->
+
 <!--INICIO SERVIÇOS -->
-<div class="container my-2" id="servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos">
+<div class="container  mt-5 mb-5" id="servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos">
     <h2 class="text-success text-center">Serviços</h2>
     <div class="row">
         <div class="col-sm-9 col-md-9" itemscope itemtype="http://schema.org/Service">
@@ -271,7 +330,7 @@
 
 
 <!--INICIO DEPOIMENTOS -->
-<div class="container my-2" id="depoimentos-servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos">
+<div class="container  mt-5 mb-5" id="depoimentos-servicos-psicologa-especialista-em-atendimento-de-tea-e-de-tadh-em-adultos">
 
     <h2 class="text-success text-center">Depoimentos</h2>
 
@@ -471,7 +530,7 @@
 
 
 <!--INICIO PERGUNTAS E RESPOSTAS -->
-<div class="container my-2" id="perguntas-e-respostas-tratamento-transtorno-de-deficit-de-atencao-e-hiperatividade-e-transtorno-do-espectro-autista-em-adultos">
+<div class="container mt-5 mb-5" id="perguntas-e-respostas-tratamento-transtorno-de-deficit-de-atencao-e-hiperatividade-e-transtorno-do-espectro-autista-em-adultos">
     <h2 class="text-center mb-5 display-6 text-primary">Perguntas Frequentes</h2>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
