@@ -29,7 +29,7 @@
 
         <!-- Botão 2: Divulgar Site Existente -->
         <div class="col-12 col-md-6 col-lg-5">
-            <a href="https://psicologosespecialistas.com.br/divulgar-site.php" target="_blank"
+            <a href="https://wa.me/5551998001919" target="_blank"
                class="btn btn-primary btn-lg w-100 p-3 d-flex align-items-center justify-content-center gap-2 shadow-sm rounded-3"
                title="Divulgue seu site e serviços na nossa página de especialistas">
                 <i class="fas fa-bullhorn fs-4"></i>
