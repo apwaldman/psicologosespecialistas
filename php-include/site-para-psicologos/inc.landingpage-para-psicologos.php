@@ -1,149 +1,193 @@
-<body>
-    <header>
-        <div class="container header-content">
-            <div class="logo" itemscope itemtype="https://schema.org/Organization">
-                <img src="https://psicologosespecialistas.com.br/php-include/image/logo-psicologos-especialistas.webp" 
-                class="img-fluid" 
-                alt="Psicólogos especialistas: aqui você encontra o profissional certo!" 
-                width="50"
-                height="auto"
-                loading="lazy">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#vantagens">Vantagens</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<nav class="navbar navbar-expand navbar-light bg-light" itemscope itemtype="https://schema.org/Organization">
+    <div class="container d-flex justify-content-center bg-light">
+        <a class="navbar-brand" href="https://psicologosespecialistas.com.br/" target="_blank" title="Psicólogos especialistas" itemprop="url">
+            <img src="https://psicologosespecialistas.com.br/php-include/image/logo-psicologos-especialistas.webp"
+                class="img-fluid custom-image-index"
+                alt="Psicólogos especialistas: aqui você encontra o profissional certo!"
+                loading="lazy"
+                itemprop="logo">
+            <meta itemprop="name" content="Psicólogos Especialistas">
+            <meta itemprop="description" content="Agência especializada em sites e landing pages para psicólogos.">
+        </a>
+    </div>
+</nav>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Site Profissional para Psicólogos: Aumente Sua Presença Digital</h1>
-            <p>Desenvolvemos sites e landing pages especializadas para psicólogos e terapeutas, com design profissional e otimizado para mecanismos de busca. Atraia mais pacientes com um site que transmita confiança e credibilidade.</p>
-            <a href="#contato" class="btn">Solicitar Orçamento</a>
-        </div>
-    </section>
+<!-- BARRA DE NAVEGAÇÃO COM SITE NAVIGATION ELEMENT (Schema) -->
+<div class="container my-5 justify-content-center">
+    <nav aria-label="Navegação Principal" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <ul>
+            <li><a href="#servicos" itemprop="url"><span itemprop="name">Serviços</span></a></li>
+            <li><a href="#diferenciais" itemprop="url"><span itemprop="name">Diferenciais</span></a></li>
+            <li><a href="#faq" itemprop="url"><span itemprop="name">Dúvidas</span></a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=5551998001919" class="nav-btn" target="_blank">Falar no WhatsApp</a></li>
+        </ul>
+    </nav>
+</div>
 
-    <section id="servicos" class="services">
-        <div class="container">
-            <h2 class="section-title">Nossos Serviços para Psicólogos</h2>
-            <div class="services-grid">
-                <div class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-content">
-                        <h3 itemprop="name">Site Institucional para Psicólogos</h3>
-                        <p itemprop="description">Desenvolvemos sites completos para psicólogos, com informações sobre sua abordagem, especialidades, contato e blog integrado. Ideal para estabelecer credibilidade e facilitar que novos pacientes encontrem seus serviços.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-content">
-                        <h3 itemprop="name">Landing Pages para Terapeutas</h3>
-                        <p itemprop="description">Páginas de conversão especializadas para psicólogos, focadas em serviços específicos como terapia online, tratamento para ansiedade ou outras especialidades. Design persuasivo para converter visitantes em pacientes.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-content">
-                        <h3 itemprop="name">Otimização SEO para Psicólogos</h3>
-                        <p itemprop="description">Otimizamos seu site para mecanismos de busca com palavras-chave que pacientes em busca de terapia utilizam. Apareça no Google quando procurarem por "psicólogo perto de mim", "terapia online" e outros termos relevantes.</p>
-                    </div>
-                </div>
+
+<!-- Seção Hero -->
+<section class="hero">
+    <div class="container hero-container">
+        <div class="hero-text">
+            <span class="badge">Especializado no Nicho da Psicologia</span>
+            <h1>Criação de Sites e Landing Pages de Alta Conversão para Psicólogos</h1>
+            <p>Tenha uma presença digital ética, profissional e otimizada para o Google. Transforme visitantes em consultas agendadas com sites 100% adequados ao Código de Ética do CFP.</p>
+            <div class="hero-actions">
+                <a href="#contato" class="btn btn-primary">Quero Meu Site Profissional</a>
+                <a href="#servicos" class="btn btn-secondary">Ver Modelos e Serviços</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="vantagens" class="benefits">
-        <div class="container">
-            <h2 class="section-title">Por que Ter um Site Profissional é Essencial para Psicólogos?</h2>
-            <div class="benefits-list">
-                <div class="benefit-item">
-                    <div class="benefit-icon">1</div>
-                    <div class="benefit-content">
-                        <h3>Aumente Sua Visibilidade Online</h3>
-                        <p>Um site otimizado para SEO ajuda psicólogos a serem encontrados por pacientes em busca de ajuda. Com a maioria das pessoas pesquisando profissionais de saúde mental online, ter uma presença digital robusta é fundamental para o crescimento do seu consultório.</p>
-                    </div>
+<!-- Serviços -->
+<section id="servicos" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Soluções Digitais Sob Medida para Psicólogos e Terapeutas</h2>
+            <p>Tudo o que seu consultório precisa para se posicionar com autoridade e atrair pacientes de forma ética.</p>
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                <div class="service-icon">🚀</div>
+                <div class="service-content">
+                    <h3 itemprop="name">Landing Pages para Psicólogos</h3>
+                    <p itemprop="description">Páginas ultra focadas em conversão direta para WhatsApp ou agendamento online. Ideais para campanhas no Google Ads direcionadas a especialidades como Ansiedade, Terapia de Casal e Terapia Cognitivo-Comportamental.</p>
                 </div>
-                
-                <div class="benefit-item">
-                    <div class="benefit-icon">2</div>
-                    <div class="benefit-content">
-                        <h3>Estabeleça Credibilidade Profissional</h3>
-                        <p>Um site bem projetado transmite profissionalismo e confiança - elementos cruciais para psicólogos. Apresente sua formação, especialidades e abordagem terapêutica de maneira organizada, facilitando que potenciais pacientes escolham seus serviços.</p>
-                    </div>
+            </article>
+
+            <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                <div class="service-icon">🌐</div>
+                <div class="service-content">
+                    <h3 itemprop="name">Site Institucional Completo</h3>
+                    <p itemprop="description">Sua clínica ou consultório com uma estrutura digital robusta. Apresente sua abordagem terapêutica, artigos em blog de psicologia, currículo profissional e múltiplos canais de atendimento com elegância.</p>
                 </div>
-                
-                <div class="benefit-item">
-                    <div class="benefit-icon">3</div>
-                    <div class="benefit-content">
-                        <h3>Atenda Pacientes em Terapia Online</h3>
-                        <p>Com a crescente demanda por terapia online, ter um site profissional permite que psicólogos ofereçam atendimento remoto com credibilidade. Integramos sistemas de agendamento e videoconferência para facilitar o acesso aos seus serviços.</p>
-                    </div>
+            </article>
+
+            <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                <div class="service-icon">📈</div>
+                <div class="service-content">
+                    <h3 itemprop="name">Otimização SEO Local e Google</h3>
+                    <p itemprop="description">Apareça no topo das buscas quando potenciais pacientes procurarem por "psicólogo perto de mim" ou "terapia online". Otimizamos o código e o conteúdo para máxima visibilidade orgânica.</p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- Diferenciais -->
+<section id="diferenciais" class="benefits" itemscope itemtype="https://schema.org/ItemList">
+    <div class="container">
+        <div class="section-header">
+            <h2 itemprop="name">Por que Escolher uma Agência Especializada em Psicologia?</h2>
+            <p itemprop="description">Entendemos as particularidades da sua profissão para criar sites que transmitem acolhimento e confiança.</p>
+        </div>
+
+        <div class="benefits-grid">
+            <!-- Benefício 1 -->
+            <div class="benefit-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <meta itemprop="position" content="1">
+                <div class="benefit-icon" itemprop="image" content="🛡️">🛡️</div>
+                <div class="benefit-content" itemprop="item" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">Conformidade com o CFP</h3>
+                    <p itemprop="description">Layouts e estruturas desenvolvidos respeitando integralmente o Código de Ética Profissional do Psicólogo (Resolução CFP), garantindo uma divulgação segura e respeitosa.</p>
+                    <meta itemprop="serviceType" content="Desenvolvimento de Sites para Psicólogos">
+                    <meta itemprop="provider" content="Psicólogos Especialistas">
+                    <meta itemprop="areaServed" content="Brasil">
+                </div>
+            </div>
+
+            <!-- Benefício 2 -->
+            <div class="benefit-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <meta itemprop="position" content="2">
+                <div class="benefit-icon" itemprop="image" content="📱">📱</div>
+                <div class="benefit-content" itemprop="item" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">Agendamento Direto no WhatsApp</h3>
+                    <p itemprop="description">Integramos botões estratégicos de contato e formulários intuitivos que facilitam o agendamento de consultas presenciais ou atendimento psicoterápico online.</p>
+                    <meta itemprop="serviceType" content="Integração com WhatsApp">
+                    <meta itemprop="provider" content="Psicólogos Especialistas">
+                    <meta itemprop="areaServed" content="Brasil">
+                    <meta itemprop="audience" content="Pacientes de Psicologia">
+                </div>
+            </div>
+
+            <!-- Benefício 3 -->
+            <div class="benefit-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <meta itemprop="position" content="3">
+                <div class="benefit-icon" itemprop="image" content="⚡">⚡</div>
+                <div class="benefit-content" itemprop="item" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">Velocidade e Segurança SSL</h3>
+                    <p itemprop="description">Páginas leves que carregam em menos de 2 segundos no celular, acompanhadas de certificado de segurança para proteger a navegação do seu futuro paciente.</p>
+                    <meta itemprop="serviceType" content="Hospedagem e Segurança Web">
+                    <meta itemprop="provider" content="Psicólogos Especialistas">
+                    <meta itemprop="offers" content="Site com carregamento rápido e certificado SSL incluso">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="cta" id="contato">
-        <div class="container">
-            <h2>Pronto para Levar Seu Consultório para o Próximo Nível?</h2>
-            <p>Entre em contato hoje mesmo para desenvolvermos juntos o site ideal para sua prática psicológica. Atraia mais pacientes, estabeleça credibilidade e expanda seu alcance com um site profissional.</p>
-            <a href="https://wa.me/5551998001919?text=Informações%20sobre%20o%20site..." class="btn">Solicitar Orçamento</a>
+<!-- Seção FAQ para SEO -->
+<section id="faq" class="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Perguntas Frequentes</h2>
+            <p>Tire suas dúvidas sobre o desenvolvimento de sites para psicólogos</p>
         </div>
-    </section>
 
-    <footer>
-        <div class="container footer-content">
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>O site é feito de acordo com as regras do CFP?</summary>
+                <p>Sim! Todo o design, textos e chamadas de ação são estruturados em estrita conformidade com o Código de Ética do Conselho Federal de Psicologia, evitando promessas irreais de cura ou termos proibidos.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Qual a diferença entre um Site e uma Landing Page?</summary>
+                <p>Uma Landing Page é uma página única e persuasiva, perfeita para campanhas pagas de anúncios (Google Ads) com o objetivo de gerar contatos no WhatsApp. Já o Site Institucional conta com várias páginas (Sobre, Serviços, Blog) e é ideal para construção de autoridade a longo prazo.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Em quanto tempo meu site fica pronto?</summary>
+                <p>O prazo médio de entrega para uma Landing Page é de 5 a 7 dias úteis após o envio dos conteúdos e fotos. Sites institucionais levam entre 10 a 15 dias úteis.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- Chamada para Ação (CTA) -->
+<section class="cta" id="contato">
+    <div class="container">
+        <h2>Pronto para Atrair Mais Pacientes com um Site Profissional?</h2>
+        <p>Fale conosco no WhatsApp, tire suas dúvidas e solicite um orçamento sem compromisso hoje mesmo.</p>
+        <a href="https://wa.me/5551998001919?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20criação%20de%20site%20para%20psicólogos"
+            class="btn btn-cta"
+            target="_blank"
+            rel="noopener noreferrer">
+            Falar no WhatsApp Agora
+        </a>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer>
+    <div class="container footer-content">
+        <div class="footer-brand">
             <div class="logo">Psicólogos Especialistas</div>
-            <div class="contact-info" itemscope itemtype="https://schema.org/Person">
-                <p>Desenvolvimento de Sites Especializados para Psicólogos</p>
-                <p>Email: <span itemprop="email">contato@psicologosespecialistas.com.br</span></p>
-                <p>Telefone: <span itemprop="telephone">(51) 99800-1919</span></p>
-            </div>
-            <p>&copy; 2023 WebPsicólogo - Todos os direitos reservados</p>
+            <p>Desenvolvimento web especializado para psicólogos, terapeutas e clínicas de saúde mental em todo o Brasil.</p>
         </div>
-    </footer>
 
-    <!-- Schema Markup para SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "WebPsicólogo",
-      "description": "Desenvolvimento de sites e landing pages especializadas para psicólogos e terapeutas",
-      "serviceType": "Desenvolvimento Web",
-      "provider": {
-        "@type": "Organization",
-        "name": "WebPsicólogo"
-      },
-      "areaServed": "Brasil",
-      "availableLanguage": "Portuguese",
-      "services": [
-        {
-          "@type": "Service",
-          "name": "Site Institucional para Psicólogos",
-          "description": "Desenvolvimento de sites completos para psicólogos com informações sobre abordagem, especialidades e contato."
-        },
-        {
-          "@type": "Service",
-          "name": "Landing Pages para Terapeutas",
-          "description": "Páginas de conversão especializadas para psicólogos focadas em serviços específicos como terapia online."
-        },
-        {
-          "@type": "Service",
-          "name": "Otimização SEO para Psicólogos",
-          "description": "Otimização para mecanismos de busca com palavras-chave que pacientes em busca de terapia utilizam."
-        }
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+55-51-99800-1919",
-        "contactType": "Customer service",
-        "email": "contato@psicologosespecialistas.com.br",
-        "availableLanguage": "Portuguese"
-      }
-    }
-    </script>
-</body>
+        <div class="contact-info" itemscope itemtype="https://schema.org/Person">
+            <h4>Contato</h4>
+            <p>WhatsApp: <span itemprop="telephone">(51) 99800-1919</span></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Psicólogos Especialistas - Desenvolvimento de Sites para Psicólogos. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
