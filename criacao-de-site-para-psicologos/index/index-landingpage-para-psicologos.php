@@ -6,8 +6,7 @@
         <ul>
             <li><a href="#servicos" itemprop="url"><span itemprop="name">Serviços</span></a></li>
             <li><a href="#diferenciais" itemprop="url"><span itemprop="name">Diferenciais</span></a></li>
-            <li><a href="#faq" itemprop="url"><span itemprop="name">Dúvidas</span></a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=5551998001919" class="nav-btn" target="_blank">Falar no WhatsApp</a></li>
+            <li><a href="#faq" itemprop="url"><span itemprop="name">Dúvidas</span></a></li>           
         </ul>
     </nav>
 </div>
@@ -158,24 +157,4 @@
         </a>
     </div>
 </section>
-
-<!-- Rodapé -->
-<footer>
-    <div class="container footer-content">
-        <div class="footer-brand">
-            <div class="logo">Psicólogos Especialistas</div>
-            <p>Desenvolvimento web especializado para psicólogos, terapeutas e clínicas de saúde mental em todo o Brasil.</p>
-        </div>
-
-        <div class="contact-info" itemscope itemtype="https://schema.org/Person">
-            <h4>Contato</h4>
-            <p>WhatsApp: <span itemprop="telephone">(51) 99800-1919</span></p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <p>&copy; 2026 Psicólogos Especialistas - Desenvolvimento de Sites para Psicólogos. Todos os direitos reservados.</p>
-        </div>
-    </div>
-</footer>
 

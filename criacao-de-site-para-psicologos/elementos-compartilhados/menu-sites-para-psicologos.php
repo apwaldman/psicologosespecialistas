@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-light bg-light" itemscope itemtype="https://schema.org/Organization">
     <div class="container d-flex justify-content-center bg-light">
-        <a class="navbar-brand" href="https://psicologosespecialistas.com.br/" target="_blank" title="Psicólogos especialistas" itemprop="url">
+        <a class="navbar-brand" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br" target="_blank" title="Psicólogos especialistas" itemprop="url">
             <img src="https://psicologosespecialistas.com.br/php-include/image/logo-psicologos-especialistas.webp"
                 class="img-fluid custom-image-index"
                 alt="Psicólogos especialistas: aqui você encontra o profissional certo!"
@@ -15,29 +15,20 @@
 <?php include('gerador-menu.php'); ?> 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCursosParaPsicologos" aria-controls="navCursosParaPsicologos" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navSitesParaPsicologos" aria-controls="navSitesParaPsicologos" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>        
-        <div class="collapse navbar-collapse" id="navCursosParaPsicologos">            
+        <div class="collapse navbar-collapse" id="navSitesParaPsicologos">            
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item ">
                     <a class="nav-link" 
-                        href="https://cursos.waldmanpsicologia.com.br/" 
-                        title="Cursos online para psicólogos e estudantes de psicologia."
+                        href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/" 
+                        title="Site para psicólogos"
                         target="_blank"                         
                         aria-expanded="false">
                         Início
                     </a> 
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" 
-                        href="https://cursos.waldmanpsicologia.com.br/moodle/" 
-                        title="Acesso ao Moodle."
-                        target="_blank"                         
-                        aria-expanded="false">
-                        Acesso ao Moodle
-                    </a> 
-                </li>
+                </li>                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle"                         
                         title="Cursos para psicólogos e para estudantes de psicologia." 
@@ -45,9 +36,9 @@
                         role="button" 
                         data-bs-toggle="dropdown" 
                         aria-expanded="false">
-                        Cursos
+                        Soluções digitais para psicólogos
                     </a>                
-                    <?php echo gerarMenuCursos('navbarMenuCursos', $itensMenuCursos); ?>
+                    <?php echo gerarMenuSitesParaPsicologos('navbarMenuCursos', $itensMenuServicos); ?>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" 
@@ -56,10 +47,11 @@
                         role="button" 
                         data-bs-toggle="dropdown" 
                         aria-expanded="false">
-                        Supervisão
+                        Dicas para otimizar seu site
                     </a>                
-                    <?php echo gerarMenuCursos('navbarMenuSupervisao', $itensMenuSupervisao); ?>
-                </li>                                					
+                    <?php echo gerarMenuSitesParaPsicologos('navbarMenuSupervisao', $itensMenuDicas); ?>
+                </li>   
+                <li><a href="https://api.whatsapp.com/send/?phone=5551998001919" class="nav-btn" target="_blank">Falar no WhatsApp</a></li>                             					
 			</ul>
 		</div>
 	</div>
