@@ -16,7 +16,7 @@
     <div class="row g-3 justify-content-center">
         <!-- Botão 1: Solicitar um Novo Site -->
         <div class="col-12 col-md-6 col-lg-5">
-            <a href="https://psicologosespecialistas.com.br/site-para-psicologos.php" target="_blank"
+            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/index.php" target="_blank"
                class="btn btn-outline-primary btn-lg w-100 p-3 d-flex align-items-center justify-content-center gap-2 shadow-sm rounded-3"
                title="Saiba como ter o seu próprio site profissional de psicologia">
                 <i class="fas fa-laptop-code fs-4"></i>

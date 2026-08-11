@@ -1,16 +1,4 @@
-<nav class="navbar navbar-expand navbar-light bg-light" itemscope itemtype="https://schema.org/Organization">
-    <div class="container d-flex justify-content-center bg-light">
-        <a class="navbar-brand" href="https://psicologosespecialistas.com.br/" target="_blank" title="Psicólogos especialistas" itemprop="url">
-            <img src="https://psicologosespecialistas.com.br/php-include/image/logo-psicologos-especialistas.webp"
-                class="img-fluid custom-image-index"
-                alt="Psicólogos especialistas: aqui você encontra o profissional certo!"
-                loading="lazy"
-                itemprop="logo">
-            <meta itemprop="name" content="Psicólogos Especialistas">
-            <meta itemprop="description" content="Agência especializada em sites e landing pages para psicólogos.">
-        </a>
-    </div>
-</nav>
+
 
 <!-- BARRA DE NAVEGAÇÃO COM SITE NAVIGATION ELEMENT (Schema) -->
 <div class="container my-5 justify-content-center">
