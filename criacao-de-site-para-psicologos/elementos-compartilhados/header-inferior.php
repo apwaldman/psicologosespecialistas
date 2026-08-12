@@ -1,27 +1,38 @@
+        <!-- ============================================ -->
+    <!-- PRÉ-CONEXÕES (OTIMIZAÇÃO) -->
     <!-- ============================================ -->
-    <!-- CSS PRINCIPAL E RECURSOS -->
+    <link rel="preconnect" href="https://ajax.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
     <!-- ============================================ -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo CSS_PATH; ?>/style.css">  <!-- ← USA A CONSTANTE -->
-    <link rel="stylesheet" href="<?php echo CSS_PATH; ?>/icone-whatsapp.css">
-    <link rel="stylesheet" href="<?php echo CSS_PATH; ?>/botoes-pg-inicio.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    
+    <!-- CSS - CARREGAMENTO NORMAL (SEM FOUC) -->
     <!-- ============================================ -->
-    <!-- JQUERY (OTIMIZADO) -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Seu CSS personalizado -->
+    <link rel="stylesheet" href="<?php echo CSS_PATH; ?>/style.css">
+
+    <!-- ============================================ -->
+    <!-- JQUERY E BOOTSTRAP JS -->
     <!-- ============================================ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-    
-    <!-- ============================================ -->
-    <!-- BOOTSTRAP -->
-    <!-- ============================================ -->
-    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- ============================================ -->
     <!-- VERIFICAÇÃO BING -->
     <!-- ============================================ -->
     <meta name="msvalidate.01" content="<?php echo BING_VERIFICATION; ?>">
-    
+
     <!-- ============================================ -->
     <!-- GOOGLE ANALYTICS -->
     <!-- ============================================ -->
@@ -32,7 +43,7 @@
         gtag('js', new Date());
         gtag('config', '<?php echo GA_TRACKING_ID; ?>');
     </script>
-    
+        
     <!-- ============================================ -->
     <!-- FECHAMENTO DO HEAD E ABERTURA DO BODY -->
     <!-- ============================================ -->
