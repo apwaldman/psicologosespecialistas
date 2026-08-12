@@ -1,3 +1,4 @@
+</body>
 <footer class="bg-light text-center py-4 mt-5 border-top" itemscope itemtype="https://schema.org/WPFooter">
     <div class="container">
         <!-- Redes Sociais -->

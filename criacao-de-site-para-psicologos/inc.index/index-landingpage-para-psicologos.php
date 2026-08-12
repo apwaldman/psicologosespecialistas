@@ -1,5 +1,3 @@
-
-
 <!-- BARRA DE NAVEGAÇÃO COM SITE NAVIGATION ELEMENT (Schema) -->
 <div class="container my-5 justify-content-center">
     <nav aria-label="Navegação Principal" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -13,12 +11,12 @@
 
 
 <!-- Seção Hero -->
-<section class="hero">
+<section class="hero" itemscope itemtype="https://schema.org/Article">
     <div class="container hero-container">
         <div class="hero-text">
-            <span class="badge">Especializado no Nicho da Psicologia</span>
-            <h1>Criação de Sites e Landing Pages de Alta Conversão para Psicólogos</h1>
-            <p>Tenha uma presença digital ética, profissional e otimizada para o Google. Transforme visitantes em consultas agendadas com sites 100% adequados ao Código de Ética do CFP.</p>
+            <span class="badge" itemprop="about">Especializado no Nicho da Psicologia</span>
+            <h1 itemprop="headline">Criação de Sites e Landing Pages de Alta Conversão para Psicólogos</h1>
+            <p itemprop="description">Tenha uma presença digital ética, profissional e otimizada para o Google. Transforme visitantes em consultas agendadas com sites 100% adequados ao Código de Ética do CFP.</p>
             <div class="hero-actions">
                 <a href="#contato" class="btn btn-primary">Quero Meu Site Profissional</a>
                 <a href="#servicos" class="btn btn-secondary">Ver Modelos e Serviços</a>
@@ -28,36 +26,48 @@
 </section>
 
 <!-- Serviços -->
-<section id="servicos" class="services">
+<section id="servicos" class="services" itemscope itemtype="https://schema.org/ItemList">
     <div class="container">
         <div class="section-header">
-            <h2>Soluções Digitais Sob Medida para Psicólogos e Terapeutas</h2>
-            <p>Tudo o que seu consultório precisa para se posicionar com autoridade e atrair pacientes de forma ética.</p>
+            <h2 itemprop="name">Soluções Digitais Sob Medida para Psicólogos e Terapeutas</h2>
+            <p itemprop="description">Tudo o que seu consultório precisa para se posicionar com autoridade e atrair pacientes de forma ética.</p>
         </div>
 
         <div class="services-grid">
 
-            <article class="service-card" itemscope itemtype="https://schema.org/Service">
+            <article class="service-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <meta itemprop="position" content="1">
                 <div class="service-icon">🚀</div>
-                <div class="service-content">
+                <div class="service-content" itemprop="item" itemscope itemtype="https://schema.org/Service">
                     <h3 itemprop="name">Landing Pages para Psicólogos</h3>
                     <p itemprop="description">Páginas ultra focadas em conversão direta para WhatsApp ou agendamento online. Ideais para campanhas no Google Ads direcionadas a especialidades como Ansiedade, Terapia de Casal e Terapia Cognitivo-Comportamental.</p>
+                    <meta itemprop="serviceType" content="Landing Page para Psicólogos">
+                    <meta itemprop="provider" content="Psicólogos Especialistas">
+                    <meta itemprop="areaServed" content="Brasil">
                 </div>
             </article>
 
-            <article class="service-card" itemscope itemtype="https://schema.org/Service">
+            <article class="service-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <meta itemprop="position" content="2">
                 <div class="service-icon">🌐</div>
-                <div class="service-content">
+                <div class="service-content" itemprop="item" itemscope itemtype="https://schema.org/Service">
                     <h3 itemprop="name">Site Institucional Completo</h3>
                     <p itemprop="description">Sua clínica ou consultório com uma estrutura digital robusta. Apresente sua abordagem terapêutica, artigos em blog de psicologia, currículo profissional e múltiplos canais de atendimento com elegância.</p>
+                    <meta itemprop="serviceType" content="Site Institucional para Psicólogos">
+                    <meta itemprop="provider" content="Psicólogos Especialistas">
+                    <meta itemprop="areaServed" content="Brasil">
                 </div>
             </article>
 
-            <article class="service-card" itemscope itemtype="https://schema.org/Service">
+            <article class="service-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <meta itemprop="position" content="3">
                 <div class="service-icon">📈</div>
-                <div class="service-content">
+                <div class="service-content" itemprop="item" itemscope itemtype="https://schema.org/Service">
                     <h3 itemprop="name">Otimização SEO Local e Google</h3>
                     <p itemprop="description">Apareça no topo das buscas quando potenciais pacientes procurarem por "psicólogo perto de mim" ou "terapia online". Otimizamos o código e o conteúdo para máxima visibilidade orgânica.</p>
+                    <meta itemprop="serviceType" content="Otimização SEO para Psicólogos">
+                    <meta itemprop="provider" content="Psicólogos Especialistas">
+                    <meta itemprop="areaServed" content="Brasil">
                 </div>
             </article>
 
@@ -118,43 +128,49 @@
 </section>
 
 <!-- Seção FAQ para SEO -->
-<section id="faq" class="faq">
+<section id="faq" class="faq" itemscope itemtype="https://schema.org/FAQPage">
     <div class="container">
         <div class="section-header">
-            <h2>Perguntas Frequentes</h2>
-            <p>Tire suas dúvidas sobre o desenvolvimento de sites para psicólogos</p>
+            <h2 itemprop="headline">Perguntas Frequentes</h2>
+            <p itemprop="description">Tire suas dúvidas sobre o desenvolvimento de sites para psicólogos</p>
         </div>
 
         <div class="faq-list">
-            <details class="faq-item">
-                <summary>O site é feito de acordo com as regras do CFP?</summary>
-                <p>Sim! Todo o design, textos e chamadas de ação são estruturados em estrita conformidade com o Código de Ética do Conselho Federal de Psicologia, evitando promessas irreais de cura ou termos proibidos.</p>
+            <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <summary itemprop="name">O site é feito de acordo com as regras do CFP?</summary>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Sim! Todo o design, textos e chamadas de ação são estruturados em estrita conformidade com o Código de Ética do Conselho Federal de Psicologia, evitando promessas irreais de cura ou termos proibidos.</p>
+                </div>
             </details>
 
-            <details class="faq-item">
-                <summary>Qual a diferença entre um Site e uma Landing Page?</summary>
-                <p>Uma Landing Page é uma página única e persuasiva, perfeita para campanhas pagas de anúncios (Google Ads) com o objetivo de gerar contatos no WhatsApp. Já o Site Institucional conta com várias páginas (Sobre, Serviços, Blog) e é ideal para construção de autoridade a longo prazo.</p>
+            <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <summary itemprop="name">Qual a diferença entre um Site e uma Landing Page?</summary>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Uma Landing Page é uma página única e persuasiva, perfeita para campanhas pagas de anúncios (Google Ads) com o objetivo de gerar contatos no WhatsApp. Já o Site Institucional conta com várias páginas (Sobre, Serviços, Blog) e é ideal para construção de autoridade a longo prazo.</p>
+                </div>
             </details>
 
-            <details class="faq-item">
-                <summary>Em quanto tempo meu site fica pronto?</summary>
-                <p>O prazo médio de entrega para uma Landing Page é de 5 a 7 dias úteis após o envio dos conteúdos e fotos. Sites institucionais levam entre 10 a 15 dias úteis.</p>
+            <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <summary itemprop="name">Em quanto tempo meu site fica pronto?</summary>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                    <p itemprop="text">O prazo médio de entrega para uma Landing Page é de 5 a 7 dias úteis após o envio dos conteúdos e fotos. Sites institucionais levam entre 10 a 15 dias úteis.</p>
+                </div>
             </details>
         </div>
     </div>
 </section>
 
 <!-- Chamada para Ação (CTA) -->
-<section class="cta" id="contato">
+<section class="cta" id="contato" itemscope itemtype="https://schema.org/Offer">
     <div class="container">
-        <h2>Pronto para Atrair Mais Pacientes com um Site Profissional?</h2>
-        <p>Fale conosco no WhatsApp, tire suas dúvidas e solicite um orçamento sem compromisso hoje mesmo.</p>
+        <h2 itemprop="name">Pronto para Atrair Mais Pacientes com um Site Profissional?</h2>
+        <p itemprop="description">Fale conosco no WhatsApp, tire suas dúvidas e solicite um orçamento sem compromisso hoje mesmo.</p>
         <a href="https://wa.me/5551998001919?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20criação%20de%20site%20para%20psicólogos"
             class="btn btn-cta"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            itemprop="url">
             Falar no WhatsApp Agora
         </a>
     </div>
 </section>
-
