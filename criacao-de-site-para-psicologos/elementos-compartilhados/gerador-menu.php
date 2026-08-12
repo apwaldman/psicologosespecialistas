@@ -12,14 +12,19 @@ function gerarMenuSitesParaPsicologos($id, $itens) {
 
   $itensMenuServicos = [       
         [
-            'titulo' => 'Curso do Teste Palográfico de Personalidade',
-            'link' => '',
-            'texto' => 'Aguarde'
+            'titulo' => 'Landing Page para Psicólogos',
+            'link' => 'https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php',
+            'texto' => 'O que são landingpages'
         ],
         [
-            'titulo' => 'Avaliação psicológica para concursos públicos',
-            'link' => '',
-            'texto' => 'Aguarde'
+            'titulo' => 'Sites para Psicólogos',
+            'link' => 'https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php',
+            'texto' => 'O que são sites'
+        ],
+        [
+            'titulo' => 'Valores de Sites e Landing Pages para Psicólogos',
+            'link' => 'https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php',
+            'texto' => 'Valores de Sites e Landing Pages para Psicólogos'
         ]
     ];
      $itensMenuDicas = [             

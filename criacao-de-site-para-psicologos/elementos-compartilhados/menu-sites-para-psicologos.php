@@ -13,6 +13,15 @@
 </nav>
 
 <?php include('gerador-menu.php'); ?> 
+<?php
+// Ensure menu item arrays are defined to avoid undefined variable notices
+if (!isset($itensMenuServicos) || !is_array($itensMenuServicos)) {
+    $itensMenuServicos = [];
+}
+if (!isset($itensMenuDicas) || !is_array($itensMenuDicas)) {
+    $itensMenuDicas = [];
+}
+?>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navSitesParaPsicologos" aria-controls="navSitesParaPsicologos" aria-expanded="false" aria-label="Toggle navigation">
