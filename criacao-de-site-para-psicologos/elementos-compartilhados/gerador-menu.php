@@ -45,19 +45,19 @@ function gerarMenuSitesParaPsicologos($id, $itens) {
     ];
      $itensMenuDicas = [             
         [
-            'titulo' => 'Curso do Teste Palográfico de Personalidade',
-            'link' => '',
-            'texto' => 'Aguarde'
+            'titulo' => 'Construa sua presença digital como psicólogo',
+            'link' => 'https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/construa-sua-presenca-digital.php',
+            'texto' => 'Construa sua presença digital como psicólogo'
         ],
         [
-            'titulo' => 'Avaliação psicológica para concursos públicos',
-            'link' => '',
-            'texto' => 'Aguarde'
+            'titulo' => 'Aumente sua relevância no Google com SEO para Psicólogos',
+            'link' => 'https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgacao-de-sites-psicologicos.php',
+            'texto' => 'Aumente sua relevância no Google com SEO para Psicólogos'
         ]
     ];
     
 
-echo gerarMenuSitesParaPsicologos('navbarMenuCursos', $itensMenuServicos);
-echo gerarMenuSitesParaPsicologos('navbarMenuSupervisao', $itensMenuDicas);
+echo gerarMenuSitesParaPsicologos('navbarMenuSitesParaPsicologos', $itensMenuServicos);
+echo gerarMenuSitesParaPsicologos('navbarMenuSEOparaPsicologos', $itensMenuDicas);
 
 ?>

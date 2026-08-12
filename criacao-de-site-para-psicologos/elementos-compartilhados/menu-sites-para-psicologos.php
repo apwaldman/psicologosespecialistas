@@ -41,24 +41,24 @@ if (!isset($itensMenuDicas) || !is_array($itensMenuDicas)) {
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle"                         
                         title="Cursos para psicólogos e para estudantes de psicologia." 
-                        id="navbarMenuCursos" 
+                        id="navbarMenuSitesParaPsicologos" 
                         role="button" 
                         data-bs-toggle="dropdown" 
                         aria-expanded="false">
                         Soluções digitais para psicólogos
                     </a>                
-                    <?php echo gerarMenuSitesParaPsicologos('navbarMenuCursos', $itensMenuServicos); ?>
+                    <?php echo gerarMenuSitesParaPsicologos('navbarMenuSitesParaPsicologos', $itensMenuServicos); ?>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" 
                         title="Supervisão para psicólogos e para estudantes de psicologia." 
-                        id="navbarMenuSupervisao" 
+                        id="navbarMenuSEOparaPsicologos" 
                         role="button" 
                         data-bs-toggle="dropdown" 
                         aria-expanded="false">
                         Dicas para otimizar seu site
                     </a>                
-                    <?php echo gerarMenuSitesParaPsicologos('navbarMenuSupervisao', $itensMenuDicas); ?>
+                    <?php echo gerarMenuSitesParaPsicologos('navbarMenuSEOparaPsicologos', $itensMenuDicas); ?>
                 </li>   
                 <li><a href="https://api.whatsapp.com/send/?phone=5551998001919" class="nav-btn" target="_blank">Falar no WhatsApp</a></li>                             					
 			</ul>

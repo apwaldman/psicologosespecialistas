@@ -42,13 +42,14 @@ body {
 header {
     background-color: var(--card-bg);
     border-bottom: 1px solid var(--border-color);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     box-shadow: var(--shadow-sm);
 }
 
-
+.header-rolagem-normal {
+    position: relative !important;
+    top: auto !important;
+    z-index: auto !important;
+}
 
 nav ul {
     display: flex;
