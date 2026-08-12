@@ -13,7 +13,7 @@
 <!-- ============================================ -->
 <!-- CANONICAL -->
 <!-- ============================================ -->
-<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php">
+<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos">
 
 <!-- ============================================ -->
 <!-- OPEN GRAPH -->
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Site para Psicólogos: Importância, Autoridade e Presença no Google">
 <meta property="og:description" content="Descubra como um site institucional completo pode fortalecer a autoridade do psicólogo, apresentar sua experiência e especialidades, ampliar sua presença no Google e criar uma presença digital independente das redes sociais.">
-<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php">
+<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos">
 <meta property="og:image" content="<?php echo IMAGE_PATH; ?>/logo-psicologos-especialistas.png">
 <meta property="og:image:width" content="<?php echo DEFAULT_IMAGE_WIDTH; ?>">
 <meta property="og:image:height" content="<?php echo DEFAULT_IMAGE_HEIGHT; ?>">

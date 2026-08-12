@@ -14,7 +14,7 @@
     <!-- ============================================ -->
     <!-- CANONICAL -->
     <!-- ============================================ -->
-    <link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/index.php">
+    <link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/index">
     
     <!-- ============================================ -->
     <!-- OPEN GRAPH -->
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Site para Psicólogo: Página Profissional e Landing Page que Atrai Pacientes">
     <meta property="og:description" content="Crie um site profissional ou landing page para psicólogo. Design focado em conversão, integração com agenda online e SEO local para atrair mais pacientes.">
-    <meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/index.php">
+    <meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/index">
     <meta property="og:image" content="<?php echo IMAGE_PATH; ?>/logo-psicologos-especialistas.png">
     <meta property="og:image:width" content="<?php echo DEFAULT_IMAGE_WIDTH; ?>">
     <meta property="og:image:height" content="<?php echo DEFAULT_IMAGE_HEIGHT; ?>">

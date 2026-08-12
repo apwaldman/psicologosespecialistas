@@ -13,7 +13,7 @@
 <!-- ============================================ -->
 <!-- CANONICAL -->
 <!-- ============================================ -->
-<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/construa-sua-presenca-digital.php">
+<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/construa-sua-presenca-digital">
 
 <!-- ============================================ -->
 <!-- OPEN GRAPH -->
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Presença Digital para Psicólogos: Como Atrair Pacientes com Ética">
 <meta property="og:description" content="Entenda como construir uma presença digital ética, relevante e profissional na psicologia. Conheça estratégias e soluções como sites institucionais, landing pages, WordPress e ferramentas de divulgação para fortalecer sua presença na internet.">
-<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/construa-sua-presenca-digital.php">
+<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/construa-sua-presenca-digital">
 <meta property="og:image" content="<?php echo IMAGE_PATH; ?>/logo-psicologos-especialistas.png">
 <meta property="og:image:width" content="<?php echo DEFAULT_IMAGE_WIDTH; ?>">
 <meta property="og:image:height" content="<?php echo DEFAULT_IMAGE_HEIGHT; ?>">

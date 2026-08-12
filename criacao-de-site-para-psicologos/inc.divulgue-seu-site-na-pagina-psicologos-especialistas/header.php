@@ -13,7 +13,7 @@
 <!-- ============================================ -->
 <!-- CANONICAL -->
 <!-- ============================================ -->
-<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas.php">
+<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas">
 
 <!-- ============================================ -->
 <!-- OPEN GRAPH -->
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Divulgue seu Site na Página Psicólogos Especialistas | Backlink">
 <meta property="og:description" content="Conheça a possibilidade de divulgar seu site na página Psicólogos Especialistas, criando uma referência para o seu endereço na internet e contribuindo para fortalecer sua presença digital e estratégia de SEO.">
-<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas.php">
+<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas">
 <meta property="og:image" content="<?php echo IMAGE_PATH; ?>/logo-psicologos-especialistas.png">
 <meta property="og:image:width" content="<?php echo DEFAULT_IMAGE_WIDTH; ?>">
 <meta property="og:image:height" content="<?php echo DEFAULT_IMAGE_HEIGHT; ?>">

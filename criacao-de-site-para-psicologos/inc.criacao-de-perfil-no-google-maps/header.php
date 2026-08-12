@@ -13,7 +13,7 @@
 <!-- ============================================ -->
 <!-- CANONICAL -->
 <!-- ============================================ -->
-<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps.php">
+<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps">
 
 <!-- ============================================ -->
 <!-- OPEN GRAPH -->
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Perfil no Google Maps para Psicólogos: O que é e por que é Importante?">
 <meta property="og:description" content="Descubra o que é o Perfil da Empresa no Google e entenda como a presença no Google Maps pode aumentar a visibilidade do psicólogo nas buscas locais, facilitar o contato e ajudar potenciais pacientes a encontrarem seu consultório.">
-<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps.php">
+<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps">
 <meta property="og:image" content="<?php echo IMAGE_PATH; ?>/logo-psicologos-especialistas.png">
 <meta property="og:image:width" content="<?php echo DEFAULT_IMAGE_WIDTH; ?>">
 <meta property="og:image:height" content="<?php echo DEFAULT_IMAGE_HEIGHT; ?>">

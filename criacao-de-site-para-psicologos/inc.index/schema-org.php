@@ -25,7 +25,7 @@
     "@type": "WebPage",
     "name": "Site para Psicólogo - Páginas Profissionais e Landing Pages",
     "description": "Desenvolvimento de sites e landing pages especializadas para psicólogos. Atraia mais pacientes com um site otimizado e com design focado em conversão.",
-    "url": "<?php echo SITE_URL; ?>/index.php",
+    "url": "<?php echo SITE_URL; ?>/index",
     "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -39,7 +39,7 @@
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Site para Psicólogos",
-                "item": "<?php echo SITE_URL; ?>/index.php"
+                "item": "<?php echo SITE_URL; ?>/index"
             }
         ]
     },

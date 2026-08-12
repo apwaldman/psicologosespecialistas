@@ -9,10 +9,10 @@
                         Como Construir uma Presença Digital Ética, Relevante e Capaz de Atrair Pacientes
                     </h1>
                     <p class="lead text-secondary mb-4">
-                        Descubra como transformar o conhecimento da sua prática clínica em uma vitrine profissional de alta credibilidade. Entenda os pilares para posicionar seu nome no topo das buscas do Google através de uma <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary text-decoration-underline">landing page otimizada</a> ou de um <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary text-decoration-underline">site institucional completo</a>.
+                        Descubra como transformar o conhecimento da sua prática clínica em uma vitrine profissional de alta credibilidade. Entenda os pilares para posicionar seu nome no topo das buscas do Google através de uma <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary text-decoration-underline">landing page otimizada</a> ou de um <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary text-decoration-underline">site institucional completo</a>.
                     </p>
                     <a href="#pilares-seo" class="btn btn-primary btn-lg me-2 mb-2">Explorar Dicas de SEO</a>
-                    <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-lg mb-2">Ver Valores e Soluções</a>
+                    <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-lg mb-2">Ver Valores e Soluções</a>
                 </div>
                 <div class="col-lg-4 text-center">
                     <div class="card border-0 shadow-sm p-4 bg-white rounded-4">
@@ -21,7 +21,7 @@
                         <p class="small text-muted mb-3">
                             Mais de 80% das pessoas pesquisam no Google antes de agendar a primeira consulta de psicoterapia. Estar presente com qualidade não é mais opcional.
                         </p>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary fw-bold">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary fw-bold">
                             Consulte Nossos Planos
                         </a>
                     </div>
@@ -40,7 +40,7 @@
                         Para muitos psicólogos, o primeiro passo no mundo digital começa nas redes sociais. No entanto, depender exclusivamente dessas plataformas é como construir uma casa em terreno alugado: as regras mudam constantemente, o alcance orgânico oscila e a atenção do leitor é disputada por milhares de distrações por segundo.
                     </p>
                     <p class="fs-5 text-secondary">
-                        Ter uma presença web consolidada por meio de um **site profissional e de alta qualidade** garante independência, autoridade de marca e a tranquilidade de transmitir o acolhimento necessário a quem procura apoio emocional. Quando um potencial paciente encontra uma estrutura moderna — seja focada em conversão via <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary text-decoration-underline">criação de landing page profissional</a> ou uma plataforma mais abrangente —, ele percebe imediatamente o seu rigor ético e compromisso profissional.
+                        Ter uma presença web consolidada por meio de um **site profissional e de alta qualidade** garante independência, autoridade de marca e a tranquilidade de transmitir o acolhimento necessário a quem procura apoio emocional. Quando um potencial paciente encontra uma estrutura moderna — seja focada em conversão via <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary text-decoration-underline">criação de landing page profissional</a> ou uma plataforma mais abrangente —, ele percebe imediatamente o seu rigor ético e compromisso profissional.
                     </p>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     <div class="p-3 border rounded-3 bg-light h-100 d-flex flex-column justify-content-center">
                         <h3 class="h6 fw-bold mb-2">🎯 Agendamento Rápido</h3>
                         <p class="small text-muted mb-2">Página de alta conversão para campanhas e WhatsApp.</p>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-auto">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-auto">
                             Ver Landing Pages
                         </a>
                     </div>
@@ -64,7 +64,7 @@
                     <div class="p-3 border rounded-3 bg-light h-100 d-flex flex-column justify-content-center">
                         <h3 class="h6 fw-bold mb-2">🌐 Presença de Autoridade</h3>
                         <p class="small text-muted mb-2">Site multipáginas com Blog e apresentação completa.</p>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-auto">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-auto">
                             Ver Sites Institucionais
                         </a>
                     </div>
@@ -73,7 +73,7 @@
                     <div class="p-3 border rounded-3 bg-light h-100 d-flex flex-column justify-content-center">
                         <h3 class="h6 fw-bold mb-2">💰 Orçamento Transparente</h3>
                         <p class="small text-muted mb-2">Tabela de valores sem surpresas para o seu consultório.</p>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-auto">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-auto">
                             Consultar Valores
                         </a>
                     </div>
@@ -121,7 +121,7 @@
                             <p class="text-secondary mb-3">
                                 Quando o paciente percebe que você entende a dor dele e oferece esclarecimentos de forma clara e respeitosa, a confiança é estabelecida antes mesmo do primeiro contato.
                             </p>
-                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm fw-bold">
+                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm fw-bold">
                                 Conheça os Sites com Blog para Publicar Artigos →
                             </a>
                         </div>
@@ -140,9 +140,9 @@
                                 Um visitante fragilizado não esperará um site lento carregar. Ter uma estrutura moderna, leve e totalmente adaptada para celulares é indispensável. 
                             </p>
                             <p class="text-secondary mb-3">
-                                Se o seu objetivo for divulgar um serviço hiperfocado ou realizar campanhas objetivas de anúncios no Google Ads, recomendamos a <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-decoration-underline text-primary">criação de landing page para psicólogos</a>, desenvolvida especificamente para garantir máxima velocidade e conversão imediata.
+                                Se o seu objetivo for divulgar um serviço hiperfocado ou realizar campanhas objetivas de anúncios no Google Ads, recomendamos a <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-decoration-underline text-primary">criação de landing page para psicólogos</a>, desenvolvida especificamente para garantir máxima velocidade e conversão imediata.
                             </p>
-                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm fw-bold">
+                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm fw-bold">
                                 Veja os Preços de Landing Pages →
                             </a>
                         </div>
@@ -163,7 +163,7 @@
                             <p class="text-secondary mb-3">
                                 Para otimizar seu site para buscas locais, inclua o nome da sua cidade no rodapé e nas descrições da sua página, integrando sempre seu endereço com o Google Maps para facilitar o acesso de futuros clientes ao consultório.
                             </p>
-                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm fw-bold">
+                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm fw-bold">
                                 Entenda como Funciona a Estrutura Local de Sites →
                             </a>
                         </div>
@@ -182,9 +182,9 @@
                                 De nada adianta ter um tráfego qualificado se o visitante não souber como agendar uma consulta. Disponibilize botões visíveis de agendamento via WhatsApp ou formulários de contato em locais estratégicos da página.
                             </p>
                             <p class="text-secondary mb-3">
-                                Para profissionais que desejam apresentar suas especialidades, artigos de blog e biografia completa de maneira robusta, o mais indicado é apostar no desenvolvimento de <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-decoration-underline text-primary">sites institucionais completos para psicólogos</a>.
+                                Para profissionais que desejam apresentar suas especialidades, artigos de blog e biografia completa de maneira robusta, o mais indicado é apostar no desenvolvimento de <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-decoration-underline text-primary">sites institucionais completos para psicólogos</a>.
                             </p>
-                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm fw-bold">
+                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm fw-bold">
                                 Compare os Valores de Cada Projeto →
                             </a>
                         </div>
@@ -213,10 +213,10 @@
                         <div class="me-3 fs-3 text-primary">🎯</div>
                         <div>
                             <h4 class="h6 fw-bold mb-1">
-                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-underline">Página Única (Landing Page)</a>
+                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-underline">Página Única (Landing Page)</a>
                             </h4>
                             <p class="small text-muted mb-1">Perfeita para campanhas no Google Ads, foco em um nicho específico de atendimento ou preenchimento rápido de horários na agenda.</p>
-                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="small text-primary fw-bold">Saber mais sobre Landing Pages →</a>
+                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="small text-primary fw-bold">Saber mais sobre Landing Pages →</a>
                         </div>
                     </div>
 
@@ -224,16 +224,16 @@
                         <div class="me-3 fs-3 text-primary">🌐</div>
                         <div>
                             <h4 class="h6 fw-bold mb-1">
-                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-underline">Site Institucional Multi-páginas</a>
+                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-underline">Site Institucional Multi-páginas</a>
                             </h4>
                             <p class="small text-muted mb-1">Ideal para criar um hub de conteúdo, manter um blog ativo, ranquear organicamente no Google e consolidar autoridade de longo prazo.</p>
-                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="small text-primary fw-bold">Saber mais sobre Sites Completo →</a>
+                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="small text-primary fw-bold">Saber mais sobre Sites Completo →</a>
                         </div>
                     </div>
 
                     <div class="p-3 bg-light border-start border-primary border-3 rounded-end">
                         <p class="small text-muted mb-0">
-                            Quer avaliar os custos de investimento para dar esse passo importante no seu consultório? Você pode consultar detalhadamente a nossa <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary text-decoration-underline">tabela de valores para sites e landing pages para psicólogos</a> e planejar o crescimento da sua carreira com segurança.
+                            Quer avaliar os custos de investimento para dar esse passo importante no seu consultório? Você pode consultar detalhadamente a nossa <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary text-decoration-underline">tabela de valores para sites e landing pages para psicólogos</a> e planejar o crescimento da sua carreira com segurança.
                         </p>
                     </div>
                 </div>
@@ -243,7 +243,7 @@
                     <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
                         <div class="card-header bg-primary text-white p-4 border-0 d-flex justify-content-between align-items-center">
                             <h3 class="h5 fw-bold mb-0 text-white">Resumo de Recursos & Estrutura</h3>
-                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-light text-primary fw-bold">Ver Preços</a>
+                            <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-light text-primary fw-bold">Ver Preços</a>
                         </div>
                         <div class="card-body p-4">
                             <div class="table-responsive">
@@ -278,14 +278,14 @@
                                         </tr>
                                         <tr>
                                             <td>Saiba Mais</td>
-                                            <td><a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="small fw-bold">Ver Modelo</a></td>
-                                            <td><a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="small fw-bold">Ver Modelo</a></td>
+                                            <td><a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="small fw-bold">Ver Modelo</a></td>
+                                            <td><a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="small fw-bold">Ver Modelo</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="text-center mt-3 pt-3 border-top">
-                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 fw-bold">
+                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 fw-bold">
                                     Acessar Tabela Completa de Investimento
                                 </a>
                             </div>
@@ -331,7 +331,7 @@
                             </h3>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body text-secondary">
-                                    Os valores variam conforme a complexidade e o objetivo do projeto. É possível iniciar com uma <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">landing page pontual</a> ou optar por um <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">site institucional completo</a>. Você pode conferir os orçamentos detalhados acessando a <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-decoration-underline text-primary">página de valores para sites e landing pages de psicologia</a>.
+                                    Os valores variam conforme a complexidade e o objetivo do projeto. É possível iniciar com uma <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">landing page pontual</a> ou optar por um <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">site institucional completo</a>. Você pode conferir os orçamentos detalhados acessando a <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-decoration-underline text-primary">página de valores para sites e landing pages de psicologia</a>.
                                 </div>
                             </div>
                         </div>
@@ -366,13 +366,13 @@
                         Não deixe que potenciais pacientes fiquem sem encontrar o acolhimento que você oferece. Construa um site alinhado com a sua essência e os valores da psicologia.
                     </p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" 
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            class="btn btn-light btn-lg px-4 py-3 fw-bold text-primary rounded-pill shadow">
                            Ver Tabela de Preços e Planos
                         </a>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" 
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            class="btn btn-outline-light btn-lg px-4 py-3 fw-bold rounded-pill">

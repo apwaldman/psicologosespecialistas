@@ -13,7 +13,7 @@
 <!-- ============================================ -->
 <!-- CANONICAL -->
 <!-- ============================================ -->
-<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php">
+<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos">
 
 <!-- ============================================ -->
 <!-- OPEN GRAPH -->
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Valores de Sites e Landing Pages para Psicólogos | Planos e Preços">
 <meta property="og:description" content="Veja os planos e preços para criação de landing pages e sites completos para psicólogos, com opções em subdomínio ou domínio próprio e informações sobre mensalidade, manutenção e custos adicionais.">
-<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php">
+<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos">
 <meta property="og:image" content="<?php echo IMAGE_PATH; ?>/logo-psicologos-especialistas.png">
 <meta property="og:image:width" content="<?php echo DEFAULT_IMAGE_WIDTH; ?>">
 <meta property="og:image:height" content="<?php echo DEFAULT_IMAGE_HEIGHT; ?>">

@@ -1,0 +1,110 @@
+# ============================================
+# ROBOTS.TXT - Psicólogos Especialistas
+# ============================================
+
+User-agent: *
+Allow: /
+
+# ============================================
+# SITEMAP
+# ============================================
+Sitemap: https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/sitemap.xml
+
+# ============================================
+# BLOQUEAR PASTAS E ARQUIVOS DESNECESSÁRIOS
+# ============================================
+
+# Bloquear acesso a includes e arquivos de sistema
+Disallow: /includes/
+Disallow: /inc/
+Disallow: /config/
+Disallow: /erros/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /tmp/
+
+# Bloquear arquivos de configuração
+Disallow: /*.ini$
+Disallow: /*.env$
+Disallow: /*.conf$
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.bak$
+Disallow: /*.old$
+
+# Bloquear arquivos de sistema
+Disallow: /*.php~
+Disallow: /*.php.bak
+Disallow: /*.swp
+Disallow: /.*.swp
+
+# Bloquear pastas de cache
+Disallow: /cache/
+Disallow: /caches/
+
+# Bloquear arquivos de upload não públicos
+Disallow: /uploads/private/
+Disallow: /uploads/temp/
+
+# Bloquear arquivos de desenvolvimento
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /composer/
+Disallow: /package.json
+Disallow: /composer.json
+Disallow: /composer.lock
+
+# Bloquear arquivos de backup automáticos
+Disallow: /*.tar$
+Disallow: /*.tar.gz$
+Disallow: /*.zip$
+Disallow: /*.rar$
+
+# ============================================
+# CONFIGURAÇÕES ESPECÍFICAS PARA BOTS
+# ============================================
+
+# Googlebot - rastreamento padrão
+User-agent: Googlebot
+Allow: /
+Disallow: /*.php$
+Disallow: /*.htm$
+Disallow: /*.html$
+Crawl-delay: 1
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /*.php$
+Disallow: /*.htm$
+Disallow: /*.html$
+Crawl-delay: 1
+
+# ============================================
+# REGRAS DE OTIMIZAÇÃO DE RASTREAMENTO
+# ============================================
+
+# Reduzir crawling de parâmetros dinâmicos
+Disallow: /*?*
+Disallow: /*&*
+
+# Evitar duplicidade de conteúdo
+Disallow: /*.php$
+Disallow: /*.htm$
+Disallow: /*.html$
+
+# ============================================
+# BLOQUEAR BOTS MALICIOSOS (OPCIONAL)
+# ============================================
+
+# Se quiser bloquear bots específicos, descomente:
+# User-agent: *
+# Disallow: /
+# User-agent: Googlebot
+# Allow: /
+# User-agent: AhrefsBot
+# Disallow: /
+# User-agent: SemrushBot
+# Disallow: /
+# User-agent: MJ12bot
+# Disallow: /

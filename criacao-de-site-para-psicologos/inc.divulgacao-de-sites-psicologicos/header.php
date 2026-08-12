@@ -13,7 +13,7 @@
 <!-- ============================================ -->
 <!-- CANONICAL -->
 <!-- ============================================ -->
-<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgacao-de-sites-psicologicos.php">
+<link rel="canonical" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgacao-de-sites-psicologicos">
 
 <!-- ============================================ -->
 <!-- OPEN GRAPH -->
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Divulgação de Sites para Psicólogos: SEO, Backlinks e Google Maps">
 <meta property="og:description" content="Descubra como a divulgação do site do psicólogo pode contribuir para sua presença digital e estratégia de SEO. Conheça serviços de backlink na página Psicólogos Especialistas e criação de Perfil da Empresa no Google para fortalecer a visibilidade online.">
-<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgacao-de-sites-psicologicos.php">
+<meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgacao-de-sites-psicologicos">
 <meta property="og:image" content="<?php echo IMAGE_PATH; ?>/logo-psicologos-especialistas.png">
 <meta property="og:image:width" content="<?php echo DEFAULT_IMAGE_WIDTH; ?>">
 <meta property="og:image:height" content="<?php echo DEFAULT_IMAGE_HEIGHT; ?>">

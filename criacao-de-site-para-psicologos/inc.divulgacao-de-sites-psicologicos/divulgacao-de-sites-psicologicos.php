@@ -13,7 +13,7 @@
                         Criar um site é apenas o primeiro passo. Descubra como posicionar seu nome na busca local, construir autoridade com backlinks estratégicos e divulgar seu consultório para atrair pacientes com consistência.
                     </p>
                     <a href="#google-maps" class="btn btn-primary btn-lg me-2 mb-2">Dominar o Google Maps</a>
-                    <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-lg mb-2">Divulgar no Portal</a>
+                    <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-lg mb-2">Divulgar no Portal</a>
                 </div>
                 <div class="col-lg-4 text-center">
                     <div class="card border-0 shadow-sm p-4 bg-white rounded-4">
@@ -22,7 +22,7 @@
                         <p class="small text-muted mb-3">
                             A maioria dos pacientes pesquisa por "Psicólogo perto de mim". Estar ativo no Google Maps aumenta drasticamente as chamadas e agendamentos diretos.
                         </p>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary fw-bold">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary fw-bold">
                             Criar Perfil Otimizado
                         </a>
                     </div>
@@ -53,7 +53,7 @@
                             <h3 class="h6 fw-bold mb-1 text-dark">Quer colocar seu consultório em destaque no mapa?</h3>
                             <p class="small text-muted mb-0">Contrate uma estruturação profissional de perfil para atrair buscas locais com eficiência.</p>
                         </div>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps.php" target="_blank" rel="noopener noreferrer" class="btn btn-primary fw-bold">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps" target="_blank" rel="noopener noreferrer" class="btn btn-primary fw-bold">
                             Criação de Perfil no Google Maps →
                         </a>
                     </div>
@@ -75,7 +75,7 @@
                     <p class="text-secondary mb-4">
                         É por isso que aparecer e ter o seu link inserido dentro do portal <strong class="text-dark">Psicólogos Especialistas</strong> (<a href="https://psicologosespecialistas.com.br" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-underline">psicologosespecialistas.com.br</a>) é uma virada de chave para a autoridade do seu consultório.
                     </p>
-                    <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas.php" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-lg fw-bold shadow-sm">
+                    <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-lg fw-bold shadow-sm">
                         Divulgue Seu Site no Portal Especialistas
                     </a>
                 </div>
@@ -103,7 +103,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 fw-bold">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 fw-bold">
                             Saber Como Fazer Parte do Portal
                         </a>
                     </div>
@@ -130,7 +130,7 @@
                         <div class="fs-1 mb-2">📍</div>
                         <h3 class="h6 fw-bold mb-2">1. Conecte ao Google Maps</h3>
                         <p class="small text-muted mb-3">Vincule seu novo endereço web ao perfil de mapas para direcionar pacientes locais diretamente ao agendamento.</p>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps.php" target="_blank" rel="noopener noreferrer" class="small fw-bold text-primary mt-auto">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps" target="_blank" rel="noopener noreferrer" class="small fw-bold text-primary mt-auto">
                             Otimizar Perfil no Maps →
                         </a>
                     </div>
@@ -142,7 +142,7 @@
                         <div class="fs-1 mb-2">🔗</div>
                         <h3 class="h6 fw-bold mb-2">2. Divulgue no Nosso Portal</h3>
                         <p class="small text-muted mb-3">Ganhe autoridade de backlinks incluindo seu link direto na página de parceiros do Psicólogos Especialistas.</p>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas.php" target="_blank" rel="noopener noreferrer" class="small fw-bold text-primary mt-auto">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas" target="_blank" rel="noopener noreferrer" class="small fw-bold text-primary mt-auto">
                             Cadastrar no Portal →
                         </a>
                     </div>
@@ -154,7 +154,7 @@
                         <div class="fs-1 mb-2">📢</div>
                         <h3 class="h6 fw-bold mb-2">3. Campanhas Focadas</h3>
                         <p class="small text-muted mb-3">Anuncie no Google Ads apontando para uma página de alta conversão construída sob medida para seu nicho.</p>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="small fw-bold text-primary mt-auto">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="small fw-bold text-primary mt-auto">
                             Ver Landing Pages →
                         </a>
                     </div>
@@ -166,7 +166,7 @@
                         <div class="fs-1 mb-2">📲</div>
                         <h3 class="h6 fw-bold mb-2">4. Redes & Assinaturas</h3>
                         <p class="small text-muted mb-3">Insira o link na bio do Instagram, na assinatura de e-mail e em cartões virtuais de atendimento via WhatsApp.</p>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="small fw-bold text-primary mt-auto">
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="small fw-bold text-primary mt-auto">
                             Conhecer Sites Completos →
                         </a>
                     </div>
@@ -189,7 +189,7 @@
                     <p class="text-secondary mb-4">
                         Consulte nossas opções de pacotes e entenda o custo-benefício de implementar cada um desses pilares no seu consultório.
                     </p>
-                    <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-primary fw-bold px-4 py-2">
+                    <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-primary fw-bold px-4 py-2">
                         Ver Tabela Completa de Valores
                     </a>
                 </div>
@@ -211,28 +211,28 @@
                                             <td class="fw-bold">Google Maps</td>
                                             <td>Captar pacientes da sua cidade / bairro</td>
                                             <td>
-                                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Criar Perfil</a>
+                                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Criar Perfil</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="fw-bold">Portal Especialistas</td>
                                             <td>Gerar backlinks e tráfego direto qualificado</td>
                                             <td>
-                                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Divulgar Site</a>
+                                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Divulgar Site</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="fw-bold">Landing Page</td>
                                             <td>Converter cliques de anúncios em agendamentos</td>
                                             <td>
-                                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Ver Modelos</a>
+                                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Ver Modelos</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="fw-bold">Site Institucional</td>
                                             <td>Consolidar autoridade de longo prazo com blog</td>
                                             <td>
-                                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Ver Estrutura</a>
+                                                <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-sites-para-psicologos" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Ver Estrutura</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -266,7 +266,7 @@
                             </h3>
                             <div id="collapseMaps" class="accordion-collapse collapse show" data-bs-parent="#accordionDivulgacao">
                                 <div class="accordion-body text-secondary">
-                                    Mesmo atendendo exclusivamente online, ter um perfil verificado no Google Maps fortalece sua presença regional e permite que pessoas da sua cidade encontrem seu serviço com maior grau de confiança. Você pode contratar a <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">criação de perfil no Google Maps</a> configurada para a sua área de atendimento.
+                                    Mesmo atendendo exclusivamente online, ter um perfil verificado no Google Maps fortalece sua presença regional e permite que pessoas da sua cidade encontrem seu serviço com maior grau de confiança. Você pode contratar a <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">criação de perfil no Google Maps</a> configurada para a sua área de atendimento.
                                 </div>
                             </div>
                         </div>
@@ -280,7 +280,7 @@
                             </h3>
                             <div id="collapseBacklinks" class="accordion-collapse collapse" data-bs-parent="#accordionDivulgacao">
                                 <div class="accordion-body text-secondary">
-                                    O portal <a href="https://psicologosespecialistas.com.br" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">psicologosespecialistas.com.br</a> já possui histórico e autoridade perante o Google. Ao incluir seu link na página de divulgação, seu site recebe um backlink valioso do setor de psicologia, sinalizando relevância imediata para os mecanismos de busca. Confira como <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">divulgar seu site em nossa página dedicada</a>.
+                                    O portal <a href="https://psicologosespecialistas.com.br" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">psicologosespecialistas.com.br</a> já possui histórico e autoridade perante o Google. Ao incluir seu link na página de divulgação, seu site recebe um backlink valioso do setor de psicologia, sinalizando relevância imediata para os mecanismos de busca. Confira como <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">divulgar seu site em nossa página dedicada</a>.
                                 </div>
                             </div>
                         </div>
@@ -294,7 +294,7 @@
                             </h3>
                             <div id="collapseValores" class="accordion-collapse collapse" data-bs-parent="#accordionDivulgacao">
                                 <div class="accordion-body text-secondary">
-                                    Mantemos total transparência nos orçamentos. Você pode verificar todos os planos para criação de landing pages, sites completos e otimizações acessando a <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos.php" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">tabela de valores de sites para psicólogos</a>.
+                                    Mantemos total transparência nos orçamentos. Você pode verificar todos os planos para criação de landing pages, sites completos e otimizações acessando a <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/valores-sites-e-landingpage-para-psicologos" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">tabela de valores de sites para psicólogos</a>.
                                 </div>
                             </div>
                         </div>
@@ -315,13 +315,13 @@
                         Combine a criação de um site de alta performance com estratégias de SEO local e backlinks no maior portal especializado.
                     </p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas.php" 
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/divulgue-seu-site-na-pagina-psicologos-especialistas" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            class="btn btn-light btn-lg px-4 py-3 fw-bold text-primary rounded-pill shadow">
                            Divulgar Meu Site no Portal
                         </a>
-                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps.php" 
+                        <a href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/criacao-de-perfil-no-google-maps" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            class="btn btn-outline-light btn-lg px-4 py-3 fw-bold rounded-pill">
