@@ -19,9 +19,12 @@
     <!-- ============================================ -->
     <!-- FAVICON -->
     <!-- ============================================ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://psicologosespecialistas.com.br/php-include/elementos-compartilhados/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://psicologosespecialistas.com.br/php-include/elementos-compartilhados/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://psicologosespecialistas.com.br/php-include/elementos-compartilhados/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/favicon/android-chrome-512x512.png">
     <meta name="msapplication-TileColor" content="<?php echo THEME_COLOR; ?>">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     
