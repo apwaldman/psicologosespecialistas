@@ -4,20 +4,15 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Product",
+      "@type": "Service",
       "name": "Backlink no Portal Psicólogos Especialistas",
-      "description": "Serviço de link de autoridade no portal Psicólogos Especialistas para otimização de SEO.",
-      "brand": {
-        "@type": "Brand",
+      "description": "Serviço de link de autoridade no portal Psicólogos Especialistas para otimização de SEO. Taxa única R$ 100,00 + R$ 30,00 de manutenção mensal (Gratuito para clientes de criação de sites).",
+      "provider": {
+        "@type": "Organization",
         "name": "Psicólogos Especialistas"
       },
-      "offers": {
-        "@type": "Offer",
-        "price": "100.00",
-        "priceCurrency": "BRL",
-        "priceValidUntil": "2026-12-31",
-        "description": "Taxa única de R$ 100,00 para inclusão do perfil + R$ 30,00 de manutenção mensal (Gratuito para clientes de criação de sites)."
-      }
+      "serviceType": "Backlink e SEO",
+      "areaServed": "Brasil"
     },
     {
       "@type": "FAQPage",
@@ -27,18 +22,35 @@
           "name": "O que é um Backlink?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "É um link em um site externo apontando para o seu site, funcionando como um voto de confiança para o algoritmo do Google."
+            "text": "Um backlink é uma ligação de texto em um site externo que aponta diretamente para o seu site. Para o Google, cada backlink de qualidade funciona como um voto de confiança e recomendação na web. Quanto mais backlinks de sites confiáveis apontarem para você, maior será a sua autoridade e relevância no mercado digital."
           }
         },
         {
           "@type": "Question",
-          "name": "Por que backlinks do nicho de psicologia são mais valiosos?",
+          "name": "Por que backlinks de sites do nicho de psicologia são mais valiosos?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Porque o Google prioriza a relevância temática do contexto. Um link vindo de um portal de saúde mental transmite maior autoridade de SEO."
+            "text": "O algoritmo do Google avalia a relevância do contexto. Receber um link de um portal focado exclusivamente em psicologia transmite muito mais autoridade do que links vindos de sites genéricos, fazendo sua página ganhar posições no ranking de pesquisas. O Google entende que seu conteúdo está relacionado ao tema saúde mental e valoriza essa conexão semântica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como o backlink impulsiona meu negócio na prática?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quanto mais relevante o Google considera o seu site, mais alto ele aparece quando um potencial paciente pesquisa por termos de terapia. Além de subir no ranking orgânico, você também recebe tráfego direto de pessoas que navegam no portal de especialistas e clicam no seu link, gerando leads qualificados para seu consultório."
           }
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "name": "Backlinks Estratégicos no Portal Psicólogos Especialistas",
+      "description": "Aumente a relevância do seu site ou landing page no algoritmo do Google com links de alta autoridade vindos de um portal exclusivo do nicho da psicologia.",
+      "about": {
+        "@type": "Service",
+        "name": "Backlink no Portal Psicólogos Especialistas"
+      }
     }
   ]
 }

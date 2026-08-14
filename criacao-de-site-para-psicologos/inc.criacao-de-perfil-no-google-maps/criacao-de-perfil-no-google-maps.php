@@ -12,25 +12,25 @@
 </section>
 
 <!-- Card de Preço / Investimento -->
-<section id="valores-maps" class="services" itemscope itemtype="https://schema.org/Product">
+<section id="valores-maps" class="services">
     <div class="container">
         <div class="section-header">
-            <h2 itemprop="name">Investimento do Perfil no Google</h2>
-            <p itemprop="description">Configuração completa e profissional do seu Perfil da Empresa no Google.</p>
+            <h2>Investimento do Perfil no Google</h2>
+            <p>Configuração completa e profissional do seu Perfil da Empresa no Google.</p>
         </div>
 
         <div style="max-width: 600px; margin: 0 auto;">
-            <article class="service-card" itemscope itemtype="https://schema.org/Service" style="border: 2px solid var(--accent);">
+            <article class="service-card" style="border: 2px solid var(--accent);">
                 <div class="service-icon">📍</div>
                 <div class="service-content">
-                    <h3 itemprop="name">Perfil Profissional no Google Maps</h3>
+                    <h3>Perfil Profissional no Google Maps</h3>
                     <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">
                         Visibilidade em: <code>Google Maps & Pesquisa Local do Google</code>
                     </p>
-                    <p itemprop="description">Otimização completa do seu perfil para que potenciais pacientes encontrem seu consultório, endereço, horário de atendimento e contatos facilmente.</p>
+                    <p>Otimização completa do seu perfil para que potenciais pacientes encontrem seu consultório, endereço, horário de atendimento e contatos facilmente.</p>
 
-                    <div style="background-color: var(--bg-light); padding: 20px; border-radius: 8px; margin: 20px 0;" itemscope itemtype="https://schema.org/Offer">
-                        <p style="margin-bottom: 0;"><strong>Valor da criação do perfil:</strong> <span style="color: var(--accent); font-weight: 700; font-size: 1.3rem;" itemprop="price">R$ 250,00</span> <small itemprop="priceCurrency" content="BRL">(Taxa única)</small></p>
+                    <div style="background-color: var(--bg-light); padding: 20px; border-radius: 8px; margin: 20px 0;">
+                        <p style="margin-bottom: 0;"><strong>Valor da criação do perfil:</strong> <span style="color: var(--accent); font-weight: 700; font-size: 1.3rem;">R$ 250,00</span> <small>(Taxa única)</small></p>
                     </div>
 
                     <ul style="padding-left: 20px; margin-bottom: 20px; color: var(--text-muted); font-size: 0.95rem;">
@@ -40,7 +40,7 @@
                     </ul>
 
                     <a href="https://wa.me/5551998001919?text=Olá!%20Quero%20contratar%20a%20Criação%20de%20Perfil%20no%20Google" 
-                       class="btn btn-primary" style="width: 100%; text-align: center;" itemprop="url">
+                       class="btn btn-primary" style="width: 100%; text-align: center;">
                        Criar Meu Perfil no Google
                     </a>
                 </div>

@@ -12,47 +12,45 @@
 </section>
 
 <!-- Card de Preço / Investimento -->
-<section id="valores-wordpress" class="services" itemscope itemtype="https://schema.org/Product">
+<section id="valores-wordpress" class="services">
     <div class="container">
         <div class="section-header">
-            <h2 itemprop="name">Investimento e Detalhes do Serviço</h2>
-            <p itemprop="description">Transparência em todas as taxas para a criação do seu site institucional em WordPress.</p>
+            <h2>Investimento e Detalhes do Serviço</h2>
+            <p>Transparência em todas as taxas para a criação do seu site institucional em WordPress.</p>
         </div>
 
         <div style="max-width: 600px; margin: 0 auto;">
-            <article class="service-card" itemscope itemtype="https://schema.org/Service" style="border: 2px solid var(--accent);">
+            <article class="service-card" style="border: 2px solid var(--accent);">
                 <div class="service-icon">🌐</div>
                 <div class="service-content">
-                    <h3 itemprop="name">Site WordPress Institucional</h3>
+                    <h3>Site WordPress Institucional</h3>
                     <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">
                         Endereço do seu site: <code>seu-nome.com.br</code>
                     </p>
-                    <p itemprop="description">Você não se preocupa com hospedagem de sites, paga apenas as mensalidades e as manutenções quando você precisar.</p>
+                    <p>Você não se preocupa com hospedagem de sites, paga apenas as mensalidades e as manutenções quando você precisar.</p>
 
-                    <div style="background-color: var(--bg-light); padding: 20px; border-radius: 8px; margin: 20px 0;" itemscope itemtype="https://schema.org/Offer">
-                        <p style="margin-bottom: 8px;"><strong>Taxa única de criação do site:</strong> <span style="color: var(--accent); font-weight: 700; font-size: 1.2rem;" itemprop="price">R$ 1.000,00</span> <small>(03 páginas inclusas)</small></p>
-                        <p style="margin-bottom: 8px;"><strong>Valor da mensalidade:</strong> <span itemprop="price">R$ 80,00</span></p>
-                        <p style="margin-bottom: 8px;"><strong>Valor da instalação:</strong> <span itemprop="price">R$ 120,00</span> <br><small style="color: var(--text-muted);">(inserção dos arquivos do site no domínio e mapeamento do DNS na registro.br)</small></p>
+                    <div style="background-color: var(--bg-light); padding: 20px; border-radius: 8px; margin: 20px 0;">
+                        <p style="margin-bottom: 8px;"><strong>Taxa única de criação do site:</strong> <span style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">R$ 1.000,00</span> <small>(03 páginas inclusas)</small></p>
+                        <p style="margin-bottom: 8px;"><strong>Valor da mensalidade:</strong> R$ 80,00</p>
+                        <p style="margin-bottom: 8px;"><strong>Valor da instalação:</strong> R$ 120,00 <br><small style="color: var(--text-muted);">(inserção dos arquivos do site no domínio e mapeamento do DNS na registro.br)</small></p>
                         <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-muted);"><strong>Valor da manutenção:</strong> A partir de R$ 120,00 (paga apenas quando precisar mudar algo no site).</p>
-                        <meta itemprop="priceCurrency" content="BRL">
                     </div>
 
                     <a href="https://wa.me/5551998001919?text=Olá!%20Gostaria%20de%20contratar%20a%20Criação%20de%20Site%20WordPress" 
-                       class="btn btn-primary" style="width: 100%; text-align: center;" itemprop="url">
+                       class="btn btn-primary" style="width: 100%; text-align: center;">
                        Contratar Site WordPress
                     </a>
                 </div>
             </article>
 
             <!-- Custos Externos -->
-            <div style="margin-top: 25px; background: white; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.9rem;" itemscope itemtype="https://schema.org/Offer">
+            <div style="margin-top: 25px; background: white; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.9rem;">
                 <h4 style="color: var(--primary); margin-bottom: 8px;">ℹ️ Outros Valores (Custos de Terceiros):</h4>
                 <ul style="padding-left: 20px; color: var(--text-muted);">
                     <li><strong>Páginas Adicionais:</strong> O valor inicial cobre 03 páginas. Consulte valores caso necessite de mais páginas.</li>
-                    <li><strong>Valor do Domínio:</strong> <span itemprop="price">R$ 40,00</span> (pagamento anual, comprado diretamente no <a href="https://registro.br/" target="_blank" rel="noopener">registro.br</a>).</li>
-                    <li><strong>Valor da Hospedagem:</strong> Em torno de <span itemprop="price">R$ 200,00</span>/ano (Recomendamos a KingHost ou Hostgator).</li>
+                    <li><strong>Valor do Domínio:</strong> R$ 40,00 (pagamento anual, comprado diretamente no <a href="https://registro.br/" target="_blank" rel="noopener">registro.br</a>).</li>
+                    <li><strong>Valor da Hospedagem:</strong> Em torno de R$ 200,00/ano (Recomendamos a KingHost ou Hostgator).</li>
                 </ul>
-                <meta itemprop="priceCurrency" content="BRL">
             </div>
         </div>
     </div>
