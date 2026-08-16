@@ -23,7 +23,7 @@
     <meta property="og:title" content="Site para Psicólogo: Página Profissional e Landing Page que Atrai Pacientes">
     <meta property="og:description" content="Crie um site profissional ou landing page para psicólogo. Design focado em conversão, integração com agenda online e SEO local para atrair mais pacientes.">
     <meta property="og:url" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/index">
-    <meta property="og:image" content="<?php echo IMAGE_PATH; ?>/logo-psicologos-especialistas.png">
+    <meta property="og:image" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/assets/images/index/desenvolvimento-de-sites-e-de-landing-pages-para-psicologos.png">
     <meta property="og:image:width" content="<?php echo DEFAULT_IMAGE_WIDTH; ?>">
     <meta property="og:image:height" content="<?php echo DEFAULT_IMAGE_HEIGHT; ?>">
     <meta property="og:site_name" content="Psicólogos Especialistas - Sites para Psicólogos">
@@ -36,7 +36,7 @@
     <meta name="twitter:site" content="<?php echo TWITTER_SITE; ?>">
     <meta name="twitter:title" content="Site para Psicólogo: Página Profissional e Landing Page que Atrai Pacientes">
     <meta name="twitter:description" content="Crie um site profissional ou landing page para psicólogo. Design focado em conversão, integração com agenda online e SEO local para atrair mais pacientes.">
-    <meta name="twitter:image" content="<?php echo IMAGE_PATH; ?>/logo-psicologos-especialistas.png">
+    <meta name="twitter:image" content="https://criacao-de-site-para-psicologos.psicologosespecialistas.com.br/assets/images/index/desenvolvimento-de-sites-e-de-landing-pages-para-psicologos.png">
     
     <!-- ============================================ -->
     <!-- SCHEMA MARKUP (JSON-LD) -->

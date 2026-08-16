@@ -67,8 +67,8 @@
         },
         "sameAs": [
             "<?php echo INSTAGRAM_URL; ?>",
-            "<?php echo YOUTUBE_URL; ?>",
-            "<?php echo LINKEDIN_URL; ?>"
+            "<?php echo YOUTUBE_URL; ?>"
+            
         ]
     }
 }
