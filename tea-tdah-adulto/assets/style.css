@@ -1,1 +1,295 @@
-.accordion-body,body{background-color:#f8f9fa}.accordion-button{font-weight:600;transition:.3s}.accordion-button:not(.collapsed){background-color:#9fd8bd;box-shadow:inset 0 -1px 0 rgba(0,0,0,.1)}.accordion-button:hover{background-color:#146c43!important}.accordion-button:focus{box-shadow:0 0 0 .25rem rgba(141,230,188,.25)}.accordion-body{border-left:4px solid #46af7e}.card-question{margin-bottom:1.5rem;border:1px solid rgba(0,0,0,.125);border-radius:.5rem;box-shadow:0 .125rem .25rem rgba(0,0,0,.075);transition:transform .2s ease-in-out,box-shadow .2s ease-in-out;height:100%;display:flex;flex-direction:column}.card-question:hover{transform:translateY(-5px);box-shadow:0 .5rem 1rem rgba(0,0,0,.15)}.card-header-custom{background-color:#e9ecef;padding:1rem 1.25rem;border-bottom:1px solid rgba(0,0,0,.125);border-top-left-radius:calc(.5rem - 1px);border-top-right-radius:calc(.5rem - 1px)}.card-header-custom h3{margin-bottom:0;font-size:1.25rem;color:#495057}.card-body-custom{padding:1.25rem;background-color:#fff;border-bottom-left-radius:calc(.5rem - 1px);border-bottom-right-radius:calc(.5rem - 1px);display:flex;flex-direction:column;flex-grow:1;justify-content:space-between}.card-body-custom p{margin-bottom:0;color:#6c757d;line-height:1.6;flex-grow:1}
+/* ==========================================================================
+   PALETA DE CORES PASTEIS E VARIÁVEIS DE DESIGN
+   ========================================================================== */
+:root {
+  --bg-main: #fbfbf9;             /* Fundo geral areia pastel bem claro */
+  --bg-card: #ffffff;             /* Fundo de cards em branco puro */
+  --bg-header-card: #f2f7f4;      /* Verde/cinza pastel suave */
+  --primary-pastel: #81c784;      /* Verde pastel refinado */
+  --primary-pastel-hover: #66bb6a;/* Verde pastel mais escuro para hover */
+  --accent-pastel: #a3e4d7;       /* Menta pastel */
+  --text-primary: #37474f;        /* Grafite suave */
+  --text-secondary: #607d8b;      /* Cinza médio suave */
+  --border-light: #e0e6e3;        /* Linhas e bordas sutis */
+  --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.03); /* Sombra suave */
+}
+
+/* ==========================================================================
+   ESTILOS GERAIS E TIPOGRAFIA (RESPIRO E ESPAÇAMENTO DE TEXTO)
+   ========================================================================== */
+body, .accordion-body {
+  background-color: var(--bg-main) !important;
+  color: var(--text-primary) !important;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+/* Espaçamento generoso entre parágrafos */
+p {
+  margin-bottom: 1.5rem !important;
+  line-height: 1.8 !important;
+  color: var(--text-secondary);
+}
+
+.lead {
+  line-height: 1.85 !important;
+  font-size: 1.15rem;
+  margin-bottom: 2rem !important;
+}
+
+/* Hierarquia de Títulos */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.4 !important;
+  margin-bottom: 1.25rem !important;
+  letter-spacing: -0.01em;
+}
+
+h1.display-6, h2.display-6 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Respiro de Listas */
+ul.list-unstyled {
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 0.85rem !important;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+}
+
+ul.list-unstyled li i {
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+/* Linhas Divisórias Suaves */
+hr {
+  border-top: 1px solid var(--border-light);
+  opacity: 0.6;
+  margin: 4rem 0 !important;
+}
+
+/* ==========================================================================
+   BARRA DE NAVEGAÇÃO
+   ========================================================================== */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-soft);
+  padding: 1rem 1.5rem !important;
+}
+
+.navbar .nav-link {
+  color: var(--text-primary) !important;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem !important;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary-pastel-hover) !important;
+}
+
+/* ==========================================================================
+   ACCORDION (PERGUNTAS RECOLHÍVEIS / CURIOSIDADES)
+   ========================================================================== */
+.accordion-item {
+  border: 1px solid var(--border-light) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  margin-bottom: 1.2rem !important;
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: var(--text-primary) !important;
+  background-color: var(--bg-header-card) !important;
+  border: none;
+  padding: 1.2rem 1.5rem !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--accent-pastel) !important;
+  color: var(--text-primary) !important;
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  background-color: #d1f2eb !important;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(163, 228, 215, 0.4) !important;
+}
+
+.accordion-body {
+  background-color: var(--bg-card) !important;
+  border-left: 4px solid var(--primary-pastel);
+  padding: 1.75rem !important;
+  line-height: 1.8 !important;
+}
+
+/* ==========================================================================
+   CARDS DE PERGUNTAS / SERVIÇOS
+   ========================================================================== */
+.card-question {
+  margin-bottom: 2rem !important;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  background-color: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-question:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card-header-custom {
+  background-color: var(--bg-header-card);
+  padding: 1.25rem 1.5rem !important;
+  border-bottom: 1px solid var(--border-light);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-header-custom h3 {
+  margin-bottom: 0 !important;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.4 !important;
+}
+
+.card-body-custom {
+  padding: 1.5rem !important;
+  background-color: var(--bg-card);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.card-body-custom p {
+  margin-bottom: 0 !important;
+  color: var(--text-secondary);
+  line-height: 1.75 !important;
+  flex-grow: 1;
+}
+
+/* ==========================================================================
+   CARDS DE DEPOIMENTOS
+   ========================================================================== */
+.card {
+  border-radius: 12px !important;
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-light) !important;
+  box-shadow: var(--shadow-soft) !important;
+  padding: 0.5rem;
+}
+
+.card .card-body {
+  padding: 1.5rem !important;
+}
+
+.card-text {
+  line-height: 1.8 !important;
+  margin-bottom: 1.25rem !important;
+}
+
+/* ==========================================================================
+   BOTÕES E ELEMENTOS DE AÇÃO
+   ========================================================================== */
+.btn-success {
+  background-color: var(--primary-pastel) !important;
+  border-color: var(--primary-pastel) !important;
+  color: #ffffff !important;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem !important;
+  transition: all 0.2s ease;
+}
+
+.btn-success:hover {
+  background-color: var(--primary-pastel-hover) !important;
+  border-color: var(--primary-pastel-hover) !important;
+  transform: translateY(-1px);
+}
+
+.btn-danger {
+  background-color: #f2b6b6 !important;
+  border-color: #f2b6b6 !important;
+  color: #4a2c2c !important;
+  border-radius: 8px;
+  padding: 0.5rem 1.25rem !important;
+}
+
+/* Destaques e Utilitários de Texto */
+.text-success, .fas.fa-check-circle.text-success {
+  color: var(--primary-pastel) !important;
+}
+
+.text-secondary, .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* ==========================================================================
+   BOTÃO VOLTAR AO TOPO (CIRCULAR E CENTRALIZADO CORRETAMENTE)
+   ========================================================================== */
+.back-to-top {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  background-color: var(--primary-pastel) !important;
+  color: #ffffff !important;
+  
+  /* Centralização rígida via Flexbox */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  
+  padding: 0 !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+  box-shadow: var(--shadow-soft) !important;
+  transition: background-color 0.2s ease, transform 0.2s ease !important;
+  z-index: 1000 !important;
+}
+
+/* Reset completo das regras internas de linha e pseudo-elementos do FontAwesome */
+.back-to-top i,
+.back-to-top i::before {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.1rem !important;
+  line-height: 1 !important;
+  height: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+}
+
+.back-to-top:hover {
+  background-color: var(--primary-pastel-hover) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}

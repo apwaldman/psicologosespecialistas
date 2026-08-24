@@ -102,7 +102,7 @@
                         </div>
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check-circle text-success me-2"></i> Diagnóstico Tardio TEA e TDAH</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Pode ser avaliação (diagnóstico) e tratamento tardio de TEA e de TDAH.</li>
                                 <li><i class="fas fa-check-circle text-success me-2"></i> Avaliação Neuropsicológica</li>
                                 <li><i class="fas fa-check-circle text-success me-2"></i> Supervisão Clínica para Psicólogos</li>
                             </ul>
@@ -191,7 +191,7 @@
         </div>
         <div class="col-sm-9 col-md-9">
             <div>
-                <h2>Capítulo: A “inclusão” da Criança Autista no Ambiente Escolar</h2> 
+                <h2>Capítulo: A Desvalidação da Criança Autista no Ambiente Escolar. </h2> 
                 <p>O capítulo aborda a inclusão da criança autista no ambiente escolar, destacando que, apesar dos avanços legais e educacionais, muitas crianças com TEA ainda vivenciam a desvalidação, caracterizada pela falta de reconhecimento de suas necessidades, emoções e particularidades. Essa desvalidação pode se manifestar por meio de incompreensão, estigmatização, práticas disciplinares inadequadas e exclusão social, gerando impactos negativos no desenvolvimento emocional, social e acadêmico da criança. O texto enfatiza a importância da empatia, da formação adequada de educadores, de políticas educacionais inclusivas e do respeito aos direitos legais das crianças com autismo, ressaltando que a construção de um ambiente escolar acolhedor e validante é fundamental para garantir participação, pertencimento e desenvolvimento pleno.</p>
             </div>
             <div class="d-flex align-items-center justify-content-center flex-grow-1 mt-3">
@@ -359,10 +359,7 @@
             <div class="card-body d-flex flex-column justify-content-between">
                 <p class="card-text text-muted fst-italic mb-3">
                     "Agradeço o acompanhamento da Psicóloga Daniele. Sempre muito acolhedora e atenciosa. Fiz terapia 1 ano, retornei com outras questões e agora estou em alta. Feliz com resultado novamente. Indico sempre o seu trabalho sério e humano."
-                </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente J.M.S
-                </h5>
+                </p>                
             </div>
         </div>
     </div>
@@ -372,10 +369,7 @@
             <div class="card-body d-flex flex-column justify-content-between">
                 <p class="card-text text-muted fst-italic mb-3">
                     "Só tenho agradecer a dra. Encontrei ela no pior momento da minha vida. E se estou em pé hoje devo tudo a ela. Gratidão!!! Indicarei o seu trabalho sempre."
-                </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente M.A.S
-                </h5>
+                </p>                
             </div>
         </div>
     </div>
@@ -385,10 +379,7 @@
             <div class="card-body d-flex flex-column justify-content-between">
                 <p class="card-text text-muted fst-italic mb-3">
                     "Fui buscar uma avaliação tardia com a Dra. Daniele. O acolhimento, a ética e seriedade no seu atendimento me cativaram. Ela não é somente uma profissional, é um ser humano excepcional. O processo doloroso, foi tão leve que nem senti. Ela tornou o momento extremamente acolhedor. Agradeço imensamente por tudo."
-                </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente V.S.O
-                </h5>
+                </p>                
             </div>
         </div>
     </div>
@@ -401,9 +392,6 @@
                 <p class="card-text text-muted fst-italic mb-3">
                     "Iniciei o processo terapêutico há poucos meses com a dra Daniele, estou amando. Já tive ótimos resultados. É uma profissional muito humana, acolhedora e segura no que faz."
                 </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente Z.S.
-                </h5>
             </div>
         </div>
     </div>
@@ -414,9 +402,6 @@
                 <p class="card-text text-muted fst-italic mb-3">
                     "Gratidão por tudo dra Daniele. Só tenho agradecer tudo que fez por mim. Indico demais."
                 </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente F.M
-                </h5>
             </div>
         </div>
     </div>
@@ -427,9 +412,6 @@
                 <p class="card-text text-muted fst-italic mb-3">
                     "Amo as sessões de terapia, são muito dinâmicas e não vejo o tempo passar. Aprendi muito. Obrigada. Indico de olhos fechados o seu trabalho."
                 </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente J. O.
-                </h5>
             </div>
         </div>
     </div>
@@ -442,9 +424,6 @@
                 <p class="card-text text-muted fst-italic mb-3">
                     "Realizei avaliação para obter meu diagnóstico e indico a dra Daniele. É uma profissional humana, acolhedora e muito competente. Indico o seu trabalho."
                 </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente K. M.
-                </h5>
             </div>
         </div>
     </div>
@@ -455,9 +434,6 @@
                 <p class="card-text text-muted fst-italic mb-3">
                     "Excelente profissional, super indico!!"
                 </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente J.A.Z
-                </h5>
             </div>
         </div>
     </div>
@@ -468,9 +444,6 @@
                 <p class="card-text text-muted fst-italic mb-3">
                     "Profissional extremamente ética, qualificada, de excelência. Recomendo de olhos fechados."
                 </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente I.A.C.
-                </h5>
             </div>
         </div>
     </div>
@@ -483,9 +456,6 @@
                 <p class="card-text text-muted fst-italic mb-3">
                     "Ótima profissional. Dedicada e ética!"
                 </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente R.S.
-                </h5>
             </div>
         </div>
     </div>
@@ -496,9 +466,6 @@
                 <p class="card-text text-muted fst-italic mb-3">
                     "Estou feliz e satisfeita, com tão pouco tempo no tratamento.. Super atenciosa, desde a acolhida até o presente momento... Super indico, e parabéns por ser tão especial no que faz..."
                 </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente K.F.
-                </h5>
             </div>
         </div>
     </div>
@@ -509,15 +476,13 @@
                 <p class="card-text text-muted fst-italic mb-3">
                     "Uma referência nas avaliações de TEA e de TDAH em adultos. Seu material é de qualidade."
                 </p>
-                <h5 class="card-title text-end fw-semibold text-success">
-                    — Paciente A.P.W.
-                </h5>
             </div>
         </div>
     </div>
 </div>
        <blockquote class="blockquote text-center mb-4 mt-5 px-4">
-                            <p><i>"Os relatos foram autorizados e as identidades preservadas."</i></p>
+                            <p><i>"Os comentários são verídicos e suas publicações foram autorizadas, 
+                                com as identidades preservadas, conforme preconiza a normativa técnica e ética do CFP."</i></p>
                             <footer class="blockquote-footer">
                                 <span>
                                     Psic. Daniele
